@@ -1,9 +1,35 @@
+![Zunévio for Android — Your music. Your flow.](assets/gallery/banner.png)
+
 # Zunévio
 ### Your music. Your flow.
 
 A focused Android music experience with clean lyrics, personal discovery and settings that stay out of your way.
 
 [**Download the latest release →**](https://github.com/amitsami/zunevio-releases/releases/latest) · [All versions & changelogs](https://github.com/amitsami/zunevio-releases/releases) · [Privacy](PRIVACY.md)
+
+---
+
+## A closer look
+
+Real Android screenshots, presented in three galleries. Select an image to view it at full size.
+
+### Discover your next favorite
+
+Personal recommendations, Explore and your listening library.
+
+[![Discover — Listen Now, Explore and Library](assets/gallery/discover.png)](assets/gallery/discover.png)
+
+### Stay in the music
+
+Immersive artwork, live lyrics and track controls within reach.
+
+[![Listen — Now Playing, Live Lyrics and Track Controls](assets/gallery/listen.png)](assets/gallery/listen.png)
+
+### Make it yours
+
+Dedicated settings for audio quality, playback, appearance and performance.
+
+[![Make it yours — Zunévio Settings](assets/gallery/settings.png)](assets/gallery/settings.png)
 
 ---
 
