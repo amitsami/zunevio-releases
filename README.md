@@ -1,6 +1,6 @@
-![Zunévio for Android — Your music. Your flow.](assets/gallery/banner.png)
+![Zunéviu for Android — Your music. Your flow.](assets/gallery/banner.png)
 
-# Zunévio
+# Zunéviu
 ### Your music. Your flow.
 
 A focused Android music experience with clean lyrics, personal discovery and settings that stay out of your way.
@@ -9,9 +9,9 @@ A focused Android music experience with clean lyrics, personal discovery and set
 
 ---
 
-## A closer look
+## Existing gallery — earlier versions
 
-Real Android screenshots, presented in three galleries. Select an image to view it at full size.
+The existing galleries below are retained from earlier versions and are not Build 47 captures. No new screenshots are included in this release.
 
 ### Discover your next favorite
 
@@ -29,9 +29,19 @@ Immersive artwork, live lyrics and track controls within reach.
 
 Dedicated settings for audio quality, playback, appearance and performance.
 
-[![Make it yours — Zunévio Settings](assets/gallery/settings.png)](assets/gallery/settings.png)
+[![Make it yours — Zunéviu Settings](assets/gallery/settings.png)](assets/gallery/settings.png)
 
 ---
+
+## Latest update — 1.2.5 (Build 47)
+
+- Restored timed fallback lyrics in inline music video playback.
+- Separate audio/video lyric offsets; visible audio default −0.4s without double application.
+- Automatic-language voice search through compatible Android 14+ speech services.
+- Creator/maintainer credit for Amit Hasan Sami, with GitHub and matching-source links.
+- [Full changelog and limitations](RELEASE_NOTES.md).
+
+Video fallback timing is not guaranteed to align with alternate edits; real-device audiovisual sync remains unverified.
 
 ## Made for everyday listening
 
@@ -55,7 +65,7 @@ The old debug-signed preview is not the production signing chain. The production
 
 ## How updates work
 
-Zunévio checks this public release channel on app open, on demand, and approximately every 12 hours in the background. Android permission, battery policies and network availability affect phone notifications; this is not instant push. A repository commit alone is not an app update—a newer stable release with its APK must be published.
+Zunéviu checks this public release channel on app open, on demand, and approximately every 12 hours in the background. Android permission, battery policies and network availability affect phone notifications; this is not instant push. A repository commit alone is not an app update—a newer stable release with its APK must be published.
 
 Downloads happen only when you choose. The app verifies the SHA-256 digest, package, signing certificate and newer version code before opening Android's installer. Android always controls installation and requires your confirmation.
 
@@ -63,10 +73,10 @@ Downloads happen only when you choose. The app verifies the SHA-256 digest, pack
 
 Every release includes the APK, changelog, SHA-256 checksums, certificate details, validation report and **corresponding-source ZIP** with build scripts and required notices. This repository's Git history contains release documentation, not the development tree. The source ZIP remains publicly available under its applicable licenses.
 
-See [License](LICENSE), [Notices](NOTICE.md), [Third-party notices](THIRD_PARTY_NOTICES.md) and [Privacy](PRIVACY.md). Required upstream credits are retained in those notices and the corresponding source. Zunévio is independent and is not endorsed by music providers or upstream projects.
+See [License](LICENSE), [Notices](NOTICE.md), [Third-party notices](THIRD_PARTY_NOTICES.md) and [Privacy](PRIVACY.md). Required upstream credits are retained in those notices and the corresponding source. Zunéviu is independent and is not endorsed by music providers or upstream projects.
 
 No warranty, Play Protect certification, silent install, universal device smoothness guarantee or on-device future-update certification is claimed. Consult each release's validation report and known limitations.
 
 ---
 
-**Zunévio** · Android music app · Maintained by [Amit Hasan Sami](https://github.com/amitsami)
+**Zunéviu** · Android music app · Maintained by [Amit Hasan Sami](https://github.com/amitsami)
