@@ -27,6 +27,8 @@ Inline music video in the player/mini-player, Back to audio, existing transport/
 - Physical-device audiovisual sync was not verified. Software-emulator screenshot attempts failed at Android system startup/installation; no new Build 47 screenshots are included. Existing repository galleries refer to earlier versions.
 - Install over the existing production app without uninstalling. Android requires installation confirmation; no silent install, Play Protect certification or universal performance guarantee is claimed.
 
+- If you already installed an earlier local **1.2.5** build, download/install Build 47 manually: update discovery compares version names, so it may not offer another build with the same 1.2.5 name. Existing public 1.2.3 users can discover the newer 1.2.5 release.
+
 ## Downloads and source
 The APK below is the same signed Build 47 file delivered before publication (158,895,238 bytes). Both repositories carry identical release assets, including the corresponding-source ZIP, validation report, license notices and SHA-256 checksums. No signing keys or credentials are included.
 
