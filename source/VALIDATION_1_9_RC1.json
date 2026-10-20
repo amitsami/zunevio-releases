@@ -1,0 +1,142 @@
+{
+  "version": "1.9-rc1",
+  "version_code": 30,
+  "package": "com.zunevio.music.preview3",
+  "label": "Zunévio",
+  "assembly_exit": 0,
+  "full_lint": {
+    "passed": false,
+    "summary": "198 errors, 666 warnings, 5 hints",
+    "error_count": 198,
+    "error_categories": {
+      "NewApi": 1,
+      "UnsafeOptInUsageError from androidx.annotation.experimental": 92,
+      "FlowOperatorInvokedInComposition from androidx.compose.runtime": 1,
+      "LocalContextGetResourceValueCall from androidx.compose.ui": 65,
+      "StateFlowValueCalledInComposition from androidx.compose.runtime": 10,
+      "StringFormatInvalid": 1,
+      "MissingQuantity": 28
+    },
+    "suppression_added": false,
+    "note": "The pinned frontend also logs incompatible Kotlin metadata. Findings require review; not all are confirmed runtime defects."
+  },
+  "tests": {
+    "android": {
+      "tests": 976,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 975,
+      "failed_cases": [
+        {
+          "class": "com.music.bitchord.GeniusTest",
+          "name": "live genius search and scraping test with noisy titles",
+          "message": "java.lang.AssertionError"
+        }
+      ]
+    },
+    "shared": {
+      "tests": 82,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 82,
+      "failed_cases": []
+    },
+    "shared_ui": {
+      "tests": 47,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 47,
+      "failed_cases": []
+    }
+  },
+  "new_regression_tests_passed": 21,
+  "apks": [
+    {
+      "file": "app-dev-arm64-v8a-benchmark.apk",
+      "bytes": 60020676,
+      "sha256": "6f152e4a5b74c9c1277bad0f49607f77c6ea8955b5e5e87aed888af7f3b51b6b",
+      "signature_verified": true,
+      "zip_16kb_alignment": true,
+      "abis": [
+        "arm64-v8a"
+      ],
+      "bundled_banners": 16,
+      "debuggable": false,
+      "certificate_matches_delivered_beta2": true
+    },
+    {
+      "file": "app-dev-armeabi-v7a-benchmark.apk",
+      "bytes": 51029788,
+      "sha256": "bb3f2f999a57a96c21e4891a7a9a46649f0cacfcee4f09145c9755e269293487",
+      "signature_verified": true,
+      "zip_16kb_alignment": true,
+      "abis": [
+        "armeabi-v7a"
+      ],
+      "bundled_banners": 16,
+      "debuggable": false,
+      "certificate_matches_delivered_beta2": true
+    },
+    {
+      "file": "app-dev-universal-benchmark.apk",
+      "bytes": 158335552,
+      "sha256": "2f5b402d8115d940fc5489591758aae4f426f88e1cd070c3a9aa682b7ac072ea",
+      "signature_verified": true,
+      "zip_16kb_alignment": true,
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "bundled_banners": 16,
+      "debuggable": false,
+      "certificate_matches_delivered_beta2": true
+    },
+    {
+      "file": "app-dev-x86-benchmark.apk",
+      "bytes": 63812623,
+      "sha256": "591dfaf2d43245153fa2cdffd4b446e0b7349a8110ce50a35cb58d352ceb30cd",
+      "signature_verified": true,
+      "zip_16kb_alignment": true,
+      "abis": [
+        "x86"
+      ],
+      "bundled_banners": 16,
+      "debuggable": false,
+      "certificate_matches_delivered_beta2": true
+    },
+    {
+      "file": "app-dev-x86_64-benchmark.apk",
+      "bytes": 66222900,
+      "sha256": "dc9bf06439e2d9506d63b22431baed5ddf3ed726016e6ad5128f88b3e3e12f21",
+      "signature_verified": true,
+      "zip_16kb_alignment": true,
+      "abis": [
+        "x86_64"
+      ],
+      "bundled_banners": 16,
+      "debuggable": false,
+      "certificate_matches_delivered_beta2": true
+    }
+  ],
+  "icon_applied": true,
+  "home_full_wordmark": true,
+  "provided_crash_root": "Non-ASCII User-Agent rejected before transport, escaping UI coroutine.",
+  "translation_ascii_header_and_error_boundary_fix": true,
+  "settings_single_action_overlay_pop_fix": true,
+  "live_translation_probe": {
+    "http_status": 200,
+    "input": "Hello world",
+    "target": "bn",
+    "output": "হ্যালো বিশ্ব",
+    "scope": "Public endpoint request from build environment, not phone UI acceptance."
+  },
+  "same_test_signing_identity_as_beta2": true,
+  "native_rc1_phone_tested": false,
+  "production_all_green_claim": false,
+  "private_signing_key_in_public_source": false
+}

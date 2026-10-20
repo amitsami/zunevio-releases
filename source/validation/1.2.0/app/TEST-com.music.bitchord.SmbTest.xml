@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.SmbTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:08:01" hostname="40a1f0bf-d72" time="0.008">
+  <properties/>
+  <testcase name="detectsConfiguration" classname="com.music.bitchord.SmbTest" time="0.001"/>
+  <testcase name="credentialsLogInAsThemselves" classname="com.music.bitchord.SmbTest" time="0.001"/>
+  <testcase name="blankCredentialsLogInAsGuestNotAnonymous" classname="com.music.bitchord.SmbTest" time="0.0"/>
+  <testcase name="artworkPrefersConventionalCovers" classname="com.music.bitchord.SmbTest" time="0.003"/>
+  <testcase name="detectsMediaFiles" classname="com.music.bitchord.SmbTest" time="0.0"/>
+  <testcase name="normalizesHost" classname="com.music.bitchord.SmbTest" time="0.0"/>
+  <testcase name="relativePath_stripsHostAndShare" classname="com.music.bitchord.SmbTest" time="0.0"/>
+  <testcase name="buildsStableIdsAndUrls" classname="com.music.bitchord.SmbTest" time="0.001"/>
+  <testcase name="splitsHostPort" classname="com.music.bitchord.SmbTest" time="0.0"/>
+  <testcase name="dataSourceDisplayPath_matchesConfig" classname="com.music.bitchord.SmbTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

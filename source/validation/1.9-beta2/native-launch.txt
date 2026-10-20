@@ -1,0 +1,6 @@
+Starting: Intent { cmp=com.zunevio.music.preview3/com.music.bitchord.MainActivity }
+Status: timeout
+LaunchState: UNKNOWN (-1)
+Activity: com.zunevio.music.preview3/com.music.bitchord.MainActivity
+WaitTime: 16376
+Complete

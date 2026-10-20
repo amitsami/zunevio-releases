@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.PlaybackFallbackTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:58" hostname="a4a5409e-bd5" time="0.006">
+  <properties/>
+  <testcase name="failed upgraded YouTube item is an alternative" classname="com.music.bitchord.PlaybackFallbackTest" time="0.005"/>
+  <testcase name="ordinary YouTube audio is not treated as a failed alternative" classname="com.music.bitchord.PlaybackFallbackTest" time="0.0"/>
+  <testcase name="source already forced to YouTube never falls back recursively" classname="com.music.bitchord.PlaybackFallbackTest" time="0.0"/>
+  <testcase name="direct YouTube fallback never falls back recursively" classname="com.music.bitchord.PlaybackFallbackTest" time="0.001"/>
+  <testcase name="source fallback removes manifest and upgrade markers and gets its own rendition" classname="com.music.bitchord.PlaybackFallbackTest" time="0.0"/>
+  <testcase name="failed substituted base item is an alternative" classname="com.music.bitchord.PlaybackFallbackTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

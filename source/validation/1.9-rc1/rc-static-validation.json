@@ -1,0 +1,61 @@
+{
+  "network_agent_ascii": true,
+  "translation_request_boundaries": 3,
+  "no_accented_display_agent_in_main_sources": true,
+  "home_full_text_wordmark": true,
+  "settings_top_back_closes_overlay_and_flag": true,
+  "legacy_monochrome_icons": [
+    {
+      "source": "app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "size": 48,
+      "sha256": "490b97926a2fdf3615b24ef0a6decf8f783d802831cd9790b12f6b84b237683b"
+    },
+    {
+      "source": "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "size": 48,
+      "sha256": "14821199a601dcd26b2d538865849e9c5a1541d82e54cc847f0c5f0003b1cee2"
+    },
+    {
+      "source": "app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "size": 72,
+      "sha256": "70beb024728b3b0250b43b6fa568e20a33cad3e364b36b755b56afc638acf6c4"
+    },
+    {
+      "source": "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "size": 72,
+      "sha256": "929d3677978319eac72dab72cea17058faed06eeb16ae9d55e7ad4518ae3e995"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "size": 96,
+      "sha256": "821ee1b5555d82e446424018c3d1cfa29efe880849f28315fd071ba4d91f28ac"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "size": 96,
+      "sha256": "1404c78e0a4c2c0506dafde02e820e108bb6edb4a51251a9faf203fab98cacf5"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "size": 144,
+      "sha256": "ea02876110c335b6487bcdeb7b976ad250d5086106f95f9a453a8782677bf018"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "size": 144,
+      "sha256": "f4cd2285e9ed7c5999ffa5c4652e5a17c7e20af09d5b82a7e425e45db8761e77"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "size": 192,
+      "sha256": "6ad63c91c69ef1d71d37ca675fcf8e0baa1a254b4a85088a1c548f53eb77c1cb"
+    },
+    {
+      "source": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "size": 192,
+      "sha256": "866f5c2fbe70df0c261befd976e5aab9b4ed0d0ebe093dd21b9c9a717c898302"
+    }
+  ],
+  "vector_literal_path_colours": true,
+  "scope": "Static/resource checks; native phone rendering/taps not tested here."
+}

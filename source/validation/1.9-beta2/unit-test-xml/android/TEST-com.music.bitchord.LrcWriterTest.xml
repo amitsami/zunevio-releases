@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LrcWriterTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:47:13" hostname="6b87ce45-d95" time="0.002">
+  <properties/>
+  <testcase name="milliseconds are truncated to centiseconds rather than rounded up past a second" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="word timings are dropped and the line's own text is kept whole" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="stamps are ascii digits regardless of the default locale" classname="com.music.bitchord.LrcWriterTest" time="0.001"/>
+  <testcase name="an instrumental gap is written as a bare stamp" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="lines are sorted by their stamp, whatever order they arrive in" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="an answering vocal is written back onto the end of its lead" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="what it writes, the parser reads back unchanged" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="a stamp past ninety-nine minutes overflows to three digits rather than wrapping" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <testcase name="each line is stamped as mm colon ss dot centiseconds" classname="com.music.bitchord.LrcWriterTest" time="0.001"/>
+  <testcase name="no lines is empty text rather than a blank stamp" classname="com.music.bitchord.LrcWriterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

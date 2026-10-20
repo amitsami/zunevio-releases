@@ -1,0 +1,5 @@
+/data/zuneviu-android-update/Zunevio-1.2.5/app/.cxx/RelWithDebInfo/3q5d5rl2/armeabi-v7a/CMakeFiles/bitchord_analysis.dir
+/data/zuneviu-android-update/Zunevio-1.2.5/app/.cxx/RelWithDebInfo/3q5d5rl2/armeabi-v7a/CMakeFiles/bitchord_dsd.dir
+/data/zuneviu-android-update/Zunevio-1.2.5/app/.cxx/RelWithDebInfo/3q5d5rl2/armeabi-v7a/CMakeFiles/bitchord_dst.dir
+/data/zuneviu-android-update/Zunevio-1.2.5/app/.cxx/RelWithDebInfo/3q5d5rl2/armeabi-v7a/CMakeFiles/edit_cache.dir
+/data/zuneviu-android-update/Zunevio-1.2.5/app/.cxx/RelWithDebInfo/3q5d5rl2/armeabi-v7a/CMakeFiles/rebuild_cache.dir

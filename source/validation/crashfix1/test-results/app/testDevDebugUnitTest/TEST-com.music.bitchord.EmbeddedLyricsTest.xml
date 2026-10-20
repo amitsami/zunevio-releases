@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.EmbeddedLyricsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:58:58" hostname="882242d2-567" time="0.03">
+  <properties/>
+  <testcase name="an m4a written by the tagger reads back" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.001"/>
+  <testcase name="a file with no lyrics at all reads back as nothing" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.0"/>
+  <testcase name="a cover alongside the lyrics is not mistaken for them" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.001"/>
+  <testcase name="word timings survive a sidecar too" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.016"/>
+  <testcase name="a package with no lyrics, and an ordinary file, are left to the container reader" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.003"/>
+  <testcase name="word timings survive the write and the read, in all three containers" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.005"/>
+  <testcase name="something that is none of the three containers is not guessed at" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.0"/>
+  <testcase name="a package's lyrics come from the sidecar beside its playlist" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.0"/>
+  <testcase name="the portable field never carries word stamps" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.001"/>
+  <testcase name="a webm written by the tagger reads back" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.0"/>
+  <testcase name="a flac written by the tagger reads back" classname="com.music.bitchord.EmbeddedLyricsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

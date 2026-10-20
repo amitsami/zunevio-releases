@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QueueHistoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:03" hostname="dc6b18e2-dd4" time="0.001">
+  <properties/>
+  <testcase name="persisted queue never restores more than twenty five history rows" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <testcase name="next and previous navigation preserve the queue" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <testcase name="starting in the middle does not turn earlier unplayed rows into history" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <testcase name="a direct forward choice removes only bypassed songs" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <testcase name="history retains at most twenty five songs" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <testcase name="persisted queue window is bounded independently of live queue size" classname="com.music.bitchord.QueueHistoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

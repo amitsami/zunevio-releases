@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QueueShuffleTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:58" hostname="a4a5409e-bd5" time="0.044">
+  <properties/>
+  <testcase name="a shuffled queue starts at the tapped track moved to its head" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="a queue holding the same track twice keeps both copies" classname="com.music.bitchord.QueueShuffleTest" time="0.005"/>
+  <testcase name="a track that has since been removed is skipped" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="an order already in place is left as it is" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="a very long queue is restored without a per-track search" classname="com.music.bitchord.QueueShuffleTest" time="0.033"/>
+  <testcase name="shuffling then restoring returns the original running order" classname="com.music.bitchord.QueueShuffleTest" time="0.005"/>
+  <testcase name="a one track section remains unchanged" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="a random identity is rotated so the first shuffle always moves a track" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="a genuinely shuffled order is kept" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="tracks the old order does not name trail behind the ones it does" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="the queue goes back into the order it was queued in" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <testcase name="an unshuffled queue starts at the tapped track's list position" classname="com.music.bitchord.QueueShuffleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

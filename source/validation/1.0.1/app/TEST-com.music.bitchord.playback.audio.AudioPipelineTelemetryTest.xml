@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:46:21" hostname="dc6b18e2-dd4" time="0.015">
+  <properties/>
+  <testcase name="flacUnknownBitrateLeavesBitrateNullAndPcmRateCalculated" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.001"/>
+  <testcase name="flacStreamBitrateDoesNotConflateWithPcmDataRate" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="nerdStatsTrackTransitionResetsCurrentSnapshot" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.001"/>
+  <testcase name="lossyFormatsHaveNoBitDepthAndNoPcmDataRate" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="flacHighRes24Bit48kStereoCalculatesPcmRateSeparately" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="resamplerAccuratelyReportsPassthroughWhenRatesMatch" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="audioTrackDoesNotFabricateFloat32WhenUninitialized" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="trackTransitionClearsStalePerTrackMetadata" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="audioTrackDisplaysExactConfiguredFormat" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="bluetoothRouteTransitionClearsBluetoothProfileWhenRoutingAway" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.012"/>
+  <testcase name="rawPcmStreamBitrateIsDerivedFromPcmThroughput" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="resamplerDoesNotFalselyReportPassthroughWhenOutputRateIsUnknown" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <testcase name="resamplerAccuratelyReportsResampledWhenRatesDiffer" classname="com.music.bitchord.playback.audio.AudioPipelineTelemetryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

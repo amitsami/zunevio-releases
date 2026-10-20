@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.SongDurationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:03" hostname="dc6b18e2-dd4" time="0.001">
+  <properties/>
+  <testcase name="minutes and seconds" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <testcase name="a negative field cannot produce a negative duration" classname="com.music.bitchord.SongDurationTest" time="0.001"/>
+  <testcase name="a single-digit minute field, which is how most rows arrive" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <testcase name="a row with no duration is zero rather than null" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <testcase name="anything that isn't a duration is zero" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <testcase name="surrounding and interior whitespace is tolerated" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <testcase name="hours, minutes and seconds" classname="com.music.bitchord.SongDurationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

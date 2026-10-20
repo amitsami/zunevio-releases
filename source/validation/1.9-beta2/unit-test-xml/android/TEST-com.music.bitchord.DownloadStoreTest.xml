@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.DownloadStoreTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:47:12" hostname="6b87ce45-d95" time="0.009">
+  <properties/>
+  <testcase name="flac and wav map to the types the media store actually accepts" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="alac is filed as the mp4 it actually is" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="characters a volume or a shell would object to are replaced" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="persisted creation time survives later file modifications" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="the name is artist then title, and carries the extension asked for" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="an unknown or absent codec is nothing to file" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="existing downloads use file time when no creation time was recorded" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="a row with nothing to name it falls back to the video id" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="youtube downloads retain their codec and resolved bitrate" classname="com.music.bitchord.DownloadStoreTest" time="0.002"/>
+  <testcase name="high is uncapped rather than capped very high" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="codecs are matched however a source spells them" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="every download rung is describable" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="only lossless asks a source for the file it holds" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="a capped streaming ceiling no longer decides what a download keeps" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <testcase name="old download metadata remains readable without an added date" classname="com.music.bitchord.DownloadStoreTest" time="0.001"/>
+  <testcase name="wifi-only refuses metered connections and nothing else" classname="com.music.bitchord.DownloadStoreTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

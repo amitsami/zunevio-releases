@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.PlayerClientRangeTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:03" hostname="dc6b18e2-dd4" time="0.006">
+  <properties/>
+  <testcase name="googlevideo ranges are capped at one megabyte" classname="com.music.bitchord.PlayerClientRangeTest" time="0.001"/>
+  <testcase name="clients refused past a megabyte get half that" classname="com.music.bitchord.PlayerClientRangeTest" time="0.0"/>
+  <testcase name="visionOS URLs are fetched as visionOS, not as an iPhone" classname="com.music.bitchord.PlayerClientRangeTest" time="0.005"/>
+  <testcase name="non-googlevideo hosts are not capped" classname="com.music.bitchord.PlayerClientRangeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

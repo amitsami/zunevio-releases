@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:08:03" hostname="40a1f0bf-d72" time="0.026">
+  <properties/>
+  <testcase name="handleBuffer converts PCM16 in to Float32 DSP to PCM16 out when float disabled" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.005"/>
+  <testcase name="configure activates precision mode with Float32 output when float output enabled" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="float is taken only when the delegate supports it directly" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="handleBuffer converts PCM32 in to Float32 DSP to PCM16 out" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="handleBuffer executes DspChain modifying samples with PCM16 output" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="handleBuffer converts PCM16 to Float32 and passes to delegate" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="handleDiscontinuity forwards to delegate without resetting precision state" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="configure activates precision mode with PCM16 output when float output disabled" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="handleBuffer respects backpressure and reuses identical buffer instance with Float32 output" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="a 24-bit preference is honoured as float, since Media3 has no 24-bit track" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="handleBuffer converts Float32 in to Float32 DSP to PCM16 out" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="16-bit round trip is exact with an idle chain" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="split sub-blocks advance the presentation timestamp" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.002"/>
+  <testcase name="a passthrough bitstream reports the DSP chain as unavailable" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="configure activates for PCM 16bit, 24bit, 32bit, and Float32" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="supportsFormat returns true when precision path can transcode to supported output" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="large input buffer processed in chunks" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.003"/>
+  <testcase name="24-bit goes to float and survives exactly" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="getFormatSupport with float output disabled reports integer PCM directly and float as transcoding" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="trailing incomplete frame bytes are dropped without hanging" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="a 24-bit preference falls back to 16-bit without a float track" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="configure falls back for non-raw audio mime types" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="handleBuffer respects backpressure and reuses identical buffer instance with PCM16 output" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="playToEndOfStream, isEnded, and hasPendingData reflect pending buffer state" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="preferredOutputEncodingProvider directs target encoding to 16-bit PCM on phone speaker" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="32-bit PCM is admitted to be inexact" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="precision stays active for a 5 point 1 stream" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="handleBuffer executes DspChain modifying samples before passing to delegate" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="the DSP chain is reached when it is switched on" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="handleBuffer converts PCM24 in to Float32 DSP to PCM16 out" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="float input is not claimed as direct when float output is off" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="getFormatSupport reports SINK_FORMAT_SUPPORTED_DIRECTLY for all linear PCM encodings with float output enabled" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="configure falls back beyond the channel ceiling" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="configure activates precision mode with PCM16 output when delegate rejects float" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.001"/>
+  <testcase name="handleBuffer in fallback mode forwards untouched to delegate" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="reports inexact when the route refuses float" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <testcase name="flush and reset clear state and propagate to delegate" classname="com.music.bitchord.playback.audio.PrecisionAudioSinkTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

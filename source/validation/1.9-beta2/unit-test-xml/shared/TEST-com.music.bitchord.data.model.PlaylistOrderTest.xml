@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.model.PlaylistOrderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:12:38" hostname="6b87ce45-d95" time="0.016">
+  <properties/>
+  <testcase name="oneTrackDraggedUpIsOneMove[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.005"/>
+  <testcase name="listsThatNoLongerMatchAreLeftAlone[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.0"/>
+  <testcase name="reversingMovesAllButOne[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.0"/>
+  <testcase name="unchangedOrderSendsNothing[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.0"/>
+  <testcase name="anyRearrangementReplaysToTheTarget[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.009"/>
+  <testcase name="oneTrackDraggedToTheEndMovesToTheEnd[jvm]" classname="com.music.bitchord.data.model.PlaylistOrderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

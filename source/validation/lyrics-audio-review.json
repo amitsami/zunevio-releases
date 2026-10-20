@@ -1,0 +1,50 @@
+{
+  "version": "1.2.5",
+  "versionCode": 46,
+  "status": "audio calibration build; not GitHub published",
+  "tests": 1295,
+  "passed": 1294,
+  "failures": [
+    {
+      "class": "com.music.bitchord.GeniusTest",
+      "test": "live genius search and scraping test with noisy titles"
+    }
+  ],
+  "focused_timing_and_calibration_tests": [
+    {
+      "class": "com.music.bitchord.AudioLyricsOffsetIntegrationTest",
+      "tests": 5,
+      "failures": 0
+    },
+    {
+      "class": "com.music.bitchord.data.AudioLyricsOffsetTest",
+      "tests": 8,
+      "failures": 0
+    },
+    {
+      "class": "com.music.bitchord.LyricClockTest",
+      "tests": 15,
+      "failures": 0
+    },
+    {
+      "class": "com.music.bitchord.AudioLyrics123RegressionTest",
+      "tests": 14,
+      "failures": 0
+    },
+    {
+      "class": "com.music.bitchord.MediaLyricClockTest",
+      "tests": 10,
+      "failures": 0
+    }
+  ],
+  "android_production_compilation_passed": true,
+  "lint_errors": 0,
+  "lint_warnings": 685,
+  "audio_default_ms": -400,
+  "existing_minus400_preserved_without_addition": true,
+  "explicit_saved_audio_zero_preserved": true,
+  "video_offset_preserved": true,
+  "calibration_basis": "user reported -0.4s matches all audio tracks they tested",
+  "physical_device_tested_by_agent": false,
+  "github_published": false
+}

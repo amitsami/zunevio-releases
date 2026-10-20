@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.ui.player.SingleTapPolicyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-16T07:39:21" hostname="40a1f0bf-d72" time="0.003">
+  <properties/>
+  <testcase name="scrollingIsNotATap[jvm]" classname="com.music.bitchord.ui.player.SingleTapPolicyTest" time="0.002"/>
+  <testcase name="normalFingerWobbleIsAccepted[jvm]" classname="com.music.bitchord.ui.player.SingleTapPolicyTest" time="0.0"/>
+  <testcase name="multiTouchDoesNotRevealOrSeek[jvm]" classname="com.music.bitchord.ui.player.SingleTapPolicyTest" time="0.001"/>
+  <testcase name="stationaryFirstTapIsAccepted[jvm]" classname="com.music.bitchord.ui.player.SingleTapPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

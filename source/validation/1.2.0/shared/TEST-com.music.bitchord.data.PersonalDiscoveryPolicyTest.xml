@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.PersonalDiscoveryPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-16T07:39:05" hostname="40a1f0bf-d72" time="0.023">
+  <properties/>
+  <testcase name="heardTracksAreNeverRediscoveredAsNew[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.004"/>
+  <testcase name="repeatedRadioResponsesAreNotRelabelledToFillRows[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.002"/>
+  <testcase name="offAndResetCanIdentifyEveryLocalPersonalRow[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.001"/>
+  <testcase name="fourDistinctArtistsAtMost[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.0"/>
+  <testcase name="richResultsCreateFiveGenuinelyDifferentRows[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.014"/>
+  <testcase name="emptyProvidersDoNotInventRows[jvm]" classname="com.music.bitchord.data.PersonalDiscoveryPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

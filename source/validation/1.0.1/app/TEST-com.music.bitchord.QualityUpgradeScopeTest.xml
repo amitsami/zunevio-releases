@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QualityUpgradeScopeTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:46:19" hostname="dc6b18e2-dd4" time="0.0">
+  <properties/>
+  <testcase name="the upgraded item does not re-open its own verdict" classname="com.music.bitchord.QualityUpgradeScopeTest" time="0.0"/>
+  <testcase name="a fresh play re-opens a verdict reached on the previous one" classname="com.music.bitchord.QualityUpgradeScopeTest" time="0.0"/>
+  <testcase name="re-opening one track leaves the rest alone" classname="com.music.bitchord.QualityUpgradeScopeTest" time="0.0"/>
+  <testcase name="a reverted item does not re-open its own verdict either" classname="com.music.bitchord.QualityUpgradeScopeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

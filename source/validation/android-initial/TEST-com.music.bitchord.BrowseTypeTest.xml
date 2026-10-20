@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.BrowseTypeTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T08:49:42" hostname="33d8a6c9-889" time="0.006">
+  <properties/>
+  <testcase name="resolves standard MPREb album IDs as BrowseType ALBUM" classname="com.music.bitchord.BrowseTypeTest" time="0.004"/>
+  <testcase name="preserves fallback when browse ID prefix is unknown" classname="com.music.bitchord.BrowseTypeTest" time="0.001"/>
+  <testcase name="resolves VLOLAK and OLAK album release IDs as BrowseType ALBUM" classname="com.music.bitchord.BrowseTypeTest" time="0.0"/>
+  <testcase name="resolves VLPL and PL playlist IDs as BrowseType PLAYLIST" classname="com.music.bitchord.BrowseTypeTest" time="0.0"/>
+  <testcase name="resolves UC artist IDs as BrowseType ARTIST" classname="com.music.bitchord.BrowseTypeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

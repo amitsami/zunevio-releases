@@ -1,0 +1,65 @@
+[
+  {
+    "file": "app-dev-arm64-v8a-benchmark.apk",
+    "bytes": 60029880,
+    "sha256": "8c890ef1ba38443c45788bb6567e823e5f92cea080749d9b4f25086c212c2413",
+    "signature_verified": true,
+    "zip_16kb_alignment": true,
+    "abis": [
+      "arm64-v8a"
+    ],
+    "bundled_banners": 16,
+    "debuggable": false
+  },
+  {
+    "file": "app-dev-armeabi-v7a-benchmark.apk",
+    "bytes": 51038992,
+    "sha256": "6d625ce84dcadd53961bd145f3faac8a1c176fdf52a991dc5fd5654b0e89b4d2",
+    "signature_verified": true,
+    "zip_16kb_alignment": true,
+    "abis": [
+      "armeabi-v7a"
+    ],
+    "bundled_banners": 16,
+    "debuggable": false
+  },
+  {
+    "file": "app-dev-universal-benchmark.apk",
+    "bytes": 158344756,
+    "sha256": "64e564290da1f8c16d116052313fe4abef542c52c18606435c9cdcd6f11ca2c8",
+    "signature_verified": true,
+    "zip_16kb_alignment": true,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "bundled_banners": 16,
+    "debuggable": false
+  },
+  {
+    "file": "app-dev-x86-benchmark.apk",
+    "bytes": 63821827,
+    "sha256": "164469496878a1efd3665eb8287f7495303b63c0fea1bd542a93d0f2a18e9e66",
+    "signature_verified": true,
+    "zip_16kb_alignment": true,
+    "abis": [
+      "x86"
+    ],
+    "bundled_banners": 16,
+    "debuggable": false
+  },
+  {
+    "file": "app-dev-x86_64-benchmark.apk",
+    "bytes": 66232104,
+    "sha256": "2b2d1363130d842074d60e6b5212cb9365ca30592810918da7478174b8a3b7c6",
+    "signature_verified": true,
+    "zip_16kb_alignment": true,
+    "abis": [
+      "x86_64"
+    ],
+    "bundled_banners": 16,
+    "debuggable": false
+  }
+]

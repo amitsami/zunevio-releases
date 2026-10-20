@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.SearchPagingTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:07" hostname="dc6b18e2-dd4" time="0.016">
+  <properties/>
+  <testcase name="watch queue keeps the full artist byline for autoplay and link lookup" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="rows under a song card keep their own credit" classname="com.music.bitchord.SearchPagingTest" time="0.003"/>
+  <testcase name="album backing playlist falls back to its canonical url" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="album backing playlist comes from the header instead of recommendation shelves" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="search page deduplicates repeated rows before pagination" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="album rows inherit every artist from the release header" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="user playlists filter still excludes non editable auto playlists after paging" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="promoted song keeps every artist in a partially linked credit" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="YouTube explicit badge is carried onto the song" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="search page keeps rows and next continuation" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="search song keeps artists that have no browse link" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="a byline that links every artist keeps every channel" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="a name a row named but did not link is filled from what another row linked" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="a partly linked byline keeps the linked artists and no others" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="playlist continuation rows are real tracks even without set video ids" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="shelf subtitle conversion preserves the complete artist segment" classname="com.music.bitchord.SearchPagingTest" time="0.0"/>
+  <testcase name="songs under an artist card inherit the card's credit" classname="com.music.bitchord.SearchPagingTest" time="0.001"/>
+  <testcase name="library item page keeps saved cards and next continuation" classname="com.music.bitchord.SearchPagingTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.DetailScreenQueueTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:56" hostname="a4a5409e-bd5" time="0.118">
+  <properties/>
+  <testcase name="bootstrap join with empty canonical party queue produces single song queue" classname="com.music.bitchord.DetailScreenQueueTest" time="0.002"/>
+  <testcase name="matching filters by title, artist, or albumName case-insensitively" classname="com.music.bitchord.DetailScreenQueueTest" time="0.099"/>
+  <testcase name="unfiltered playlist preserves full playlist as context queue with correct startIndex" classname="com.music.bitchord.DetailScreenQueueTest" time="0.009"/>
+  <testcase name="tapping song in playlist while in party constructs single-song queue without surrounding context tracks and preserves upcoming manual party queue" classname="com.music.bitchord.DetailScreenQueueTest" time="0.005"/>
+  <testcase name="tapping song in playlist while in party drops stale autoplay tracks from upcoming party tracks" classname="com.music.bitchord.DetailScreenQueueTest" time="0.0"/>
+  <testcase name="filtered playlist search results become the context queue, not the unfiltered playlist" classname="com.music.bitchord.DetailScreenQueueTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

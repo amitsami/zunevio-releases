@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QueueMigrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:47:13" hostname="6b87ce45-d95" time="0.006">
+  <properties/>
+  <testcase name="snapshot with tier USER_QUEUE and entryId round-trips cleanly" classname="com.music.bitchord.QueueMigrationTest" time="0.005"/>
+  <testcase name="legacy snapshot with auto true deserializes to AUTOPLAY tier" classname="com.music.bitchord.QueueMigrationTest" time="0.0"/>
+  <testcase name="legacy snapshot with auto false deserializes to CONTEXT tier" classname="com.music.bitchord.QueueMigrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.AudioBlockTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:59:01" hostname="882242d2-567" time="0.005">
+  <properties/>
+  <testcase name="pcm32 round trip preserves full scale, zero, and small amplitude values" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.002"/>
+  <testcase name="pcm24 packed round trip preserves full scale, zero, and small amplitude values" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.001"/>
+  <testcase name="buffer with fewer bytes than one full frame decodes zero frames" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="nan and infinity are defensively sanitized and clamped" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="incomplete trailing bytes are preserved in input buffer" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="pcm16 round trip preserves full scale, zero, and small amplitude values" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="pcm_float round trip preserves floating point values" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="interleaved stereo ordering preserves left and right channels" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="audio block copy and frame slicing" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <testcase name="multi-frame buffer handles large audio blocks without distortion" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.002"/>
+  <testcase name="audio block reuses preallocated memory without allocation" classname="com.music.bitchord.playback.audio.AudioBlockTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.AuthCookieTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:07:59" hostname="40a1f0bf-d72" time="0.004">
+  <properties/>
+  <testcase name="plain SAPISID is accepted" classname="com.music.bitchord.AuthCookieTest" time="0.001"/>
+  <testcase name="a jar with no signing secret is rejected" classname="com.music.bitchord.AuthCookieTest" time="0.0"/>
+  <testcase name="leading and trailing whitespace does not hide a cookie" classname="com.music.bitchord.AuthCookieTest" time="0.001"/>
+  <testcase name="the name has to be the whole name" classname="com.music.bitchord.AuthCookieTest" time="0.0"/>
+  <testcase name="a present but empty value is rejected" classname="com.music.bitchord.AuthCookieTest" time="0.001"/>
+  <testcase name="a jar with only the secure forms is accepted" classname="com.music.bitchord.AuthCookieTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

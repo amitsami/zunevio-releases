@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.ArtistCreditsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:02" hostname="dc6b18e2-dd4" time="0.014">
+  <properties/>
+  <testcase name="a credit with no channel is drawn but carries no link" classname="com.music.bitchord.ArtistCreditsTest" time="0.008"/>
+  <testcase name="stated credits are used even when the credit line says something else" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a dangling separator does not produce an empty credit" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <testcase name="a name the line spells differently is drawn as the line spells it" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <testcase name="the stretches redraw the credit line character for character" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <testcase name="a longer name wins over a shorter one that starts inside it" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a name the project rule leaves whole is left whole here" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="an empty line is no stretches at all" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a blank line is no credits rather than one empty one" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="the lead credit of a split is the same name primaryArtist picks" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <testcase name="a split hands the track's own id to the lead and to nobody else" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a blank stated name is dropped rather than drawn" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="every stated artist keeps its own page" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a live collaboration names every credit and every one is a link" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="the punctuation between credits is drawn but is not tappable" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <testcase name="a line with nothing credited is one plain stretch" classname="com.music.bitchord.ArtistCreditsTest" time="0.0"/>
+  <testcase name="a name stated without a channel is kept but has nothing to open" classname="com.music.bitchord.ArtistCreditsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.model.ModelsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:13:10" hostname="dc6b18e2-dd4" time="0.017">
+  <properties/>
+  <testcase name="durationIsSharedAcrossTargets[jvm]" classname="com.music.bitchord.data.model.ModelsTest" time="0.001"/>
+  <testcase name="aReorderedReleaseShelfUnderAnotherTitleIsARepeat[jvm]" classname="com.music.bitchord.data.model.ModelsTest" time="0.005"/>
+  <testcase name="songShelvesAndAFewSharedAlbumsAreKept[jvm]" classname="com.music.bitchord.data.model.ModelsTest" time="0.001"/>
+  <testcase name="artworkSizeHintIsSharedAcrossTargets[jvm]" classname="com.music.bitchord.data.model.ModelsTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QueueEdgeScrollTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:58" hostname="a4a5409e-bd5" time="0.019">
+  <properties/>
+  <testcase name="a row in the middle of the list scrolls it neither way" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.013"/>
+  <testcase name="held past the edge it goes no faster than at it" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="reaching the top of the list scrolls back towards the start" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="no zone is no auto-scroll" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="reaching the bottom scrolls on towards the end" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="the zone is measured from the viewport, not from zero" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.001"/>
+  <testcase name="a row barely inside the zone already moves the list" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="the ramp is even across the zone" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="the speed at the very edge is the full speed asked for" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <testcase name="a row clear of the zone by a single pixel still scrolls nothing" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.005"/>
+  <testcase name="a viewport too short to clear both edges scrolls neither way" classname="com.music.bitchord.QueueEdgeScrollTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

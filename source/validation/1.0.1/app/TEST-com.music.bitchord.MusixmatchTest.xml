@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.MusixmatchTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:46:19" hostname="dc6b18e2-dd4" time="0.01">
+  <properties/>
+  <testcase name="malformed rich sync is ignored" classname="com.music.bitchord.MusixmatchTest" time="0.007"/>
+  <testcase name="rich sync never emits backward word times" classname="com.music.bitchord.MusixmatchTest" time="0.002"/>
+  <testcase name="rich sync keeps word timing and merges syllable fragments" classname="com.music.bitchord.MusixmatchTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

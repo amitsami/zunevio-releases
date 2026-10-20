@@ -1,0 +1,222 @@
+--- a/ZUNEVIO_README.md
++++ b/ZUNEVIO_README.md
+@@ -1,15 +1,15 @@
+ # Zunévio native fork
+ 
+-Prepared for PriceBond. Upstream: https://github.com/kushagrasinghx/BitChord
++Zunévio developer: Amit Hasan Sami. Public contact: amitsami110@gmail.com; GitHub: https://github.com/amitsami. Upstream: https://github.com/kushagrasinghx/BitChord
+ Upstream commit: fe95bb60aa9cd205cf4ab8bd25a5bec71a595b4f
+ 
+-This is a GPLv3 derivative fork, not a claim that PriceBond wrote the upstream code. Original source, copyright, licence, contributor acknowledgements and upstream documentation are retained. Review inherited third-party asset/font licences before a public release.
++This is a GPLv3 derivative fork, not a claim that Amit Hasan Sami wrote the upstream code. Original source, copyright, licence, contributor acknowledgements and upstream documentation are retained. Review inherited third-party asset/font licences before a public release.
+ 
+ ## Native UI, not an HTML shell
+ 
+ The Android and desktop applications keep BitChord's actual Compose UI, player engines, floating navigation, artwork transitions, lyric clock, word/letter sweep, queue, service integrations and native analysis code. They are not a WebView wrapping the design preview.
+ 
+-Zunévio changes include distinct application/package identifiers, PriceBond publisher metadata, Z icons, visible/export branding, Glass enabled by default for new Android installs, and a translucent lyric capsule connected to the actual player backdrop in both portrait and landscape layouts. Reduced-blur settings and unsupported-device fallbacks remain in place. Saved user preferences are not overwritten. Lyrics need a provider with word timestamps for the native letter/word sweep; line-only and unavailable lyrics retain upstream behavior rather than fabricating sung timing.
++Zunévio changes include distinct application/package identifiers, Amit Hasan Sami publisher metadata, Z icons, visible/export branding, Glass enabled by default for new Android installs, and a translucent lyric capsule connected to the actual player backdrop in both portrait and landscape layouts. Reduced-blur settings and unsupported-device fallbacks remain in place. Saved user preferences are not overwritten. Lyrics need a provider with word timestamps for the native letter/word sweep; line-only and unavailable lyrics retain upstream behavior rather than fabricating sung timing.
+ 
+ The HTML in design-preview remains a separate interactive concept. It is not evidence that its entire custom layout has been ported to native code. The native UI deliberately retains BitChord's own layouts and animation implementation.
+ 
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -80,8 +80,8 @@
+         // Haze falls back to a translucent scrim below that.
+         minSdk = 26
+         targetSdk = 36
+-        versionCode = 26
+-        versionName = "1.8"
++        versionCode = 27
++        versionName = "1.8-crashfix1"
+ 
+         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+ 
+@@ -118,8 +118,12 @@
+     productFlavors {
+         create("dev") {
+             dimension = "env"
+-            applicationId = "com.zunevio.music.dev"
+-            resValue("string", "app_name", "Zunévio Dev")
++            // A new test key cannot update the previously supplied APK. This
++            // opt-in package installs alongside it without deleting user data.
++            val sideBySide = providers.gradleProperty("zunevioSideBySide").orNull == "true"
++            applicationId = if (sideBySide) "com.zunevio.music.dev.crashfix1" else "com.zunevio.music.dev"
++            resValue("string", "app_name", if (sideBySide) "Zunévio Test" else "Zunévio Dev")
++            manifestPlaceholders["zunevioDevLabel"] = if (sideBySide) "Zunévio Test" else "Zunévio Dev"
+         }
+         create("prod") {
+             dimension = "env"
+--- a/app/src/dev/AndroidManifest.xml
++++ b/app/src/dev/AndroidManifest.xml
+@@ -3,7 +3,7 @@
+     xmlns:tools="http://schemas.android.com/tools">
+ 
+     <application
+-        android:label="Zunévio Dev"
++        android:label="${zunevioDevLabel}"
+         android:usesCleartextTraffic="true"
+         tools:replace="android:label,android:usesCleartextTraffic" />
+ </manifest>
+--- a/app/src/main/java/com/music/bitchord/ui/screens/SettingsSheet.kt
++++ b/app/src/main/java/com/music/bitchord/ui/screens/SettingsSheet.kt
+@@ -1391,27 +1391,35 @@
+         if (searchQuery.isBlank()) {
+         Text(
+             text = buildAnnotatedString {
+-                append("bitchord $version  ")
++                append("Zunévio $version\nDeveloper: ")
+                 val linkStyles = TextLinkStyles(
+                     style = SpanStyle(
+                         color = MaterialTheme.colorScheme.primary,
+                         textDecoration = TextDecoration.Underline,
+                     ),
+                 )
++                withLink(LinkAnnotation.Url("https://github.com/amitsami", linkStyles)) {
++                    append("Amit Hasan Sami")
++                }
++                append("\n")
++                withLink(LinkAnnotation.Url("mailto:amitsami110@gmail.com", linkStyles)) {
++                    append("amitsami110@gmail.com")
++                }
++                append("\nBased on BitChord · GPLv3\n")
+                 withLink(LinkAnnotation.Url("https://github.com/kushagrasinghx/BitChord", linkStyles)) {
+-                    append("GitHub")
++                    append("BitChord source")
+                 }
+                 append("  ")
+                 withLink(LinkAnnotation.Url("https://github.com/kushagrasinghx", linkStyles)) {
+-                    append("Developer")
++                    append("Upstream: Kushagra Singh")
+                 }
+                 append("  ")
+                 withLink(LinkAnnotation.Url("https://discord.gg/pDdKfrdHY6", linkStyles)) {
+-                    append("Discord")
++                    append("Upstream Discord")
+                 }
+                 append("  ")
+                 withLink(LinkAnnotation.Url("https://bitchord.kushagrasingh.in/", linkStyles)) {
+-                    append("Website")
++                    append("Upstream website")
+                 }
+                 append("\n~YouTube Music & Listen Together Backend")
+             },
+--- a/app/src/main/res/drawable/ic_launcher_foreground.xml
++++ b/app/src/main/res/drawable/ic_launcher_foreground.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!-- Zunevio original mark; GPLv3 fork branding modification, 2026-10-15. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:pathData="M34,32 L76,32 L34,76 L76,76" android:strokeColor="#FFFFFFFF" android:strokeWidth="7" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="@android:color/transparent" /></vector>
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:pathData="M34,32 L76,32 L34,76 L76,76" android:strokeColor="#FFFFFFFF" android:strokeWidth="7" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
+--- a/app/src/main/res/drawable/ic_logo.xml
++++ b/app/src/main/res/drawable/ic_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="@android:color/transparent" /></vector>
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
+--- a/app/src/main/res/drawable/ic_notification_logo.xml
++++ b/app/src/main/res/drawable/ic_notification_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="@android:color/transparent" /></vector>
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
+--- a/desktopApp/build.gradle.kts
++++ b/desktopApp/build.gradle.kts
+@@ -534,8 +534,8 @@
+             packageName = "Zunevio"
+             packageVersion = nativePackageVersion
+             description = if (targetOs == "windows") "Zunevio" else "Aesthetic YouTube Music client"
+-            vendor = "PriceBond"
+-            copyright = "Copyright © 2026 BitChord contributors; Zunevio modifications © 2026 PriceBond"
++            vendor = "Amit Hasan Sami"
++            copyright = "Copyright © 2026 BitChord contributors; Zunevio modifications © 2026 Amit Hasan Sami"
+ 
+             modules(
+                 "java.base",
+--- a/sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml
++++ b/sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="@android:color/transparent" /></vector>
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
+--- /dev/null
++++ b/scripts/check_vector_resources.py
+@@ -0,0 +1,26 @@
++#!/usr/bin/env python3
++"""Check literal shared vector path colors; optionally inspect the built APK."""
++from pathlib import Path
++import re, sys, xml.etree.ElementTree as ET, zipfile
++ROOT = Path(__file__).resolve().parents[1]
++NAMESPACE = '{http://schemas.android.com/apk/res/android}'
++def check(data, label):
++    tree = ET.fromstring(data)
++    for node in tree.iter():
++        for attr in ('fillColor', 'strokeColor'):
++            value = node.get(NAMESPACE + attr)
++            if value is not None:
++                assert re.fullmatch(r'#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})', value), (label, attr, value)
++    return tree
++vectors = list((ROOT / 'sharedUi/src/commonMain/composeResources/drawable').glob('*.xml'))
++assert vectors
++for file in vectors: check(file.read_bytes(), file.name)
++print(f'PASS: {len(vectors)} shared vector XML resources have literal path colors')
++if len(sys.argv) > 1:
++    with zipfile.ZipFile(sys.argv[1]) as archive:
++        prefix = 'assets/composeResources/com.music.bitchord.sharedui.resources/drawable/'
++        names = [n for n in archive.namelist() if n.startswith(prefix) and n.endswith('.xml')]
++        assert names
++        for name in names: check(archive.read(name), name)
++        assert archive.read(prefix + 'ic_logo.xml') == (ROOT / 'sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml').read_bytes()
++        print(f'PASS: {len(names)} APK shared vectors checked; packaged logo matches corrected source')
+--- /dev/null
++++ b/sharedUi/src/jvmTest/kotlin/com/music/bitchord/ui/resources/VectorResourceRegressionTest.kt
+@@ -0,0 +1,46 @@
++package com.music.bitchord.ui.resources
++
++import androidx.compose.ui.graphics.SolidColor
++import androidx.compose.ui.graphics.vector.VectorPath
++import androidx.compose.ui.unit.Density
++import java.io.File
++import org.jetbrains.compose.resources.decodeToImageVector
++import org.junit.Assert.*
++import org.junit.Test
++
++/** Exercises the same Compose XML parser used by HomeTitle's painterResource. */
++class VectorResourceRegressionTest {
++    private val drawables = File("src/commonMain/composeResources/drawable")
++    private fun logo() = File(drawables, "ic_logo.xml").readBytes()
++
++    @Test fun homeLogoDecodesWithoutAndroidResourceResolution() {
++        val image = logo().decodeToImageVector(Density(1f))
++        assertEquals(48f, image.viewportWidth, 0f)
++        assertEquals(48f, image.viewportHeight, 0f)
++    }
++
++    @Test fun homeLogoRemainsTransparentWithVisibleStroke() {
++        val path = logo().decodeToImageVector(Density(1f)).root[0] as VectorPath
++        assertEquals(0f, (path.fill as SolidColor).value.alpha, 0f)
++        assertEquals(1f, (path.stroke as SolidColor).value.alpha, 0f)
++        assertEquals(3.8f, path.strokeLineWidth, 0f)
++    }
++
++    @Test fun everySharedVectorDecodesAtMultipleDensities() {
++        val vectors = drawables.listFiles { f -> f.extension == "xml" }!!.toList()
++        assertTrue("Shared vector resources must be present", vectors.isNotEmpty())
++        for (file in vectors) for (density in listOf(1f, 2f, 3.5f)) {
++            try { file.readBytes().decodeToImageVector(Density(density)) }
++            catch (e: Exception) { throw AssertionError("Cannot decode ${file.name} at $density", e) }
++        }
++    }
++
++    @Test fun oldAndroidColorReferenceReproducesReportedCrash() {
++        val old = logo().toString(Charsets.UTF_8)
++            .replace("#00000000", "@android:color/transparent").toByteArray()
++        val error = assertThrows(IllegalArgumentException::class.java) {
++            old.decodeToImageVector(Density(1f))
++        }
++        assertTrue(error.message!!.contains("Invalid color value @android:color/transparent"))
++    }
++}

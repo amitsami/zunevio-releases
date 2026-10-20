@@ -1,0 +1,9 @@
+N: android=http://schemas.android.com/apk/res/android
+  E: vector (line=2)
+    A: android:height(0x01010155)=(type 0x5)0x6c01
+    A: android:width(0x01010159)=(type 0x5)0x6c01
+    A: android:viewportWidth(0x01010402)=(type 0x4)0x42d80000
+    A: android:viewportHeight(0x01010403)=(type 0x4)0x42d80000
+    E: path (line=2)
+      A: android:fillColor(0x01010404)=(type 0x1c)0xff000000
+      A: android:pathData(0x01010405)="M0,0h108v108h-108z" (Raw: "M0,0h108v108h-108z")

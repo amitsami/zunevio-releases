@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.HomeDiscoveryPolicyTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:29:58" hostname="23011c11-9c1" time="0.099">
+  <properties/>
+  <testcase name="duplicateItemsDoNotBecomeFakeDifferentSections[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.057"/>
+  <testcase name="virtualSupplementIdsResolveKnownSectionsOnly[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.003"/>
+  <testcase name="twelveDistinctDiscoveryQueries[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.001"/>
+  <testcase name="invalidUnplayableCardsAreOmitted[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.002"/>
+  <testcase name="historyIsNotTruncatedOrRemovedByRecommendations[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.007"/>
+  <testcase name="unrenderedOverflowRemainsAvailableForAnotherSection[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.001"/>
+  <testcase name="discoveryKeepsExistingCategoryPolicy[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.01"/>
+  <testcase name="emptyAndDuplicateOnlyRowsAreOmitted[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.002"/>
+  <testcase name="invalidCursorsCannotSelectArbitraryRequests[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.001"/>
+  <testcase name="fourInitialSectionsAndEightPagedSections[jvm]" classname="com.music.bitchord.data.HomeDiscoveryPolicyTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

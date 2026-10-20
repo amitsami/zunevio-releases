@@ -1,35 +1,43 @@
-# Zunéviu 1.2.5 — Build 47
+# Zunéviu v1.2.6 · Build 51
 
-## What's new since 1.2.3
+## What changed since v1.2.5
 
-### Live lyrics and timing
-- Restore the v1.2.3 audio lyric-clock/presentation behavior and make the compact audio caption switch without its previous entrance delay.
-- Set the visible Android audio Lyrics offset default to **−0.4s**, based on the maintainer's device testing. Migrate previous zero/default settings once; preserve existing nonzero manual offsets without double application. An explicitly saved audio zero remains zero on subsequent launches.
-- Keep audio and video Lyrics offsets separate, with consistent highlighting and lyric-line seeking.
-- Restore timed fallback lyrics during inline music video playback: line, word and gap cues are no longer erased when exact-video captions are unavailable. Exact-video captions remain preferred, and disabled sources remain disabled.
+### Spotify sign-in
+- Moved sign-in into a dedicated native Android Activity, outside the animated music screen.
+- One WebView per Activity; progress updates and cookie polling do not reload or replace the page. Only an explicit Retry reloads it.
+- Keep progress-bar space stable, apply keyboard/system insets, and restore navigation state on Activity recreation.
+- Accept a session only after reaching the trusted Spotify web-player origin; an old cookie on the login form no longer closes sign-in prematurely.
+- Keep normal responsive provider layout/mobile user agent, main-frame error reporting, a visible Retry action, HTTPS origin checks and default TLS protections.
 
-### Voice search
-- Remove the fixed Bengali/Hindi/English language picker. On Android 14 and later, request automatic language detection/switching from a compatible installed speech service without a fixed language allowlist.
-- Check speech-service capabilities, retain uncertain recognition for review, and handle timeout, cancellation and retry states. Supported languages/models depend on the installed service; this is not humming/song fingerprint recognition or Spotify's proprietary engine.
-- The app still supports Android 8 and later. This automatic-language voice flow needs Android 14+; typed search remains available on older versions.
+### Google sign-in
+- Wait for session-cookie writes before opening the signed-in page, with SPA readiness handling and improved Back/disposal handling. Device/account acceptance still varies.
 
-### Credits and source availability
-- Present **Developed and maintained by Amit Hasan Sami** and **GitHub @amitsami** at the top of Licenses & source.
-- Provide the official releases/source-download link directly. Retain original-author attribution, licenses and warranty notices in a separate **Open-source notices** view.
+### Video playback and lyrics
+- Resolve catalogue video availability before changing playback. Missing video shows “Video unavailable” while preserving/restoring audio.
+- Use a static “Lyrics >” entry in video mode to open the lyrics panel instead of a live lyric strip.
+- Bounded ranged stream requests, tuned buffering and automatic quality downshift on stalls improve network handling; no zero-buffering guarantee.
+- Existing audio lyric timing/calibration remains unchanged.
 
-## Retained playback features
-Inline music video in the player/mini-player, Back to audio, existing transport/seek controls and Auto/Low/Medium/High video-quality settings remain available. This release does not replace the audio/video engines.
+### Settings, branding and cache
+- Improve equalizer switch contrast/accessibility and Zunéviu branding/source text, including the red Z styling on Library cards.
+- Default disposable audio cache reduced to 128 MiB; image 64 MiB, canvas 64 MiB, remote art 32 MiB. Existing explicit audio-cache choices are preserved and can be changed in Settings. These are component budgets, not a whole-app storage cap.
+- Safely remove already-installed/older matching update APKs and abandoned partial update downloads. Saved songs, playlists and login/session data are not targets of this cleanup.
+
+### Genius reliability
+- Cancellable requests; explicit temporarily-unavailable status and manual retry; stop repeated blocked search attempts and retain other enabled provider fallbacks.
+- More robust parsing of supported search response shapes and trusted result URL checks.
+
+### Gallery and source distribution
+- Replace the three gallery cards with the approved new owner-provided screenshots. The existing first banner is unchanged.
+- Full corresponding application source, dependencies/build inputs and notices are public in [source/ at v1.2.6](https://github.com/amitsami/zunevio-releases/tree/v1.2.6/source). No separately uploaded corresponding-source ZIP asset for this release. GitHub's automatic source archives include that tree.
 
 ## Validation and known limitations
-- 1,307 automated tests: **1,306 passed**; the existing live Genius network search/scraping test failed. Android lint: **0 errors, 687 warnings**.
-- The APK's production signature/package and the matching source archive were verified. Package: `com.zunevio.music`; versionName `1.2.5`; versionCode `47`.
-- Restoring fallback timestamps is **not** acoustic alignment. Alternate video intros/edits and inaccurate provider timings may still need the independent video Lyrics offset. Perfect video/music/lyrics synchronization is not claimed.
-- Physical-device audiovisual sync was not verified. Software-emulator screenshot attempts failed at Android system startup/installation; no new Build 47 screenshots are included. Existing repository galleries refer to earlier versions.
-- Install over the existing production app without uninstalling. Android requires installation confirmation; no silent install, Play Protect certification or universal performance guarantee is claimed.
+- Signed with the same owner certificate; package `com.zunevio.music`, version `1.2.6`, version code `51`, Android 8.0+.
+- 1,323 of 1,324 automated tests passed, zero skipped. The unchanged real-network Genius live-fetch test fails with HTTP 403 / provider blocked. Genius access has NOT been restored by these error-handling changes.
+- Spotify navigation/policy and lifecycle wiring tests passed, but no authenticated end-to-end login on the affected Android phone was performed by the agent. Do not interpret unit tests or release approval as proof of universal login success or a bug-free build.
+- No physical-device audiovisual-sync, universal compatibility, Play Protect certification or zero-buffering guarantee is claimed. Existing R8/Kotlin metadata compatibility warnings remain.
 
-- If you already installed an earlier local **1.2.5** build, download/install Build 47 manually: update discovery compares version names, so it may not offer another build with the same 1.2.5 name. Existing public 1.2.3 users can discover the newer 1.2.5 release.
+## Install
+Download `Zuneviu-1.2.6-universal.apk` below. Keep Play Protect enabled and review Android's installation prompts. Existing installs on the owner release signing chain can update normally; do not uninstall to update.
 
-## Downloads and source
-The APK below is the same signed Build 47 file delivered before publication (158,895,238 bytes). Both repositories carry identical release assets, including the corresponding-source ZIP, validation report, license notices and SHA-256 checksums. No signing keys or credentials are included.
-
-Developed and maintained by [Amit Hasan Sami](https://github.com/amitsami).
+Maintained by [Amit Hasan Sami](https://github.com/amitsami). Upstream copyrights, licenses and notices remain in the source and documentation.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LocaleStringsTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:47:12" hostname="6b87ce45-d95" time="0.171">
+  <properties/>
+  <testcase name="strings_containsAllBaseKeys[es]" classname="com.music.bitchord.LocaleStringsTest" time="0.068"/>
+  <testcase name="strings_containsAllBaseKeys[fr]" classname="com.music.bitchord.LocaleStringsTest" time="0.011"/>
+  <testcase name="strings_containsAllBaseKeys[de]" classname="com.music.bitchord.LocaleStringsTest" time="0.009"/>
+  <testcase name="strings_containsAllBaseKeys[pl]" classname="com.music.bitchord.LocaleStringsTest" time="0.008"/>
+  <testcase name="strings_containsAllBaseKeys[pt]" classname="com.music.bitchord.LocaleStringsTest" time="0.007"/>
+  <testcase name="strings_containsAllBaseKeys[id]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[bn-BD]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[ja]" classname="com.music.bitchord.LocaleStringsTest" time="0.005"/>
+  <testcase name="strings_containsAllBaseKeys[ru]" classname="com.music.bitchord.LocaleStringsTest" time="0.005"/>
+  <testcase name="strings_containsAllBaseKeys[zh-CN]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[zh-TW]" classname="com.music.bitchord.LocaleStringsTest" time="0.005"/>
+  <testcase name="strings_containsAllBaseKeys[he]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[it]" classname="com.music.bitchord.LocaleStringsTest" time="0.005"/>
+  <testcase name="strings_containsAllBaseKeys[tr]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[th]" classname="com.music.bitchord.LocaleStringsTest" time="0.006"/>
+  <testcase name="strings_containsAllBaseKeys[vi]" classname="com.music.bitchord.LocaleStringsTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

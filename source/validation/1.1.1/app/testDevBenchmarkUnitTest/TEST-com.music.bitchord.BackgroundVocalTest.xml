@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.BackgroundVocalTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:14" hostname="23011c11-9c1" time="0.007">
+  <properties/>
+  <testcase name="the answering line takes the words that were inside the bracket" classname="com.music.bitchord.BackgroundVocalTest" time="0.005"/>
+  <testcase name="a line that is entirely bracketed is left as it is" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a trailing bracket becomes the answering line" classname="com.music.bitchord.BackgroundVocalTest" time="0.001"/>
+  <testcase name="nesting splits at the outer bracket" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a source that marked its own answer is not second-guessed" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a bracket opening mid-word is not a second voice" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="instrumental breaks are left untouched" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a line-synced answer shares the line's stamp and its stated end" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="the line ends when the answer does, not when the lead does" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a bracket with no words in it is not a second voice" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <testcase name="a bracket in the middle of a line is left alone" classname="com.music.bitchord.BackgroundVocalTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

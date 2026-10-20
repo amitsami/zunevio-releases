@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.VersionAudioAlignerCorrelationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:59:00" hostname="882242d2-567" time="0.145">
+  <properties/>
+  <testcase name="fft correlation matches brute force over many random envelopes" classname="com.music.bitchord.VersionAudioAlignerCorrelationTest" time="0.144"/>
+  <testcase name="empty envelopes yield no measurable correlation" classname="com.music.bitchord.VersionAudioAlignerCorrelationTest" time="0.0"/>
+  <testcase name="correlation finds a planted lag with high confidence" classname="com.music.bitchord.VersionAudioAlignerCorrelationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

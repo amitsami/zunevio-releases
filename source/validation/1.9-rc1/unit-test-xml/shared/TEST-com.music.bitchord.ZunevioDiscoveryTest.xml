@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.ZunevioDiscoveryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T19:30:06" hostname="6b87ce45-d95" time="0.035">
+  <properties/>
+  <testcase name="localExploreHasSixteenUniqueNavigableTopics[jvm]" classname="com.music.bitchord.ZunevioDiscoveryTest" time="0.03"/>
+  <testcase name="excludesRequestedIndianLanguageAndGenreCategories[jvm]" classname="com.music.bitchord.ZunevioDiscoveryTest" time="0.001"/>
+  <testcase name="unknownTopicDoesNotInventABrowseDestination[jvm]" classname="com.music.bitchord.ZunevioDiscoveryTest" time="0.001"/>
+  <testcase name="doesNotConfuseCountryTagsWithUnrelatedEnglishWords[jvm]" classname="com.music.bitchord.ZunevioDiscoveryTest" time="0.0"/>
+  <testcase name="everyTopicHasAnOriginalLocalBannerKey[jvm]" classname="com.music.bitchord.ZunevioDiscoveryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

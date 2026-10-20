@@ -1,0 +1,89 @@
+{
+  "version": "1.1.1",
+  "versionCode": 34,
+  "package": "com.zunevio.music.preview3",
+  "distribution": "Unpublished review candidate, optimized and test-signed; not production-certified",
+  "build": "SUCCESSFUL",
+  "buildToolWarnings": [
+    "R8 reports Kotlin metadata compatibility warnings; AGP warns about compile SDK 37. Device validation is still required."
+  ],
+  "sourceFrozenAndVerified": true,
+  "lintStatus": "FAILED; findings are not suppressed",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "apkSha256": "44e5d0d053dba91e7da1c4e4572aa1904b9235c3b309dc1fea5aaa9b1f4466cd",
+  "apkBytes": 158469795,
+  "certificateSha256": "90b689ad6f21393d343ca9539860cb26d4f8b5be56d0b3e20ed58fc31bd8b496",
+  "sameCertificateAsSupplied110": true,
+  "debuggable": false,
+  "tests": {
+    "app": {
+      "tests": 993,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "shared": {
+      "tests": 98,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sharedUi": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "testFailures": [
+    {
+      "module": "app",
+      "class": "com.music.bitchord.GeniusTest",
+      "test": "live genius search and scraping test with noisy titles",
+      "message": "java.lang.AssertionError"
+    }
+  ],
+  "lintSeverityCounts": {
+    "Warning": 674,
+    "Error": 198,
+    "Hint": 5
+  },
+  "lintErrorCategories": {
+    "NewApi": 1,
+    "UnsafeOptInUsageError": 92,
+    "FlowOperatorInvokedInComposition": 1,
+    "LocalContextGetResourceValueCall": 65,
+    "StateFlowValueCalledInComposition": 10,
+    "StringFormatInvalid": 1,
+    "MissingQuantity": 28
+  },
+  "updater": {
+    "repository": null,
+    "publicStableReleasesOnly": true,
+    "checkPeriodHours": 12,
+    "automaticDownloads": false,
+    "silentInstallation": false,
+    "digestRequired": true,
+    "packageAndSignerAndVersionChecked": true,
+    "installerPermissionRestoredAtUserRequest": true
+  },
+  "notValidated": [
+    "Physical-device UI and scrolling performance",
+    "Live chosen-repository notification/download/installation end-to-end",
+    "Play Protect verdict or appeal",
+    "Production signing and public release readiness"
+  ],
+  "limitations": [
+    "The live Genius lookup test failure is retained, not suppressed.",
+    "Android background restrictions can delay notifications; no real-time push guarantee.",
+    "No permanent warning-free Play Protect guarantee.",
+    "A production com.zunevio.music APK cannot update preview3."
+  ]
+}

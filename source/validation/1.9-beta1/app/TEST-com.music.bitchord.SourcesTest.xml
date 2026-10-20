@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.SourcesTest" tests="109" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:59" hostname="a4a5409e-bd5" time="0.818">
+  <properties/>
+  <testcase name="picks the closest candidate rather than the first acceptable one" classname="com.music.bitchord.SourcesTest" time="0.002"/>
+  <testcase name="accepts a composer credit against a singer credit on an exact runtime" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="refuses a different take of the same song" classname="com.music.bitchord.SourcesTest" time="0.01"/>
+  <testcase name="takes the quick answer rather than waiting for a slow better one" classname="com.music.bitchord.SourcesTest" time="0.042"/>
+  <testcase name="will not waive the credit check without a runtime to back it" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="ignores the immersive row when the Atmos setting is off" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses a cover by a different artist" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="rejects a stream URL the player's own parser would refuse" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="has nothing when no source holds the track" classname="com.music.bitchord.SourcesTest" time="0.022"/>
+  <testcase name="falls back to title alone when no artist is known" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="ranks lossless above any lossy bitrate" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses an artist whose name merely contains the one asked for" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="accepts an origin with no path of its own" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="rejects a stream URL carrying a second copy of its own origin" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="accepts the instrumental twin for an instrumental request" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="only swaps in a copy of demonstrably the same length" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="JioSaavn upgrades a parameterized 96kbps CDN URL without losing its query" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="JioSaavn prioritizes the uncensored duplicate" classname="com.music.bitchord.SourcesTest" time="0.007"/>
+  <testcase name="hi-res is decided on measured depth and rate" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches the club mix take for a club mix request" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="an equal stream does not displace the one already held" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="uses the uniquely fullest credit to resolve a JioSaavn release collision" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="track key round-trips" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="the declared format never earns a quality tier by itself" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="keeps the version marker in the query" classname="com.music.bitchord.SourcesTest" time="0.002"/>
+  <testcase name="matches the katakana row for a romaji-queried Koi Kogare" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="transliterates kana to romaji" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="orders tiers worst to best" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches the romaji row of a kana title with a syllabic n" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches the same recording across differing catalogue titles" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="a thinner rendition loses to youtube's aac" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="plain video ids are not source keys" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="a katakana full name is one artist" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="Dolby Atmos is a distinct premium codec" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="swaps to a lossy stream that is clearly better than what is playing" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="still rejects the original recording for a remix request" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="manual video audio switch accepts the official song despite a long visual intro" classname="com.music.bitchord.SourcesTest" time="0.007"/>
+  <testcase name="explicit YouTube track cannot match the censored JioSaavn edition" classname="com.music.bitchord.SourcesTest" time="0.006"/>
+  <testcase name="accepts a shared artist when catalogues credit differently" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="asks for the title a catalogue would file the track under" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="lossless is decided by codec, not bitrate" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="refuses to let a module point the player at anything but http" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches a film credit against a bare catalogue listing" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="asks for the romaji filing of a mixed-script title" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="JioSaavn substitution refuses conflicting albums without a target album" classname="com.music.bitchord.SourcesTest" time="0.003"/>
+  <testcase name="keeps a pure CJK title instead of asking for nothing" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="JioSaavn is absent on a fresh install" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="strips upload labelling from either side" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="a 320 from a source is worth keeping over youtube's aac" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="prefers the immersive row over a lossless one when Atmos is wanted" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="ranks a higher-bitrate lossy stream above a lower one" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="youtube is not prefetched as a substitute for itself" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="a title ending in a version word does not take the live recording" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses to let a lossless label outrank the right runtime" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="track key survives separators inside the track id" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="only the quick source is worth resolving ahead of playback" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="album naming beyond the wanted take does not refuse the row" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="upgrade refuses same title and runtime from a different artist" classname="com.music.bitchord.SourcesTest" time="0.002"/>
+  <testcase name="matches CJK titles across punctuation and spacing differences" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="matches the instrumental twin for an instrumental Kizuna request" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="always swaps to lossless" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="an unstated rendition is not worth keeping" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="ranks an immersive mix above a lossless copy" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="asks both scripts for a transliterated pair" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="patient upgrade chooses the better later answer" classname="com.music.bitchord.SourcesTest" time="0.209"/>
+  <testcase name="disabled JioSaavn and addons are excluded from the source list used by downloads" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="a plain request ignores the album when the row needs no marker" classname="com.music.bitchord.SourcesTest" time="0.005"/>
+  <testcase name="keeps waiting when the quick answer is refused" classname="com.music.bitchord.SourcesTest" time="0.207"/>
+  <testcase name="target keeps the queued album identity" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="has nothing to ask for without a title" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="rejects the cover take of a CJK recording" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="an undescribed lossy stream does not outrank a stated one" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="keeps waiting when the first source to answer has nothing" classname="com.music.bitchord.SourcesTest" time="0.205"/>
+  <testcase name="treats an album or radio version as the plain track" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="refuses a candidate whose runtime is nowhere near" classname="com.music.bitchord.SourcesTest" time="0.004"/>
+  <testcase name="an Atmos rendition is refused when it is not allowed to play" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses a lossy swap that gains little" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses a lossy swap it cannot measure" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="prefers the lossless copy when nothing separates the recordings" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="prefers the better of two answers that arrive together" classname="com.music.bitchord.SourcesTest" time="0.009"/>
+  <testcase name="retains JioSaavn refusal when conflicting releases tie on credit coverage" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="detects conflicting releases when the requested album is unknown" classname="com.music.bitchord.SourcesTest" time="0.002"/>
+  <testcase name="rejects the instrumental twin for a vocal request" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="JioSaavn accepts textual explicit flags defensively" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="accepts a URL that passes another URL along to a proxy" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="accepts the remix single whose marker lives on the album" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="anything beats no stream at all" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches the romaji catalogue row for a mixed-script request" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="reads a tier out of whatever a module calls it" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="summary states depth and rate and drops bitrate when lossless" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="has nothing to offer when no candidate is the recording" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="reads a runtime off a queue row" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="keeps a CJK title whose dash tail is the artist" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="JioSaavn never calls an unrecognised unchanged URL 320kbps" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="never swaps away from an immersive mix that is already playing" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="prefers a credited match over a runtime-vouched one" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="does not mistake a bit depth for a bitrate tier" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="missing YouTube badge does not reject explicit I Really Do" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="refuses a different song by the same artist" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="unlabelled music video timing cannot make another artist the Brown Rang match" classname="com.music.bitchord.SourcesTest" time="0.007"/>
+  <testcase name="still matches the vocal original from the same soundtrack" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="names a high-bitrate lossy stream without calling it lossless" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="uses the album to separate duplicate JioSaavn recordings" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="unknown YouTube explicit state does not reject the credited JioSaavn track" classname="com.music.bitchord.SourcesTest" time="0.007"/>
+  <testcase name="separates vocal from instrumental blue" classname="com.music.bitchord.SourcesTest" time="0.001"/>
+  <testcase name="retired JioSaavn is removed on every existing install" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="matches the plain Mayonaka row across the wave-dash spellings" classname="com.music.bitchord.SourcesTest" time="0.003"/>
+  <testcase name="keeps substring matching strict for short Unicode titles" classname="com.music.bitchord.SourcesTest" time="0.0"/>
+  <testcase name="abandons the sources still running once it has an answer" classname="com.music.bitchord.SourcesTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

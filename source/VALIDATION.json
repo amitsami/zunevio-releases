@@ -1,0 +1,65 @@
+{
+  "upstreamCommit": "fe95bb60aa9cd205cf4ab8bd25a5bec71a595b4f",
+  "android": {
+    "assembly": "success",
+    "label": "Zunévio Dev",
+    "applicationId": "com.zunevio.music.dev",
+    "minimumApi": 26,
+    "targetApi": 36,
+    "compileApi": 37,
+    "signing": "development/debug key; APK signature verified",
+    "variants": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64",
+      "universal"
+    ],
+    "officialApi37ClassesUnmodified": true,
+    "unitTests": {
+      "total": 971,
+      "passed": 970,
+      "failed": 1,
+      "remainingFailure": "GeniusTest: live genius search and scraping test with noisy titles"
+    },
+    "phoneOrEmulatorTested": false,
+    "universalApkSha256": "e68a44e6b5dc9b31f241df0df771b64b3324269b517c5349bc359793a26321ef",
+    "universalApkBytes": 189055549
+  },
+  "desktopLinux": {
+    "compiledDistributable": "success",
+    "nativeUiLaunched": true,
+    "visualStatesInspected": [
+      "Home",
+      "album detail",
+      "Settings",
+      "Now Playing"
+    ],
+    "finalDesktopUnitTests": {
+      "total": 342,
+      "passed": 342,
+      "failed": 0
+    },
+    "testRuntime": "Isolated official Ubuntu 22.04 libc + installed native dependencies; system libc unchanged",
+    "sharedTests": 46,
+    "sharedUiTests": 34,
+    "fullLiveAccountPlaybackVerified": false
+  },
+  "windows": {
+    "built": false,
+    "deviceTested": false,
+    "manualBuildWorkflowProvided": true
+  },
+  "macos": {
+    "built": false,
+    "deviceTested": false,
+    "manualBuildWorkflowProvided": true
+  },
+  "ios": {
+    "implemented": false,
+    "built": false
+  },
+  "releasePublished": false,
+  "githubWorkflowExecuted": false,
+  "historical_report": true,
+  "current_validation": "VALIDATION_1_9_BETA1.json"
+}

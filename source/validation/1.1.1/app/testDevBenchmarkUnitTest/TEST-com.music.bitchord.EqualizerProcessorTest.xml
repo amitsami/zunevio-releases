@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.EqualizerProcessorTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:14" hostname="23011c11-9c1" time="0.383">
+  <properties/>
+  <testcase name="boosting every band at once does not clip" classname="com.music.bitchord.EqualizerProcessorTest" time="0.074"/>
+  <testcase name="focused is narrower than broad at the same setting" classname="com.music.bitchord.EqualizerProcessorTest" time="0.055"/>
+  <testcase name="a band lifts its own centre by the decibels it was given" classname="com.music.bitchord.EqualizerProcessorTest" time="0.073"/>
+  <testcase name="a band cuts its own centre by the decibels it was given" classname="com.music.bitchord.EqualizerProcessorTest" time="0.057"/>
+  <testcase name="the tone pad tilts the spectrum without moving its middle" classname="com.music.bitchord.EqualizerProcessorTest" time="0.029"/>
+  <testcase name="the make-up attenuation never becomes a boost" classname="com.music.bitchord.EqualizerProcessorTest" time="0.003"/>
+  <testcase name="balance silences the side it is pushed away from" classname="com.music.bitchord.EqualizerProcessorTest" time="0.013"/>
+  <testcase name="the tone pad's contour moves the mids and leaves the ends alone" classname="com.music.bitchord.EqualizerProcessorTest" time="0.025"/>
+  <testcase name="the end bands are shelves, half way up at their corner and all the way past it" classname="com.music.bitchord.EqualizerProcessorTest" time="0.044"/>
+  <testcase name="once the switch-off has glided down the passthrough is exact again" classname="com.music.bitchord.EqualizerProcessorTest" time="0.001"/>
+  <testcase name="every preset covers every band" classname="com.music.bitchord.EqualizerProcessorTest" time="0.001"/>
+  <testcase name="a preset's own bands name it, and anything else is custom" classname="com.music.bitchord.EqualizerProcessorTest" time="0.0"/>
+  <testcase name="a switched-off equaliser hands the signal back untouched" classname="com.music.bitchord.EqualizerProcessorTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

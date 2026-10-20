@@ -1,0 +1,1 @@
+The matching source ZIP and build scripts accompany this locally delivered APK. Published releases and source archives are available at https://github.com/amitsami/zunevio-releases/releases. No account is required. You may build with your own signing key. Owner private keys are not needed to modify the app. No warranty.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.AudioPipelineTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-15T08:53:28" hostname="33d8a6c9-889" time="0.008">
+  <properties/>
+  <testcase name="stale provider must never leak across tracks sharing same inner identifier" classname="com.music.bitchord.AudioPipelineTest" time="0.002"/>
+  <testcase name="high quality tier requires 256 kbps or higher and is lossy" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="AudioOutputStatus tracks decoder name and buffer size" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="resampler active when input rate differs from output rate" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="resampler passthrough when input rate equals output rate" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="forgetLastSession clears all recorded sources and snapshots" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="lossless and hi-res lossless are never tagged as lossy tiers" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="source lookup unwraps prefixed source track keys" classname="com.music.bitchord.AudioPipelineTest" time="0.001"/>
+  <testcase name="authoritative sources are recorded and retrieved across track identifiers" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="unknown provider and missing metadata remain null in exact lookup" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="codecLabel formats standard mime types into clean display names" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="low quality tier identifies streams at or below 80 kbps" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="medium quality tier identifies streams between 80 kbps and 256 kbps" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <testcase name="clearDeclared drops the recorded source for that track" classname="com.music.bitchord.AudioPipelineTest" time="0.001"/>
+  <testcase name="playback source transitions maintain correct sequence without stale bleed" classname="com.music.bitchord.AudioPipelineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

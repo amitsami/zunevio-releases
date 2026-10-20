@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.AddonSourceTest" tests="55" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:07:56" hostname="40a1f0bf-d72" time="3.322">
+  <properties/>
+  <testcase name="declared setting defaults travel with the request and quality overrides them" classname="com.music.bitchord.AddonSourceTest" time="0.172"/>
+  <testcase name="without the hint the same addon answers with the stereo ladder" classname="com.music.bitchord.AddonSourceTest" time="0.082"/>
+  <testcase name="bit depth and sample rate are read out of a free-text quality label" classname="com.music.bitchord.AddonSourceTest" time="0.068"/>
+  <testcase name="an immersive row is recognised from audioModes with no atmos flag" classname="com.music.bitchord.AddonSourceTest" time="0.071"/>
+  <testcase name="a search with no request behind it still asks for lossless" classname="com.music.bitchord.AddonSourceTest" time="0.057"/>
+  <testcase name="an addon with no manifest is healthy when its search endpoint answers" classname="com.music.bitchord.AddonSourceTest" time="0.109"/>
+  <testcase name="redact hides the token in the path and keeps the host" classname="com.music.bitchord.AddonSourceTest" time="0.007"/>
+  <testcase name="a stereo row keeps the tier its label states" classname="com.music.bitchord.AddonSourceTest" time="0.077"/>
+  <testcase name="normalizeBase keeps a token-bearing path intact" classname="com.music.bitchord.AddonSourceTest" time="0.002"/>
+  <testcase name="with no row remembered and no stream answer there is nothing to play" classname="com.music.bitchord.AddonSourceTest" time="0.027"/>
+  <testcase name="a declared atmos default is not overridden by the hint" classname="com.music.bitchord.AddonSourceTest" time="0.062"/>
+  <testcase name="an addon URL is stored normalised so two spellings are one source" classname="com.music.bitchord.AddonSourceTest" time="0.003"/>
+  <testcase name="normalizeBase accepts every form of the address a user might paste" classname="com.music.bitchord.AddonSourceTest" time="0.002"/>
+  <testcase name="an addon that enumerates no options is sent the tier verbatim" classname="com.music.bitchord.AddonSourceTest" time="0.062"/>
+  <testcase name="a stream 404 is a miss, not a crash" classname="com.music.bitchord.AddonSourceTest" time="0.016"/>
+  <testcase name="a URL that answers with something other than a manifest is rejected" classname="com.music.bitchord.AddonSourceTest" time="0.016"/>
+  <testcase name="manual refresh asks again for a cached stream URL" classname="com.music.bitchord.AddonSourceTest" time="0.12"/>
+  <testcase name="no manifest at the URL is rejected rather than reported as a miss" classname="com.music.bitchord.AddonSourceTest" time="0.011"/>
+  <testcase name="a track id containing a slash stays one path segment" classname="com.music.bitchord.AddonSourceTest" time="0.054"/>
+  <testcase name="a bitrate already in kbps is left alone" classname="com.music.bitchord.AddonSourceTest" time="0.055"/>
+  <testcase name="an addon that cannot be searched is rejected, not merely unreachable" classname="com.music.bitchord.AddonSourceTest" time="0.019"/>
+  <testcase name="an Atmos rendition is refused on a device that cannot decode it" classname="com.music.bitchord.AddonSourceTest" time="0.053"/>
+  <testcase name="search honours the caller's limit" classname="com.music.bitchord.AddonSourceTest" time="0.065"/>
+  <testcase name="an unreachable addon returns no results rather than throwing" classname="com.music.bitchord.AddonSourceTest" time="0.019"/>
+  <testcase name="the search row's own URL is used when the stream endpoint has nothing" classname="com.music.bitchord.AddonSourceTest" time="0.058"/>
+  <testcase name="real search rows survive their provider-prefixed ids" classname="com.music.bitchord.AddonSourceTest" time="0.054"/>
+  <testcase name="a server error reads as unreachable" classname="com.music.bitchord.AddonSourceTest" time="0.014"/>
+  <testcase name="asking for atmos gets an immersive answer the player is told how to open" classname="com.music.bitchord.AddonSourceTest" time="0.058"/>
+  <testcase name="search maps rows to songs tagged with this source" classname="com.music.bitchord.AddonSourceTest" time="0.055"/>
+  <testcase name="a URL nobody declared is still judged on its extension" classname="com.music.bitchord.AddonSourceTest" time="0.001"/>
+  <testcase name="a Tidal immersive row is tagged as Atmos and not as its LOW bitrate label" classname="com.music.bitchord.AddonSourceTest" time="0.063"/>
+  <testcase name="the routing fields become the format the player is told about" classname="com.music.bitchord.AddonSourceTest" time="0.059"/>
+  <testcase name="the atmos hint travels on search and stream when the device and the user both want it" classname="com.music.bitchord.AddonSourceTest" time="0.094"/>
+  <testcase name="an addon that declares search but not stream is accepted" classname="com.music.bitchord.AddonSourceTest" time="0.01"/>
+  <testcase name="an extensionless HLS playlist is declared to the player rather than sniffed" classname="com.music.bitchord.AddonSourceTest" time="0.056"/>
+  <testcase name="an Atmos rendition plays on a device that can decode it" classname="com.music.bitchord.AddonSourceTest" time="0.056"/>
+  <testcase name="encrypted false is not treated as encrypted" classname="com.music.bitchord.AddonSourceTest" time="0.058"/>
+  <testcase name="manual refresh asks again after a cached empty search" classname="com.music.bitchord.AddonSourceTest" time="0.104"/>
+  <testcase name="a bare answer still yields what can be inferred from the URL" classname="com.music.bitchord.AddonSourceTest" time="0.056"/>
+  <testcase name="a rate-limited request is waited out and retried" classname="com.music.bitchord.AddonSourceTest" time="0.517"/>
+  <testcase name="a malformed stream URL is refused before the player sees it" classname="com.music.bitchord.AddonSourceTest" time="0.06"/>
+  <testcase name="no atmos hint is sent when the setting is off" classname="com.music.bitchord.AddonSourceTest" time="0.05"/>
+  <testcase name="a container in the format field is not mistaken for a transport" classname="com.music.bitchord.AddonSourceTest" time="0.059"/>
+  <testcase name="an encrypted rendition is refused" classname="com.music.bitchord.AddonSourceTest" time="0.056"/>
+  <testcase name="a real Tidal Hi-Res answer routes to DASH on the strength of its format field" classname="com.music.bitchord.AddonSourceTest" time="0.055"/>
+  <testcase name="a capped request asks for the addon's small tier" classname="com.music.bitchord.AddonSourceTest" time="0.054"/>
+  <testcase name="a 200 carrying an error and no url is a miss" classname="com.music.bitchord.AddonSourceTest" time="0.054"/>
+  <testcase name="a bitrate in bits per second is read as kbps" classname="com.music.bitchord.AddonSourceTest" time="0.052"/>
+  <testcase name="a declared dash transport is passed on too" classname="com.music.bitchord.AddonSourceTest" time="0.048"/>
+  <testcase name="a well-formed manifest reports healthy with its name and version" classname="com.music.bitchord.AddonSourceTest" time="0.004"/>
+  <testcase name="no atmos hint is sent when the device cannot decode it" classname="com.music.bitchord.AddonSourceTest" time="0.05"/>
+  <testcase name="a searched row's duration reaches the stream it produces" classname="com.music.bitchord.AddonSourceTest" time="0.1"/>
+  <testcase name="a search behind a capped request asks the addon at that tier" classname="com.music.bitchord.AddonSourceTest" time="0.051"/>
+  <testcase name="search drops rows with no id or no title" classname="com.music.bitchord.AddonSourceTest" time="0.055"/>
+  <testcase name="a gateway error on an unknown id is a miss rather than a crash" classname="com.music.bitchord.AddonSourceTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

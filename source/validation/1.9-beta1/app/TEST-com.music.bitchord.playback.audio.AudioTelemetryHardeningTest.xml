@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:36:00" hostname="a4a5409e-bd5" time="0.007">
+  <properties/>
+  <testcase name="usbEndpointTelemetryDistinguishesExternal24BitDacFromAudioTrackClientFormat" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.001"/>
+  <testcase name="usbEndpointTelemetryDistinguishesPortronicsUac1FromAudioTrackClientFormat" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.0"/>
+  <testcase name="usbDeviceCapabilityFormattingIsHumanReadable" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.005"/>
+  <testcase name="phoneSpeakerAlwaysSetsHalFormatAndNullUsbEndpoint" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.0"/>
+  <testcase name="genuineDirectPlaybackReportsBitMatchedAndNullMixer" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.0"/>
+  <testcase name="staticUsbCapabilityAndActiveAudioTrackRemainSeparate" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.0"/>
+  <testcase name="unknownSampleRateDoesNotRejectDirectPlaybackOnWiredRoute" classname="com.music.bitchord.playback.audio.AudioTelemetryHardeningTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

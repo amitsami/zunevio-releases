@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LyricsOffsetTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:57:24" hostname="882242d2-567" time="0.015">
+  <properties/>
+  <testcase name="positive offset delays lyrics[jvm]" classname="com.music.bitchord.LyricsOffsetTest" time="0.014"/>
+  <testcase name="negative offset advances lyrics[jvm]" classname="com.music.bitchord.LyricsOffsetTest" time="0.0"/>
+  <testcase name="offset never produces a negative lyric clock[jvm]" classname="com.music.bitchord.LyricsOffsetTest" time="0.0"/>
+  <testcase name="seeking a lyric includes its offset[jvm]" classname="com.music.bitchord.LyricsOffsetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

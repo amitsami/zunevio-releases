@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.PlayerQualityMenuTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:58" hostname="a4a5409e-bd5" time="0.001">
+  <properties/>
+  <testcase name="an unresolved cached track keeps its revert row" classname="com.music.bitchord.PlayerQualityMenuTest" time="0.001"/>
+  <testcase name="a track back on YouTube's own stream is offered an upgrade" classname="com.music.bitchord.PlayerQualityMenuTest" time="0.0"/>
+  <testcase name="a track playing a substituted copy is not offered an upgrade" classname="com.music.bitchord.PlayerQualityMenuTest" time="0.0"/>
+  <testcase name="an upgraded track keeps its revert row despite the stale YouTube choice" classname="com.music.bitchord.PlayerQualityMenuTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

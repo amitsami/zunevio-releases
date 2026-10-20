@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.download.OfflineDashTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:16" hostname="23011c11-9c1" time="0.009">
+  <properties/>
+  <testcase name="without a lossless rendition takes the highest bandwidth" classname="com.music.bitchord.download.OfflineDashTest" time="0.006"/>
+  <testcase name="keeps the flac rendition, not the first one listed" classname="com.music.bitchord.download.OfflineDashTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

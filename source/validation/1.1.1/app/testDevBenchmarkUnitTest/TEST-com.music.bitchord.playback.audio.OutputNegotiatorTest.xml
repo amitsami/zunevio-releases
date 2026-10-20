@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.OutputNegotiatorTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:16" hostname="23011c11-9c1" time="0.002">
+  <properties/>
+  <testcase name="directPcm24SelectedWhenDirectAudioExposesPcm24Only" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="internalDspIsAlwaysFloat32RegardlessOfRouteOrOutput" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="viableDirectUsbUsesDirectUsbTransportAndFloatEncoding" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.001"/>
+  <testcase name="float32SelectedOnSupportedRouteProducesFloat32AudioTrack" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="directFloat32SelectedWhenDirectAudioSupported" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="externalRouteAdvertisedPcm24SelectedWhenSourceIsHighRes" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="pcm16RequestedOnHighResolutionSourceStrictlyHonorsPcm16Preference" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="usbPcm16DacProvidesAuthoritativeDiagnosticFallbackReason" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="bluetoothTelemetryFormattingAccuratelyReportsLdacBitrate" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.001"/>
+  <testcase name="float32SelectedOnUnsupportedRouteFallsBackToPcm16" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="transitionsBetweenPcm16AndFloat32KeepDspAsFloat32" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="bluetoothNegotiatesFloatOnlyWhenAdvertised" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <testcase name="phoneSpeakerStrictlyCapsOutputAt16BitWithRouteLimitation" classname="com.music.bitchord.playback.audio.OutputNegotiatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LyricAnimationWindowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:56:30" hostname="dc6b18e2-dd4" time="0.056">
+  <properties/>
+  <testcase name="nothingMovesAfterTheWindow[jvm]" classname="com.music.bitchord.LyricAnimationWindowTest" time="0.052"/>
+  <testcase name="theWindowCoversTheHeldWordAndTheBackingVocal[jvm]" classname="com.music.bitchord.LyricAnimationWindowTest" time="0.001"/>
+  <testcase name="nothingMovesBeforeTheWindow[jvm]" classname="com.music.bitchord.LyricAnimationWindowTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.EchoOutTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:07:59" hostname="40a1f0bf-d72" time="0.014">
+  <properties/>
+  <testcase name="an idle echo leaves every sample untouched" classname="com.music.bitchord.EchoOutTest" time="0.012"/>
+  <testcase name="an echo repeats on its delay, each repeat quieter, after the dry signal is gone" classname="com.music.bitchord.EchoOutTest" time="0.001"/>
+  <testcase name="parking puts the dry signal back and drops the tail" classname="com.music.bitchord.EchoOutTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

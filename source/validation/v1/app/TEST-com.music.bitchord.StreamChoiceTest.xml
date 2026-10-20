@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.StreamChoiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:08" hostname="dc6b18e2-dd4" time="0.003">
+  <properties/>
+  <testcase name="overflow drops the oldest choice rather than all of them" classname="com.music.bitchord.StreamChoiceTest" time="0.002"/>
+  <testcase name="remembers whether the copy came from a substitute" classname="com.music.bitchord.StreamChoiceTest" time="0.0"/>
+  <testcase name="forgetting a choice reopens the question" classname="com.music.bitchord.StreamChoiceTest" time="0.001"/>
+  <testcase name="a track nothing has chosen for is free to resolve" classname="com.music.bitchord.StreamChoiceTest" time="0.0"/>
+  <testcase name="a remembered choice is handed back" classname="com.music.bitchord.StreamChoiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

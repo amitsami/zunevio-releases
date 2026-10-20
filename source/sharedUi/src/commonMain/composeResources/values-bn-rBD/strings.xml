@@ -1,0 +1,204 @@
+<resources>
+    <string name="analysis_complete">বিশ্লেষণ করা হয়েছে</string>
+    <string name="analysis_in_progress">বিশ্লেষণ করা হচ্ছে...</string>
+    <string name="analysis_refining">বিশ্লেষণ করা হয়েছে, পরিমার্জন করা হচ্ছে...</string>
+    <string name="audio_output">অডিও আউটপুট</string>
+    <string name="audio_output_playing">এখানে বাজছে</string>
+    <string name="audio_pipeline">অডিও পাইপলাইন</string>
+    <string name="automix_analysis_status">অটোমিক্স · এই গানটি: %1$s · পরবর্তী: %2$s</string>
+    <string name="automix_not_supported_video">অটোমিক্স ভিডিও গানে সমর্থিত নয়</string>
+    <string name="automix_stopped_in_party">অটোমিক্স: একসাথে শোনার জন্য থামে</string>
+    <string name="autoplay">অটোপ্লে</string>
+    <string name="autoplay_empty_description">অনুরূপ সঙ্গীত বাজতে থাকবে৷</string>
+    <string name="autoplay_off">অটোপ্লে বন্ধ</string>
+    <string name="autoplay_on">অটোপ্লে চালু আছে</string>
+    <string name="autoplay_queue_description">অনুরূপ সঙ্গীত, পরবর্তী চালানোর জন্য নির্বাচিত৷</string>
+    <string name="bit_depth">%1$d-বিট</string>
+    <string name="cancel">বাতিল</string>
+    <string name="cast">কাস্ট</string>
+    <string name="cast_casting">কাস্টিং</string>
+    <string name="cast_connecting">সংযোগ করা হচ্ছে...</string>
+    <string name="cast_row_subtitle">Chromecast এবং Google Cast স্পিকার৷</string>
+    <string name="channel_count">%1$d ch</string>
+    <string name="choose_lyrics_provider">গানের কথার উৎস বেছে নিন</string>
+    <string name="clear">সাফ</string>
+    <string name="close_lyrics">গানের কথা বন্ধ করুন</string>
+    <string name="data_saver">ডেটা-সেভার</string>
+    <string name="decrease_lyrics_offset">সময়ের ব্যবধান কমান</string>
+    <string name="downgraded_from">↓ %1$s থেকে</string>
+    <string name="drag_to_reorder">পুনরায় সাজাতে টেনে আনুন</string>
+    <string name="failed">ব্যর্থ হয়েছে৷</string>
+    <string name="hi_res_lossless">হাই-রেস লসলেস</string>
+    <string name="high_quality">উচ্চ মানের</string>
+    <string name="high_quality_upgrading">উচ্চ মানের, আপগ্রেডিং</string>
+    <string name="increase_lyrics_offset">সময়ের ব্যবধান বাড়ান</string>
+    <string name="instrumental">ইন্সট্রুমেন্টাল</string>
+    <string name="like">লাইক</string>
+    <string name="listen_together">একসাথে শুনুন</string>
+    <string name="listen_together_away">দূরে — তাদের স্লট অনুষ্ঠিত হয়</string>
+    <string name="listen_together_host">হোস্ট</string>
+    <string name="listen_together_in_party">একটি পার্টিতে · %1$s</string>
+    <string name="listen_together_jam">%1$s এর জ্যাম</string>
+    <string name="listen_together_jam_unnamed">একসাথে শুনছি</string>
+    <string name="listen_together_manage">পরিচালনা করুন</string>
+    <string name="listen_together_open">একসাথে শুনুন</string>
+    <string name="listen_together_open_count">একসাথে শোনা · %1$d</string>
+    <string name="listen_together_you">আপনি</string>
+    <string name="mixing">মিক্সিং</string>
+    <string name="lossless">লসলেস</string>
+    <string name="lyrics_already_in_language">গানের কথা আগে থেকেই %1$s ভাষায় আছে</string>
+    <string name="lyrics_already_romanized">গানের কথা আগে থেকেই লাতিন অক্ষরে আছে</string>
+    <string name="lyrics_by">গানের কথার উৎস: %1$s</string>
+    <string-array name="lyrics_intro_lines">
+        <item>বীট অবতরণ করছে</item>
+        <item>গানটি শুরু হচ্ছে</item>
+        <item>ওয়ার্মিং আপ</item>
+        <item>মেজাজ সেট করা হচ্ছে</item>
+        <item>প্রথমে বাস, পরে শব্দ</item>
+        <item>এর জন্য অপেক্ষা করুন</item>
+        <item>যে বিল্ড অনুভব</item>
+        <item>আপাতত শুধু খাঁজ</item>
+        <item>হুক পথে আছে</item>
+        <item>শ্বাস নিতে দিন</item>
+        <item>কণ্ঠস্বর শোনাও</item>
+        <item>প্রথম নোট ইন</item>
+    </string-array>
+    <string-array name="lyrics_loading_lines">
+        <item>গানের কথা পাচ্ছি</item>
+        <item>শব্দগুলো খুঁজে বের করা</item>
+        <item>আয়াত আনা হচ্ছে</item>
+        <item>গানের কথা লোড হচ্ছে</item>
+        <item>লিরিক শীট পরীক্ষা করা হচ্ছে</item>
+        <item>গানের বই অনুসন্ধান করা হচ্ছে</item>
+        <item>লিরিক্স লাইন আপ</item>
+        <item>শব্দ পথে আছে</item>
+        <item>সংরক্ষণাগার পরীক্ষা করা হচ্ছে</item>
+        <item>সঠিক শব্দ খোঁজা</item>
+        <item>লিরিক্স একসাথে আসছে</item>
+        <item>প্রায় শব্দ পাওয়া গেছে</item>
+    </string-array>
+    <string name="lyrics_not_available">গানের কথা পাওয়া যায়নি</string>
+    <string name="lyrics_offset">গানের কথার সময় সমন্বয়</string>
+    <string name="lyrics_offset_description">ধনাত্মক মান দিলে গানের কথা পরে দেখাবে</string>
+    <string name="lyrics_offset_reset">রিসেট</string>
+    <string name="lyrics_provider_current">বর্তমান উৎস</string>
+    <string name="lyrics_provider_fetching">গানের কথা আনা হচ্ছে…</string>
+    <string name="lyrics_provider_found">গানের কথা পাওয়া গেছে · ব্যবহার করতে চাপুন</string>
+    <string name="lyrics_provider_not_fetched">আনতে চাপুন</string>
+    <string name="lyrics_provider_not_found">গানের কথা পাওয়া যায়নি</string>
+    <string name="lyrics_romanization_unavailable">এই গানের কথার লাতিন উচ্চারণলিপি পাওয়া যাচ্ছে না</string>
+    <string name="lyrics_romanized">লাতিন অক্ষরে উচ্চারণ</string>
+    <string name="lyrics_saved_with_download">ডাউনলোডের সঙ্গে গানের কথা সংরক্ষিত আছে</string>
+    <string name="lyrics_share_pick_limit">কার্ডটি পূর্ণ</string>
+    <string name="lyrics_translated_to">%1$s ভাষায় অনূদিত</string>
+    <string name="lyrics_translation_unavailable">এখন অনুবাদ করা যাচ্ছে না</string>
+    <string name="medium_quality">মাঝারি মানের</string>
+    <string name="mono">মনো</string>
+    <string name="more">আরও</string>
+    <string name="next_from">এর থেকে পরবর্তী: %1$s</string>
+    <string name="next_in_queue">পরবর্তী সারিতে</string>
+    <string name="no_lyrics_for_track">এই গানটির কথা পাওয়া যায়নি</string>
+    <string name="no_lyrics_found">গানের কথা পাওয়া যায়নি</string>
+    <string name="now_playing">এখন চলছে</string>
+    <string name="open_lyrics">গানের কথা</string>
+    <string name="pause">বিরতি</string>
+    <string name="play">চালান</string>
+    <string name="played_by">%1$s দ্বারা বাজানো হয়েছে৷</string>
+    <string name="playing_from">%1$s থেকে বাজানো হচ্ছে</string>
+    <string name="playing_radio">%1$s রেডিও বাজছে</string>
+    <string name="queue">সারি</string>
+    <string name="remove_from_liked">পছন্দ করা সঙ্গীত থেকে সরান</string>
+    <string name="remove_from_queue">সারি থেকে সরান</string>
+    <string name="repeat_all">সব গান আবার চালান</string>
+    <string name="repeat_off">পুনরাবৃত্তি বন্ধ</string>
+    <string name="repeat_one">এই গানটি আবার চালান</string>
+    <string name="romanize_lyrics">লাতিন অক্ষরে উচ্চারণ দেখান</string>
+    <string name="romanizing_lyrics">উচ্চারণলিপি তৈরি হচ্ছে…</string>
+    <string name="show_original_lyrics">মূল গানের কথা দেখান</string>
+    <string name="shuffle_off">এলোমেলোভাবে চালানো বন্ধ</string>
+    <string name="shuffle_on">এলোমেলোভাবে চালানো চালু</string>
+    <string name="stereo">স্টেরিও</string>
+    <string name="translate_lyrics">গানের কথা অনুবাদ করুন</string>
+    <string name="translating_lyrics_to">%1$s ভাষায় অনুবাদ করা হচ্ছে…</string>
+    <string name="up_next">পরবর্তী</string>
+    <string name="upgrading_quality">আপগ্রেডিং গুণমান</string>
+    <string name="waiting">অপেক্ষা করছে</string>
+    <string name="widget_next">পরবর্তী</string>
+    <string name="widget_previous">আগের</string>
+    <string name="wired_headphones">তারযুক্ত হেডফোন</string>
+    <string name="usb_audio">USB অডিও</string>
+    <string name="hdmi_output">HDMI</string>
+    <string name="personal_phone">%1$s এর ফোন</string>
+    <string name="this_phone">এই ফোন</string>
+    <string name="albums">অ্যালবাম</string>
+    <string name="artists">শিল্পী</string>
+    <string name="card_plays_format">%1$s বাজছে</string>
+    <string name="card_songs_format">%1$s গান</string>
+    <string name="card_views_format">%1$s ভিউ</string>
+    <string name="clear_search">সার্চ সাফ করুন</string>
+    <string name="downloaded">ডাউনলোড করা হয়েছে</string>
+    <string name="explore">এক্সপ্লোর</string>
+    <string name="library">লাইব্রেরি</string>
+    <string name="library_sign_in_description">আপনার পছন্দ করা গান, প্লেলিস্ট এবং Zunéviu ইতিহাস দেখতে আপনার Google অ্যাকাউন্টে সাইন ইন করুন৷</string>
+    <string name="new_playlist">নতুন প্লেলিস্ট</string>
+    <string name="on_device" />
+    <string name="personalized_recommendations">আপনার জন্য ব্যক্তিগতকৃত সুপারিশ পান</string>
+    <string name="pinned">পিন করা হয়েছে</string>
+    <string name="play_next">এরপর চালান</string>
+    <string name="playlist">প্লেলিস্ট</string>
+    <string name="playlist_action">প্লেলিস্ট</string>
+    <string name="playlists">প্লেলিস্ট</string>
+    <string name="recent_search_edit">\"%1$s\" সম্পাদনা করুন</string>
+    <string name="recent_search_remove">সাম্প্রতিক অনুসন্ধানগুলি থেকে \"%1$s\" সরান</string>
+    <string name="recent_searches">সাম্প্রতিক অনুসন্ধান</string>
+    <string name="replay_subtitle">আপনার সেরা গান, শিল্পী, অ্যালবাম এবং জেনার</string>
+    <string name="retry">আবার চেষ্টা করুন</string>
+    <string name="saved_to_youtube_music">Zunéviu এ সংরক্ষিত</string>
+    <string name="search">খুঁজুন</string>
+    <string name="search_empty">Zunéviu-এ লক্ষ লক্ষ গান খুঁজুন।</string>
+    <string name="search_hint">শিল্পী, গান, গান এবং আরও অনেক কিছু</string>
+    <string name="search_library_empty">আপনার স্থানীয় সঙ্গীত ফোল্ডারে গান খুঁজুন।</string>
+    <string name="search_library_hint">গান, শিল্পী এবং অ্যালবাম</string>
+    <string name="search_library_no_results">স্থানীয় সঙ্গীতে \"%1$s\" এর সাথে মেলে না।</string>
+    <string name="selected">নির্বাচিত</string>
+    <string name="share">শেয়ার করুন</string>
+    <string name="shelf_artists_on_the_rise">শিল্পীরা বাড়ছে</string>
+    <string name="shelf_chart">চার্ট</string>
+    <string name="shelf_charts">চার্ট</string>
+    <string name="shelf_concerts">কনসার্ট</string>
+    <string name="shelf_featured_playlists_for_you">আপনার জন্য বৈশিষ্ট্যযুক্ত প্লেলিস্ট</string>
+    <string name="shelf_for_you">আপনার জন্য</string>
+    <string name="shelf_forgotten_favorites">ভুলে যাওয়া প্রিয়</string>
+    <string name="shelf_from_the_community">সম্প্রদায় থেকে</string>
+    <string name="shelf_from_your_library">আপনার লাইব্রেরি থেকে</string>
+    <string name="shelf_hits_today">আজ হিট</string>
+    <string name="shelf_listen_again">আবার শুনুন</string>
+    <string name="shelf_mixed_for_you">আপনার জন্য মিশ্রিত</string>
+    <string name="shelf_new_releases">নতুন রিলিজ</string>
+    <string name="shelf_quick_picks">দ্রুত বাছাই</string>
+    <string name="shelf_recents">সাম্প্রতিক</string>
+    <string name="shelf_recommended_music_videos">প্রস্তাবিত সঙ্গীত ভিডিও</string>
+    <string name="shelf_shorts">শর্টস</string>
+    <string name="shelf_similar_to">%1$s এর অনুরূপ</string>
+    <string name="shelf_single">একক</string>
+    <string name="shelf_song_item">গান</string>
+    <string name="shelf_top_music_videos">সেরা মিউজিক ভিডিও</string>
+    <string name="shelf_top_tunes_right_now">এই মুহূর্তে শীর্ষ টিউন</string>
+    <string name="shelf_trending">ট্রেন্ডিং</string>
+    <string name="shelf_trending_community_playlists">ট্রেন্ডিং কমিউনিটি প্লেলিস্ট</string>
+    <string name="shelf_youtube_charts">YouTube চার্ট</string>
+    <string name="show_all">সব দেখান</string>
+    <string name="sign_in">সাইন ইন করুন</string>
+    <string name="sign_in_youtube_music">Zunéviu-এ সাইন ইন করুন</string>
+    <string name="subscriptions">সদস্যতা</string>
+    <string name="switch_to_grid_view">গ্রিড ভিউতে স্যুইচ করুন</string>
+    <string name="switch_to_list_view">তালিকা দৃশ্যে স্যুইচ করুন</string>
+    <string name="your_replay">আপনার রিপ্লে</string>
+    <string name="your_listening_experience">আপনার শোনার অভিজ্ঞতা</string>
+    <string name="default_replay_holder">Zunéviu শ্রোতা</string>
+    <string name="member_since">থেকে সদস্য</string>
+    <string name="import_spotify">Spotify আমদানি করুন</string>
+    <string name="import_spotify_subtitle">একটি প্লেলিস্ট লিঙ্ক থেকে</string>
+    <string name="made_for_you">আপনার জন্য</string>
+    <string name="on_device_listening">এই ডিভাইসে শোনা গানের ভিত্তিতে</string>
+</resources>

@@ -1,0 +1,547 @@
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -80,8 +80,8 @@
+         // Haze falls back to a translucent scrim below that.
+         minSdk = 26
+         targetSdk = 36
+-        versionCode = 29
+-        versionName = "1.9-beta2"
++        versionCode = 30
++        versionName = "1.9-rc1"
+ 
+         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+ 
+--- a/app/src/main/java/com/music/bitchord/MainActivity.kt
++++ b/app/src/main/java/com/music/bitchord/MainActivity.kt
+@@ -2427,6 +2427,20 @@
+                 }
+             },
+         )
++    }
++
++    fun dismissSettingsSubScreen() {
++        val next = com.music.bitchord.data.SettingsOverlayState(
++            page = settingsSubScreen, account = showAccountScrobbling,
++            sources = showSources, equalizer = showEqualizer,
++            listenTogether = showListenTogether, replay = showReplay,
++        ).dismiss()
++        showAccountScrobbling = next.account
++        showSources = next.sources
++        showEqualizer = next.equalizer
++        showListenTogether = next.listenTogether
++        showReplay = next.replay
++        settingsSubScreen = next.page
+     }
+ 
+     Box(
+@@ -3485,11 +3499,11 @@
+                         showDiscord -> ({ showDiscord = false })
+                         showHistory -> ({ showHistory = false })
+                         libraryShowAll != null && detail == null -> ({ libraryShowAll = null })
++                        settingsSubScreen != null -> ({ dismissSettingsSubScreen() })
+                         showAccountScrobbling -> ({ showAccountScrobbling = false })
+                         showSources -> ({ showSources = false })
+                         showListenTogether -> ({ showListenTogether = false })
+                         showEqualizer -> ({ showEqualizer = false })
+-                        settingsSubScreen != null -> ({ settingsSubScreen = null })
+                         showSettings -> ({ showSettings = false })
+                         showReplay -> ({ showReplay = false })
+                         detailActiveShelf != null -> ({ detailActiveShelf = null })
+--- a/app/src/main/java/com/music/bitchord/data/sources/addon/AddonClient.kt
++++ b/app/src/main/java/com/music/bitchord/data/sources/addon/AddonClient.kt
+@@ -474,7 +474,7 @@
+         private const val BACKOFF_BASE_MS = 500L
+         private const val BACKOFF_CAP_MS = 8_000L
+ 
+-        private val USER_AGENT = "BitChord/v${com.music.bitchord.BuildConfig.VERSION_NAME}"
++        private val USER_AGENT = com.music.bitchord.data.NetworkIdentity.USER_AGENT
+ 
+         /**
+          * What [probeSearch] asks for. Deliberately an ordinary word rather
+--- a/app/src/main/java/com/music/bitchord/data/sources/addon/SourceFormats.kt
++++ b/app/src/main/java/com/music/bitchord/data/sources/addon/SourceFormats.kt
+@@ -210,7 +210,7 @@
+     private suspend fun fetch(url: String): Result<String> = runCatching {
+         val request = Request.Builder().url(url)
+             .header("Accept", "application/json")
+-            .header("User-Agent", "BitChord/v${com.music.bitchord.BuildConfig.VERSION_NAME}")
++            .header("User-Agent", com.music.bitchord.data.NetworkIdentity.USER_AGENT)
+             .build()
+         Http.client.newCall(request).execute().use { response ->
+             if (!response.isSuccessful) {
+--- a/app/src/main/java/com/music/bitchord/data/stats/ArtistFacts.kt
++++ b/app/src/main/java/com/music/bitchord/data/stats/ArtistFacts.kt
+@@ -319,7 +319,7 @@
+ 
+     private const val TAG = "ZunévioArtists"
+     private const val FILE_NAME = "artist_facts.json"
+-    private const val USER_AGENT = "Zunévio/${BuildConfig.VERSION_NAME}"
++    private const val USER_AGENT = com.music.bitchord.data.NetworkIdentity.USER_AGENT
+     private const val MAX_NAME_LENGTH = 120
+     private const val MAX_GENRES_PER_ARTIST = 2
+     private const val MAX_ARTISTS = 4_000
+--- a/app/src/main/res/drawable/ic_launcher_background.xml
++++ b/app/src/main/res/drawable/ic_launcher_background.xml
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#141518" android:pathData="M0,0h108v108h-108z"/></vector>
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FF000000" android:pathData="M0,0h108v108h-108z"/></vector>
+--- a/app/src/main/res/drawable/ic_launcher_foreground.xml
++++ b/app/src/main/res/drawable/ic_launcher_foreground.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Zunevio original mark; GPLv3 fork branding modification, 2026-10-15. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:pathData="M34,32 L76,32 L34,76 L76,76" android:strokeColor="#FFFFFFFF" android:strokeWidth="7" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
++<!-- Zunevio approved music mark; GPL source/attribution retained. -->
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:pathData="M46.898438 65.531250V43.242188Q46.898438 41.906250 48.234375 41.554688L66.304688 37.265625Q68.203125 36.843750 68.203125 38.742188V61.031250" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.726562" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/><path android:pathData="M36.692497,68.412344 C35.908654,66.135898 37.922300,63.378324 41.190101,62.253130 C44.457903,61.127936 47.742410,62.061210 48.526253,64.337656 C49.310096,66.614102 47.296450,69.371676 44.028649,70.496870 C40.760847,71.622064 37.476340,70.688790 36.692497,68.412344 Z" android:fillColor="#FFFFFFFF"/><path android:pathData="M58.067497,63.982657 C57.283654,61.706211 59.297300,58.948637 62.565101,57.823442 C65.832903,56.698248 69.117410,57.631522 69.901253,59.907968 C70.685096,62.184414 68.671450,64.941988 65.403649,66.067183 C62.135847,67.192377 58.851340,66.259103 58.067497,63.982657 Z" android:fillColor="#FFFFFFFF"/></vector>
+--- a/app/src/main/res/drawable/ic_logo.xml
++++ b/app/src/main/res/drawable/ic_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
++<!-- Zunevio approved music mark; GPL source/attribution retained. -->
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M19.265625 31.687500V16.828125Q19.265625 15.937500 20.156250 15.703125L32.203125 12.843750Q33.468750 12.562500 33.468750 13.828125V28.687500" android:strokeColor="#FFFFFFFF" android:strokeWidth="2.484375" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/><path android:pathData="M12.461665,33.608230 C11.939103,32.090599 13.281533,30.252216 15.460068,29.502087 C17.638602,28.751957 19.828273,29.374140 20.350835,30.891770 C20.873397,32.409401 19.530967,34.247784 17.352432,34.997913 C15.173898,35.748043 12.984227,35.125860 12.461665,33.608230 Z" android:fillColor="#FFFFFFFF"/><path android:pathData="M26.711665,30.655105 C26.189103,29.137474 27.531533,27.299091 29.710068,26.548962 C31.888602,25.798832 34.078273,26.421015 34.600835,27.938645 C35.123397,29.456276 33.780967,31.294659 31.602432,32.044788 C29.423898,32.794918 27.234227,32.172735 26.711665,30.655105 Z" android:fillColor="#FFFFFFFF"/></vector>
+--- a/app/src/main/res/drawable/ic_notification_logo.xml
++++ b/app/src/main/res/drawable/ic_notification_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
++<!-- Zunevio approved music mark; GPL source/attribution retained. -->
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M19.265625 31.687500V16.828125Q19.265625 15.937500 20.156250 15.703125L32.203125 12.843750Q33.468750 12.562500 33.468750 13.828125V28.687500" android:strokeColor="#FFFFFFFF" android:strokeWidth="2.484375" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/><path android:pathData="M12.461665,33.608230 C11.939103,32.090599 13.281533,30.252216 15.460068,29.502087 C17.638602,28.751957 19.828273,29.374140 20.350835,30.891770 C20.873397,32.409401 19.530967,34.247784 17.352432,34.997913 C15.173898,35.748043 12.984227,35.125860 12.461665,33.608230 Z" android:fillColor="#FFFFFFFF"/><path android:pathData="M26.711665,30.655105 C26.189103,29.137474 27.531533,27.299091 29.710068,26.548962 C31.888602,25.798832 34.078273,26.421015 34.600835,27.938645 C35.123397,29.456276 33.780967,31.294659 31.602432,32.044788 C29.423898,32.794918 27.234227,32.172735 26.711665,30.655105 Z" android:fillColor="#FFFFFFFF"/></vector>
+--- a/scripts/check_rc1_resources.py
++++ b/scripts/check_rc1_resources.py
+@@ -0,0 +1,33 @@
++#!/usr/bin/env python3
++"""Static RC checks; not a native UI/performance acceptance test."""
++from pathlib import Path
++import re,json,hashlib,xml.etree.ElementTree as E
++from PIL import Image
++root=Path(__file__).resolve().parents[1]
++out=root/'validation/1.9-rc1';out.mkdir(exist_ok=True,parents=True)
++identity=(root/'shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/NetworkIdentity.kt').read_text()
++agent=re.search(r'USER_AGENT = "([^"]+)"',identity)[1];assert all(32<=ord(c)<=126 for c in agent)
++for base in ['app/src/main','shared/src/jvmSharedMain','sharedUi/src/jvmSharedMain']:
++ for p in (root/base).rglob('*.kt'):assert 'Zunévio/' not in p.read_text(),str(p)
++lyrics=(root/'shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/LyricsTranslation.kt').read_text()
++assert lyrics.count('val response = translationBodyOrNull {')==3
++assert lyrics.count('.header("User-Agent", com.music.bitchord.data.NetworkIdentity.USER_AGENT)')==3
++home=(root/'sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/screens/HomeScreen.kt').read_text()
++part=home[home.index('private fun HomeTitle('):home.index('internal fun SectionHeader(')]
++assert 'text = "Zunévio"' in part and 'painterResource(' not in part
++main=(root/'app/src/main/java/com/music/bitchord/MainActivity.kt').read_text();back=main[main.index('onBack = when {'):]
++assert back.index('settingsSubScreen != null -> ({ dismissSettingsSubScreen() })')<back.index('showAccountScrobbling ->')
++assert 'settingsSubScreen = next.page' in main
++images=[]
++for density,size in [('mdpi',48),('hdpi',72),('xhdpi',96),('xxhdpi',144),('xxxhdpi',192)]:
++ for name in ['ic_launcher','ic_launcher_round']:
++  p=root/f'app/src/main/res/mipmap-{density}/{name}.webp';im=Image.open(p).convert('RGBA');assert im.size==(size,size)
++  assert all(red==green==blue for red,green,blue,alpha in im.getdata()),str(p)
++  images.append({'source':str(p.relative_to(root)),'size':size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
++ns='{http://schemas.android.com/apk/res/android}'
++for rel in ['app/src/main/res/drawable/ic_launcher_foreground.xml','app/src/main/res/drawable/ic_logo.xml','app/src/main/res/drawable/ic_notification_logo.xml','sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml']:
++ t=E.parse(root/rel).getroot();assert len(t.findall('path'))==3
++ assert t.findall('path')[0].get(ns+'fillColor')=='#00000000'
++background=E.parse(root/'app/src/main/res/drawable/ic_launcher_background.xml').getroot();assert background.find('path').get(ns+'fillColor')=='#FF000000'
++result={'network_agent_ascii':True,'translation_request_boundaries':3,'no_accented_display_agent_in_main_sources':True,'home_full_text_wordmark':True,'settings_top_back_closes_overlay_and_flag':True,'legacy_monochrome_icons':images,'vector_literal_path_colours':True,'scope':'Static/resource checks; native phone rendering/taps not tested here.'}
++(out/'rc-static-validation.json').write_text(json.dumps(result,indent=2));print('PASS: ASCII agent, three guarded request paths, Home wordmark, Settings back wiring, ten legacy icons and vector geometry.')
+--- a/shared/src/commonMain/kotlin/com/music/bitchord/data/SettingsOverlayState.kt
++++ b/shared/src/commonMain/kotlin/com/music/bitchord/data/SettingsOverlayState.kt
+@@ -0,0 +1,20 @@
++package com.music.bitchord.data
++
++/** Settings preserves the list below a sub-page. Both markers must pop together. */
++data class SettingsOverlayState(
++    val page: String?,
++    val account: Boolean = false,
++    val sources: Boolean = false,
++    val equalizer: Boolean = false,
++    val listenTogether: Boolean = false,
++    val replay: Boolean = false,
++) {
++    fun dismiss(): SettingsOverlayState = copy(
++        page = null,
++        account = account && page != "account_scrobbling",
++        sources = sources && page != "sources",
++        equalizer = equalizer && page != "equalizer",
++        listenTogether = listenTogether && page != "listen_together",
++        replay = replay && page != "replay",
++    )
++}
+--- a/shared/src/commonTest/kotlin/com/music/bitchord/data/SettingsOverlayStateTest.kt
++++ b/shared/src/commonTest/kotlin/com/music/bitchord/data/SettingsOverlayStateTest.kt
+@@ -0,0 +1,32 @@
++package com.music.bitchord.data
++
++import kotlin.test.*
++
++class SettingsOverlayStateTest {
++    @Test fun accountClosesVisibilityAndOverlayInOneAction() {
++        assertEquals(SettingsOverlayState(null), SettingsOverlayState("account_scrobbling", account = true).dismiss())
++    }
++    @Test fun sourcesCloseVisibilityAndOverlayInOneAction() {
++        assertEquals(SettingsOverlayState(null), SettingsOverlayState("sources", sources = true).dismiss())
++    }
++    @Test fun equalizerClosesVisibilityAndOverlayInOneAction() {
++        assertEquals(SettingsOverlayState(null), SettingsOverlayState("equalizer", equalizer = true).dismiss())
++    }
++    @Test fun partyClosesVisibilityAndOverlayInOneAction() {
++        assertEquals(SettingsOverlayState(null), SettingsOverlayState("listen_together", listenTogether = true).dismiss())
++    }
++    @Test fun replayClosesVisibilityAndOverlayInOneAction() {
++        assertEquals(SettingsOverlayState(null), SettingsOverlayState("replay", replay = true).dismiss())
++    }
++    @Test fun settingsOpenedOverReplayDoesNotDestroyUnderlyingReplay() {
++        val state = SettingsOverlayState("sources", sources = true, replay = true).dismiss()
++        assertNull(state.page); assertFalse(state.sources); assertTrue(state.replay)
++    }
++    @Test fun repeatedDismissIsIdempotent() {
++        val first = SettingsOverlayState("sources", sources = true).dismiss()
++        assertEquals(first, first.dismiss())
++    }
++    @Test fun restoredOverlayWithoutVisibilityFlagStillCloses() {
++        assertNull(SettingsOverlayState("equalizer").dismiss().page)
++    }
++}
+--- a/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/NetworkIdentity.kt
++++ b/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/NetworkIdentity.kt
+@@ -0,0 +1,6 @@
++package com.music.bitchord.data
++
++/** HTTP headers must not use the accented display name. */
++object NetworkIdentity {
++    const val USER_AGENT = "Zunevio/1.9 (+https://github.com/amitsami)"
++}
+--- a/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/Genius.kt
++++ b/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/Genius.kt
+@@ -50,7 +50,7 @@
+      * which travels up as "no lyrics for this track" — indistinguishable from
+      * a song Genius genuinely does not have.
+      */
+-    private const val USER_AGENT = "Zunévio"
++    private const val USER_AGENT = com.music.bitchord.data.NetworkIdentity.USER_AGENT
+ 
+     private val json by lazy { Json { ignoreUnknownKeys = true; isLenient = true } }
+ 
+--- a/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/LyricsTranslation.kt
++++ b/shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/LyricsTranslation.kt
+@@ -348,19 +348,15 @@
+             .add("dt", "t")
+             .add("q", batch.payload)
+             .build()
+-        val request = Request.Builder()
++        val response = translationBodyOrNull {
++            val request = Request.Builder()
+             .url(ENDPOINT)
+-            .header("User-Agent", "Zunévio/1.7.1")
++            .header("User-Agent", com.music.bitchord.data.NetworkIdentity.USER_AGENT)
+             .header("Accept", "application/json")
+             .post(body)
+             .build()
+-        val response = try {
+             client.newCall(request).awaitBody()
+-        } catch (cancelled: CancellationException) {
+-            throw cancelled
+-        } catch (_: IOException) {
+-            return null
+-        }
++        } ?: return null
+         return runCatching {
+             val root = json.parseToJsonElement(response).jsonArray
+             val translatedBody = root[0].jsonArray.joinToString(separator = "") { segment ->
+@@ -381,19 +377,15 @@
+             .add("dt", "rm")
+             .add("q", batch.payload)
+             .build()
+-        val request = Request.Builder()
++        val response = translationBodyOrNull {
++            val request = Request.Builder()
+             .url(ENDPOINT)
+-            .header("User-Agent", "Zunévio/1.7.1")
++            .header("User-Agent", com.music.bitchord.data.NetworkIdentity.USER_AGENT)
+             .header("Accept", "application/json")
+             .post(body)
+             .build()
+-        val response = try {
+             client.newCall(request).awaitBody()
+-        } catch (cancelled: CancellationException) {
+-            throw cancelled
+-        } catch (_: IOException) {
+-            return null
+-        }
++        } ?: return null
+         return runCatching {
+             val root = json.parseToJsonElement(response).jsonArray
+             val romanizedBody = root[0].jsonArray.joinToString(separator = "") { segment ->
+@@ -436,19 +428,15 @@
+             .add("ie", "utf-8")
+             .add("oe", "utf-8")
+             .build()
+-        val request = Request.Builder()
++        val response = translationBodyOrNull {
++            val request = Request.Builder()
+             .url(INPUT_TOOLS_ENDPOINT)
+-            .header("User-Agent", "Zunévio/1.7.1")
++            .header("User-Agent", com.music.bitchord.data.NetworkIdentity.USER_AGENT)
+             .header("Accept", "application/json")
+             .post(body)
+             .build()
+-        val response = try {
+             client.newCall(request).awaitBody()
+-        } catch (cancelled: CancellationException) {
+-            throw cancelled
+-        } catch (_: IOException) {
+-            return null
+-        }
++        } ?: return null
+         return runCatching {
+             val root = json.parseToJsonElement(response).jsonArray
+             if (root.getOrNull(0)?.jsonPrimitive?.contentOrNull != "SUCCESS") return@runCatching null
+@@ -616,3 +604,12 @@
+         }
+     }
+ }
++
++/** Request/transport failures are an unavailable translation, never an uncaught UI coroutine. */
++internal suspend fun translationBodyOrNull(request: suspend () -> String): String? = try {
++    request()
++} catch (cancelled: CancellationException) {
++    throw cancelled
++} catch (_: Exception) {
++    null
++}
+--- a/shared/src/jvmTest/kotlin/com/music/bitchord/data/lyrics/TranslationCrashRegressionTest.kt
++++ b/shared/src/jvmTest/kotlin/com/music/bitchord/data/lyrics/TranslationCrashRegressionTest.kt
+@@ -0,0 +1,65 @@
++package com.music.bitchord.data.lyrics
++
++import com.music.bitchord.data.NetworkIdentity
++import kotlinx.coroutines.CancellationException
++import kotlinx.coroutines.runBlocking
++import okhttp3.OkHttpClient
++import okhttp3.Request
++import okhttp3.mockwebserver.MockResponse
++import okhttp3.mockwebserver.MockWebServer
++import org.junit.Assert.*
++import org.junit.Test
++import java.io.IOException
++import java.util.concurrent.TimeUnit
++
++class TranslationCrashRegressionTest {
++    @Test fun suppliedAccentedUserAgentReproducesTheReportedCrash() {
++        val error = assertThrows(IllegalArgumentException::class.java) {
++            Request.Builder().url("https://example.invalid/").header("User-Agent", "Zunévio/1.7.1").build()
++        }
++        assertTrue(error.message.orEmpty().contains("Unexpected char"))
++    }
++    @Test fun currentIdentityIsPrintableAsciiAndAcceptedByOkHttp() {
++        assertTrue(NetworkIdentity.USER_AGENT.all { it.code in 32..126 })
++        val request = Request.Builder().url("https://example.invalid/")
++            .header("User-Agent", NetworkIdentity.USER_AGENT).build()
++        assertEquals(NetworkIdentity.USER_AGENT, request.header("User-Agent"))
++    }
++    @Test fun acceptedIdentityReachesAnActualLocalHttpServer() = runBlocking {
++        MockWebServer().use { server ->
++            server.enqueue(MockResponse().setBody("translated"))
++            val response = translationBodyOrNull {
++                val request = Request.Builder().url(server.url("/translate"))
++                    .header("User-Agent", NetworkIdentity.USER_AGENT).build()
++                OkHttpClient().newCall(request).execute().use { it.body!!.string() }
++            }
++            assertEquals("translated", response)
++            assertEquals(NetworkIdentity.USER_AGENT, server.takeRequest(2, TimeUnit.SECONDS)!!.getHeader("User-Agent"))
++        }
++    }
++    @Test fun constructionFailureReturnsUnavailableInsteadOfEscapingCoroutine() = runBlocking {
++        val result = translationBodyOrNull {
++            Request.Builder().url("https://example.invalid/").header("User-Agent", "Zunévio/1.7.1")
++            "unreachable"
++        }
++        assertNull(result)
++    }
++    @Test fun transportFailureReturnsUnavailable() = runBlocking {
++        assertNull(translationBodyOrNull { throw IOException("offline") })
++    }
++    @Test fun cancellationIsNotSwallowed() {
++        val cancellation = CancellationException("track changed")
++        val caught = assertThrows(CancellationException::class.java) {
++            runBlocking { translationBodyOrNull { throw cancellation } }
++        }
++        assertSame(cancellation, caught)
++    }
++    @Test fun successfulBodiesAreNotChanged() = runBlocking {
++        assertEquals("[translation]", translationBodyOrNull { "[translation]" })
++    }
++    @Test fun fatalErrorsAreNotHidden() {
++        assertThrows(AssertionError::class.java) {
++            runBlocking { translationBodyOrNull { throw AssertionError("fatal") } }
++        }
++    }
++}
+--- a/sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml
++++ b/sharedUi/src/commonMain/composeResources/drawable/ic_logo.xml
+@@ -1,3 +1,3 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Zunevio branding modification, 2026-10-15; upstream GPLv3 notices retained. -->
+-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M14,13 L34,13 L14,35 L35,35" android:strokeColor="#FFFFFFFF" android:strokeWidth="3.8" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000" /></vector>
++<!-- Zunevio approved music mark; GPL source/attribution retained. -->
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48"><path android:pathData="M19.265625 31.687500V16.828125Q19.265625 15.937500 20.156250 15.703125L32.203125 12.843750Q33.468750 12.562500 33.468750 13.828125V28.687500" android:strokeColor="#FFFFFFFF" android:strokeWidth="2.484375" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/><path android:pathData="M12.461665,33.608230 C11.939103,32.090599 13.281533,30.252216 15.460068,29.502087 C17.638602,28.751957 19.828273,29.374140 20.350835,30.891770 C20.873397,32.409401 19.530967,34.247784 17.352432,34.997913 C15.173898,35.748043 12.984227,35.125860 12.461665,33.608230 Z" android:fillColor="#FFFFFFFF"/><path android:pathData="M26.711665,30.655105 C26.189103,29.137474 27.531533,27.299091 29.710068,26.548962 C31.888602,25.798832 34.078273,26.421015 34.600835,27.938645 C35.123397,29.456276 33.780967,31.294659 31.602432,32.044788 C29.423898,32.794918 27.234227,32.172735 26.711665,30.655105 Z" android:fillColor="#FFFFFFFF"/></vector>
+--- a/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/LyricsOperation.kt
++++ b/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/LyricsOperation.kt
+@@ -0,0 +1,11 @@
++package com.music.bitchord.ui.player
++
++import kotlinx.coroutines.CancellationException
++
++internal suspend fun <T> lyricsOperationOrDefault(fallback: T, operation: suspend () -> T): T = try {
++    operation()
++} catch (cancelled: CancellationException) {
++    throw cancelled
++} catch (_: Exception) {
++    fallback
++}
+--- a/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/PlayerLyrics.kt
++++ b/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/PlayerLyrics.kt
+@@ -2817,11 +2817,13 @@
+                 translationJob?.cancel()
+                 translationJob = translationScope.launch {
+                     when (
+-                        val result = PlayerPlatform.host.translateLyrics(
+-                            trackId = trackId,
+-                            lines = source,
+-                            targetLanguageTag = translationLanguage,
+-                        )
++                        val result = lyricsOperationOrDefault<LyricsTranslationResult>(LyricsTranslationResult.Unavailable) {
++                            PlayerPlatform.host.translateLyrics(
++                                trackId = trackId,
++                                lines = source,
++                                targetLanguageTag = translationLanguage,
++                            )
++                        }
+                     ) {
+                         is LyricsTranslationResult.Translated -> {
+                             translationState = LyricsTranslationUiState.Ready(result.lines)
+@@ -2870,11 +2872,13 @@
+                 romanizationJob?.cancel()
+                 romanizationJob = translationScope.launch {
+                     when (
+-                        val result = PlayerPlatform.host.romanizeLyrics(
+-                            trackId = trackId,
+-                            lines = source,
+-                            targetLanguageTag = translationLanguage,
+-                        )
++                        val result = lyricsOperationOrDefault<LyricsRomanizationResult>(LyricsRomanizationResult.Unavailable) {
++                            PlayerPlatform.host.romanizeLyrics(
++                                trackId = trackId,
++                                lines = source,
++                                targetLanguageTag = translationLanguage,
++                            )
++                        }
+                     ) {
+                         is LyricsRomanizationResult.Romanized -> {
+                             romanizationState = LyricsTranslationUiState.Ready(result.lines)
+--- a/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/screens/HomeScreen.kt
++++ b/sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/screens/HomeScreen.kt
+@@ -482,23 +482,19 @@
+  * Listen now's large heading, with the wordmark stacked above it.
+  *
+  * Only the home tab carries it — the top bar no longer shows the logo, so this
+- * is where the app's mark lives. Its height is taken from the heading's own
+- * font size rather than a fixed dp, so the two keep their proportion under the
+- * system font scale.
++ * is where the full native text wordmark lives. Text follows the system font
++ * scale instead of drawing a single-letter logo.
+  */
+ @Composable
+ private fun HomeTitle(title: String, modifier: Modifier = Modifier) {
+     val style = MaterialTheme.typography.displayLarge
+-    val logoHeight = with(LocalDensity.current) { (style.fontSize * LOGO_TO_FONT).toDp() }
+     Column(modifier = modifier.padding(horizontal = PAGE_GUTTER, vertical = 8.dp)) {
+-        Icon(
+-            painter = painterResource(Res.drawable.ic_logo),
+-            contentDescription = null,
+-            tint = MaterialTheme.colorScheme.onBackground,
+-            modifier = Modifier
+-                .padding(bottom = 14.dp)
+-                .height(logoHeight)
+-                .aspectRatio(LOGO_ASPECT),
++        Text(
++            text = "Zunévio",
++            style = MaterialTheme.typography.headlineMedium,
++            fontWeight = androidx.compose.ui.text.font.FontWeight.SemiBold,
++            color = MaterialTheme.colorScheme.onBackground,
++            modifier = Modifier.padding(bottom = 14.dp),
+         )
+         Text(
+             text = title,
+@@ -507,12 +503,6 @@
+         )
+     }
+ }
+-
+-/** The wordmark's height against the heading's font size. */
+-private const val LOGO_TO_FONT = 0.9f
+-
+-/** ic_logo's viewport, 730 x 484. */
+-private const val LOGO_ASPECT = 730f / 484f
+ 
+ /**
+  * Shared by the home feed, Explore and Library so headings line up across tabs.
+--- a/sharedUi/src/jvmTest/kotlin/com/music/bitchord/ui/player/LyricsOperationTest.kt
++++ b/sharedUi/src/jvmTest/kotlin/com/music/bitchord/ui/player/LyricsOperationTest.kt
+@@ -0,0 +1,34 @@
++package com.music.bitchord.ui.player
++
++import kotlinx.coroutines.CancellationException
++import kotlinx.coroutines.runBlocking
++import org.junit.Assert.*
++import org.junit.Test
++
++class LyricsOperationTest {
++    @Test fun providerExceptionShowsUnavailableRatherThanCrashingUi() = runBlocking {
++        val result = lyricsOperationOrDefault<LyricsTranslationResult>(LyricsTranslationResult.Unavailable) {
++            throw IllegalArgumentException("invalid header")
++        }
++        assertSame(LyricsTranslationResult.Unavailable, result)
++    }
++    @Test fun romanizationExceptionAlsoShowsUnavailable() = runBlocking {
++        val result = lyricsOperationOrDefault<LyricsRomanizationResult>(LyricsRomanizationResult.Unavailable) {
++            throw IllegalStateException("provider failed")
++        }
++        assertSame(LyricsRomanizationResult.Unavailable, result)
++    }
++    @Test fun changingTracksStillCancelsTheOldOperation() {
++        assertThrows(CancellationException::class.java) {
++            runBlocking { lyricsOperationOrDefault("unavailable") { throw CancellationException("changed") } }
++        }
++    }
++    @Test fun successfulResultIsPreserved() = runBlocking {
++        assertEquals("translation", lyricsOperationOrDefault("unavailable") { "translation" })
++    }
++    @Test fun fatalErrorIsNotHidden() {
++        assertThrows(AssertionError::class.java) {
++            runBlocking { lyricsOperationOrDefault("unavailable") { throw AssertionError("fatal") } }
++        }
++    }
++}
+--- a/sharedUi/src/jvmTest/kotlin/com/music/bitchord/ui/resources/VectorResourceRegressionTest.kt
++++ b/sharedUi/src/jvmTest/kotlin/com/music/bitchord/ui/resources/VectorResourceRegressionTest.kt
+@@ -8,7 +8,7 @@
+ import org.junit.Assert.*
+ import org.junit.Test
+ 
+-/** Exercises the same Compose XML parser used by HomeTitle's painterResource. */
++/** Exercises Compose XML vector decoding for shared branding resources. */
+ class VectorResourceRegressionTest {
+     private val drawables = File("src/commonMain/composeResources/drawable")
+     private fun logo() = File(drawables, "ic_logo.xml").readBytes()
+@@ -23,7 +23,7 @@
+         val path = logo().decodeToImageVector(Density(1f)).root[0] as VectorPath
+         assertEquals(0f, (path.fill as SolidColor).value.alpha, 0f)
+         assertEquals(1f, (path.stroke as SolidColor).value.alpha, 0f)
+-        assertEquals(3.8f, path.strokeLineWidth, 0f)
++        assertEquals(2.484375f, path.strokeLineWidth, 0f)
+     }
+ 
+     @Test fun everySharedVectorDecodesAtMultipleDensities() {

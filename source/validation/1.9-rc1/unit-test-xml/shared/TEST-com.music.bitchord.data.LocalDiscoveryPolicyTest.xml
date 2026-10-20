@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.LocalDiscoveryPolicyTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-15T19:30:06" hostname="6b87ce45-d95" time="0.04">
+  <properties/>
+  <testcase name="oneListenCanSeedDiscovery[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.016"/>
+  <testcase name="recommendationsInterleaveTwoSeedsAndNeverRepeatHeardSongs[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.017"/>
+  <testcase name="emptyProvidersDoNotInventRecommendations[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.001"/>
+  <testcase name="mostRecentSeedWinsWithoutDuplicates[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.0"/>
+  <testcase name="twentySecondsAreRequiredNotOneTap[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.0"/>
+  <testcase name="localPathsAreNeverSentAsRadioSeeds[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.0"/>
+  <testcase name="historyIsBoundedToEight[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.002"/>
+  <testcase name="recommendationsAreBounded[jvm]" classname="com.music.bitchord.data.LocalDiscoveryPolicyTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

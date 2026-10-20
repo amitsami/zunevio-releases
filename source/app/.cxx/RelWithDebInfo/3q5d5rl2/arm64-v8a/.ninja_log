@@ -1,0 +1,15 @@
+# ninja log v5
+0	1262	1792483194412554139	CMakeFiles/bitchord_analysis.dir/data/zuneviu-android-update/Zunevio-1.2.5/native/analyzer/vocal_spectrogram.cpp.o	9bbcbe4a66e9eb2
+2	1480	1792483194632554134	CMakeFiles/bitchord_analysis.dir/data/zuneviu-android-update/Zunevio-1.2.5/native/analyzer/tempo_analysis.cpp.o	f8cc5d4257c9142
+1263	1873	1792483195024554126	CMakeFiles/bitchord_analysis.dir/data/zuneviu-android-update/Zunevio-1.2.5/native/analyzer/resampler.cpp.o	cc59e62079dbfdb5
+1875	2633	1792483195784554110	CMakeFiles/bitchord_analysis.dir/jni/analysis_jni.cpp.o	299e393cef52d01a
+2	2650	1792483195800554109	CMakeFiles/bitchord_analysis.dir/data/zuneviu-android-update/Zunevio-1.2.5/native/analyzer/audio_analysis.cpp.o	8ba2d0d6c3089822
+1480	2882	1792483196032554104	CMakeFiles/bitchord_analysis.dir/data/zuneviu-android-update/Zunevio-1.2.5/native/analyzer/mel_spectrogram.cpp.o	2c8444b71ba52e5c
+2633	3192	1792483196348554098	CMakeFiles/bitchord_analysis.dir/jni/mel_jni.cpp.o	55aa5741336eb101
+3193	3325	1792483196484554095	CMakeFiles/bitchord_dst.dir/dsd/dst/decoder.c.o	9bac325debc1d551
+2650	3437	1792483196588554092	CMakeFiles/bitchord_analysis.dir/jni/vocal_jni.cpp.o	8df0a48d3cefd7a7
+3437	3483	1792483196632554092	/data/zuneviu-android-update/Zunevio-1.2.5/app/build/intermediates/cxx/RelWithDebInfo/3q5d5rl2/obj/arm64-v8a/libbitchord_analysis.so	c5a51e3adb5c6a77
+3326	3571	1792483196728554090	CMakeFiles/bitchord_dst.dir/dsd/dst/jni.cpp.o	2997f091e5aba80e
+3571	3585	1792483196743058262	/data/zuneviu-android-update/Zunevio-1.2.5/app/build/intermediates/cxx/RelWithDebInfo/3q5d5rl2/obj/arm64-v8a/libbitchord_dst.so	74f925cc51764d43
+2883	3729	1792483196884554086	CMakeFiles/bitchord_dsd.dir/dsd/dsd_decimator.cpp.o	74f1aab2c9211707
+3729	3745	1792483196901138332	/data/zuneviu-android-update/Zunevio-1.2.5/app/build/intermediates/cxx/RelWithDebInfo/3q5d5rl2/obj/arm64-v8a/libbitchord_dsd.so	fb8282f637a395cc

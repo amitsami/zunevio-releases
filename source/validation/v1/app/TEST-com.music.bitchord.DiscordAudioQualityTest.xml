@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.DiscordAudioQualityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:05" hostname="dc6b18e2-dd4" time="0.005">
+  <properties/>
+  <testcase name="ordinary lossy audio has no quality line" classname="com.music.bitchord.DiscordAudioQualityTest" time="0.001"/>
+  <testcase name="dsd line names the dsd rate in megahertz" classname="com.music.bitchord.DiscordAudioQualityTest" time="0.002"/>
+  <testcase name="dolby line includes immersive codec and channels" classname="com.music.bitchord.DiscordAudioQualityTest" time="0.0"/>
+  <testcase name="hi-res line contains measured specs separated by center dots" classname="com.music.bitchord.DiscordAudioQualityTest" time="0.0"/>
+  <testcase name="cd-quality lossless line keeps known specs only" classname="com.music.bitchord.DiscordAudioQualityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

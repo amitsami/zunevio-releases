@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.ZunevioV1SettingsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:16" hostname="23011c11-9c1" time="0.02">
+  <properties/>
+  <testcase name="contactLinksAndDeveloperCreditStayPresent" classname="com.music.bitchord.ZunevioV1SettingsTest" time="0.016"/>
+  <testcase name="settingsHasNoPerCardGpuEffects" classname="com.music.bitchord.ZunevioV1SettingsTest" time="0.001"/>
+  <testcase name="settingsObservesOnlyAtmosFlagNotPlaybackTelemetry" classname="com.music.bitchord.ZunevioV1SettingsTest" time="0.002"/>
+  <testcase name="toolbarIsSettingsNotProfilePhoto" classname="com.music.bitchord.ZunevioV1SettingsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

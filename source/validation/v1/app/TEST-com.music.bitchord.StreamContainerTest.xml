@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.StreamContainerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:08" hostname="dc6b18e2-dd4" time="0.002">
+  <properties/>
+  <testcase name="dash reopen changes virtual uri while preserving playback identity" classname="com.music.bitchord.StreamContainerTest" time="0.002"/>
+  <testcase name="non-manifest mime does not force a source rebuild" classname="com.music.bitchord.StreamContainerTest" time="0.0"/>
+  <testcase name="hls source-track reopen preserves source parameters and fragment" classname="com.music.bitchord.StreamContainerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

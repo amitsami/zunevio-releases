@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.listentogether.PartyQueueReadingTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:12:38" hostname="6b87ce45-d95" time="0.008">
+  <properties/>
+  <testcase name="aTrackTheQueueDoesNotHoldHasNothingAfterIt[jvm]" classname="com.music.bitchord.data.listentogether.PartyQueueReadingTest" time="0.005"/>
+  <testcase name="theStateFramesIndexWinsWhenItNamesTheTrack[jvm]" classname="com.music.bitchord.data.listentogether.PartyQueueReadingTest" time="0.002"/>
+  <testcase name="theCopyAheadOfTheNeedleBeatsTheOneBehindIt[jvm]" classname="com.music.bitchord.data.listentogether.PartyQueueReadingTest" time="0.0"/>
+  <testcase name="aStaleQueueIndexIsNotTakenFromAnOlderQueue[jvm]" classname="com.music.bitchord.data.listentogether.PartyQueueReadingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

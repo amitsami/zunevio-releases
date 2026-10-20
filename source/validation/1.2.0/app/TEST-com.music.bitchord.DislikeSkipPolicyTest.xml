@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.DislikeSkipPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-16T08:07:59" hostname="40a1f0bf-d72" time="0.042">
+  <properties/>
+  <testcase name="indifferent non-current track does not skip" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.037"/>
+  <testcase name="liked non-current track does not skip" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.0"/>
+  <testcase name="indifferent current track skips" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.0"/>
+  <testcase name="missing current track does not skip" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.004"/>
+  <testcase name="undoing dislike on current track does not skip" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.0"/>
+  <testcase name="liked current track skips" classname="com.music.bitchord.DislikeSkipPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

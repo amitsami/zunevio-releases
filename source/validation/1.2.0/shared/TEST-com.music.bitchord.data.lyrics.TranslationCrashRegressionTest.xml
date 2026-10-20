@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-16T07:39:05" hostname="40a1f0bf-d72" time="0.536">
+  <properties/>
+  <testcase name="successfulBodiesAreNotChanged[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.047"/>
+  <testcase name="suppliedAccentedUserAgentReproducesTheReportedCrash[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.049"/>
+  <testcase name="acceptedIdentityReachesAnActualLocalHttpServer[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.42"/>
+  <testcase name="cancellationIsNotSwallowed[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.007"/>
+  <testcase name="fatalErrorsAreNotHidden[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.004"/>
+  <testcase name="transportFailureReturnsUnavailable[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.002"/>
+  <testcase name="currentIdentityIsPrintableAsciiAndAcceptedByOkHttp[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.001"/>
+  <testcase name="constructionFailureReturnsUnavailableInsteadOfEscapingCoroutine[jvm]" classname="com.music.bitchord.data.lyrics.TranslationCrashRegressionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

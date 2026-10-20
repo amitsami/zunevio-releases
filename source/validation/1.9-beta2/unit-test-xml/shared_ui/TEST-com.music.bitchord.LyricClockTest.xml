@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LyricClockTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:48:08" hostname="6b87ce45-d95" time="0.109">
+  <properties/>
+  <testcase name="unannouncedForwardJumpCatchesUp[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.011"/>
+  <testcase name="unstampedReadingsNeverMoveTheWordsBack[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.022"/>
+  <testcase name="unannouncedFarJumpIsFollowed[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.004"/>
+  <testcase name="returningToTheAppExtrapolatesFromTheLastReading[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.002"/>
+  <testcase name="announcedFarSeekJumpsAtOnce[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.0"/>
+  <testcase name="announcedBackwardSeekGlidesBackAndLands[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.005"/>
+  <testcase name="lateReadingsNeverStallTheWords[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.026"/>
+  <testcase name="learnsAFasterPlaybackRate[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.009"/>
+  <testcase name="resumingAfterAPauseStartsWhereItStopped[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.0"/>
+  <testcase name="holdSettlesAtOnce[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.001"/>
+  <testcase name="movingTheOffsetIsFollowed[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.001"/>
+  <testcase name="lateReadingsDoNotPullTheWordsOffTheSong[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.007"/>
+  <testcase name="oneWrongReadingIsIgnored[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.003"/>
+  <testcase name="lateReadingsNeverMoveTheWordsBack[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.006"/>
+  <testcase name="unannouncedSmallRewindSlowsDownInsteadOfReversing[jvm]" classname="com.music.bitchord.LyricClockTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

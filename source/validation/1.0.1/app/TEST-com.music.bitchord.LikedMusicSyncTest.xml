@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.LikedMusicSyncTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:46:19" hostname="dc6b18e2-dd4" time="0.029">
+  <properties/>
+  <testcase name="first page is seeded while background sync is still in flight" classname="com.music.bitchord.LikedMusicSyncTest" time="0.006"/>
+  <testcase name="an existing like survives a menu that says nothing" classname="com.music.bitchord.LikedMusicSyncTest" time="0.001"/>
+  <testcase name="a stated indifferent rating does not downgrade an existing like" classname="com.music.bitchord.LikedMusicSyncTest" time="0.0"/>
+  <testcase name="liked sync stops when the continuation runs dry" classname="com.music.bitchord.LikedMusicSyncTest" time="0.001"/>
+  <testcase name="liked sync stops when a continuation points back at a page already read" classname="com.music.bitchord.LikedMusicSyncTest" time="0.006"/>
+  <testcase name="cancelling the sync stops further pagination" classname="com.music.bitchord.LikedMusicSyncTest" time="0.01"/>
+  <testcase name="a row without a like button states no rating" classname="com.music.bitchord.LikedMusicSyncTest" time="0.0"/>
+  <testcase name="liked sync follows continuations past the old ten page cap" classname="com.music.bitchord.LikedMusicSyncTest" time="0.003"/>
+  <testcase name="a failed continuation stops the sync without losing earlier ids" classname="com.music.bitchord.LikedMusicSyncTest" time="0.001"/>
+  <testcase name="liked sync is a no-op with no continuation" classname="com.music.bitchord.LikedMusicSyncTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

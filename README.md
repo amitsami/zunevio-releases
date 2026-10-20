@@ -9,9 +9,9 @@ A focused Android music experience with clean lyrics, personal discovery and set
 
 ---
 
-## Existing gallery — earlier versions
+## App gallery
 
-The existing galleries below are retained from earlier versions and are not Build 47 captures. No new screenshots are included in this release.
+Updated with owner-provided screenshots for the v1.2.6 release. The first banner is unchanged.
 
 ### Discover your next favorite
 
@@ -21,9 +21,9 @@ Personal recommendations, Explore and your listening library.
 
 ### Stay in the music
 
-Immersive artwork, live lyrics and track controls within reach.
+Immersive artwork and track controls within reach.
 
-[![Listen — Now Playing, Live Lyrics and Track Controls](assets/gallery/listen.png)](assets/gallery/listen.png)
+[![Listen — Now Playing and Track Controls](assets/gallery/listen.png)](assets/gallery/listen.png)
 
 ### Make it yours
 
@@ -33,15 +33,15 @@ Dedicated settings for audio quality, playback, appearance and performance.
 
 ---
 
-## Latest update — 1.2.5 (Build 47)
+## Latest update — 1.2.6 (Build 51)
 
-- Restored timed fallback lyrics in inline music video playback.
-- Separate audio/video lyric offsets; visible audio default −0.4s without double application.
-- Automatic-language voice search through compatible Android 14+ speech services.
-- Creator/maintainer credit for Amit Hasan Sami, with GitHub and matching-source links.
-- [Full changelog and limitations](RELEASE_NOTES.md).
+- Dedicated native Spotify sign-in screen, stable page lifecycle and explicit Retry.
+- Google session readiness improvements; video availability checks and a static “Lyrics >” entry.
+- Stream buffering improvements, equalizer/branding fixes and reduced disposable-cache budgets.
+- Approved new gallery cards; the original banner is unchanged.
+- [Full changelog, validation and known limitations](RELEASE_NOTES.md).
 
-Video fallback timing is not guaranteed to align with alternate edits; real-device audiovisual sync remains unverified.
+Genius live-fetch remains blocked with HTTP 403 in the build environment. Spotify device/account acceptance is not established by automated tests; no universal login or sync guarantee is claimed.
 
 ## Made for everyday listening
 
@@ -53,7 +53,7 @@ Video fallback timing is not guaranteed to align with alternate edits; real-devi
 
 ## Install
 
-1. Open the latest release and download **Zunevio-…-universal.apk**.
+1. Open the latest release and download **Zuneviu-…-universal.apk**.
 2. Open the APK and allow installation for the app you downloaded it with, if Android asks.
 3. Keep Play Protect enabled. Review any Android warning; never bypass it blindly.
 
@@ -71,7 +71,7 @@ Downloads happen only when you choose. The app verifies the SHA-256 digest, pack
 
 ## Transparency
 
-Every release includes the APK, changelog, SHA-256 checksums, certificate details, validation report and **corresponding-source ZIP** with build scripts and required notices. This repository's Git history contains release documentation, not the development tree. The source ZIP remains publicly available under its applicable licenses.
+The v1.2.6 release includes the APK, changelog, SHA-256 checksums, certificate details and validation report. Its complete corresponding source and rebuild inputs are in [source/](source/) and the immutable [v1.2.6 source tree](https://github.com/amitsami/zunevio-releases/tree/v1.2.6/source). From the GitHub automatic source archive, run builds from the `source/` directory following its BUILDING.md. No separately uploaded source ZIP asset is needed for this version. Historical releases retain their own corresponding-source assets for their exact binaries.
 
 See [License](LICENSE), [Notices](NOTICE.md), [Third-party notices](THIRD_PARTY_NOTICES.md) and [Privacy](PRIVACY.md). Required upstream credits are retained in those notices and the corresponding source. Zunéviu is independent and is not endorsed by music providers or upstream projects.
 

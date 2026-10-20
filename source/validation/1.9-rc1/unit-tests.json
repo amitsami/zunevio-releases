@@ -1,0 +1,32 @@
+{
+  "android": {
+    "tests": 976,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 975,
+    "failed_cases": [
+      {
+        "class": "com.music.bitchord.GeniusTest",
+        "name": "live genius search and scraping test with noisy titles",
+        "message": "java.lang.AssertionError"
+      }
+    ]
+  },
+  "shared": {
+    "tests": 82,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 82,
+    "failed_cases": []
+  },
+  "shared_ui": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 47,
+    "failed_cases": []
+  }
+}

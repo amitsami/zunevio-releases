@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "summary": "198 errors, 666 warnings, 5 hints",
+  "error_count": 198,
+  "error_categories": {
+    "NewApi": 1,
+    "UnsafeOptInUsageError from androidx.annotation.experimental": 92,
+    "FlowOperatorInvokedInComposition from androidx.compose.runtime": 1,
+    "LocalContextGetResourceValueCall from androidx.compose.ui": 65,
+    "StateFlowValueCalledInComposition from androidx.compose.runtime": 10,
+    "StringFormatInvalid": 1,
+    "MissingQuantity": 28
+  },
+  "suppression_added": false,
+  "note": "The pinned frontend also logs incompatible Kotlin metadata. Findings require review; not all are confirmed runtime defects."
+}

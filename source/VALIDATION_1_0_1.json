@@ -1,0 +1,218 @@
+{
+  "version": "1.0.1",
+  "version_code": 32,
+  "package": "com.zunevio.music.preview3",
+  "build_variant": "devBenchmark",
+  "optimized_apk_assembly": "PASS",
+  "tests": {
+    "shared": {
+      "tests": 82,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sharedUi": {
+      "tests": 50,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "app": {
+      "tests": 980,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "known_test_failure": "Enabled live Genius search/scraping test (GeniusTest.kt:111)",
+  "full_lint": "Not rerun for 1.0.1; inherited unresolved RC1 findings are not fixed or suppressed",
+  "physical_device_or_emulator_acceptance": "NOT PERFORMED; no connected device",
+  "static_audit": {
+    "all_rc1_settings_string_references_and_callbacks_retained": true,
+    "settings_live_blur_calls": 0,
+    "settings_backdrop_capture_calls": 0,
+    "settings_reduce_blur_collectors": 1,
+    "playback_observation": "distinct Atmos boolean instead of full NerdStats snapshots",
+    "gpu_frame_timing": "NOT MEASURED; source checks are not phone profiling"
+  },
+  "apks": [
+    {
+      "file": "Zunevio-1.0.1-POCO-arm64.apk",
+      "bytes": 60037052,
+      "sha256": "9dcaf5c5539ea9227e0d1885b35ab69660f65ab95f4ca45433a574c787a062de",
+      "signature_matches_rc1": true,
+      "certificate_sha256": "90b689ad6f21393d343ca9539860cb26d4f8b5be56d0b3e20ed58fc31bd8b496",
+      "zip_alignment_16k": true,
+      "non_debuggable": true,
+      "native_libraries": [
+        {
+          "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_analysis.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_dsd.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_dst.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libffmpegJNI.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libonnxruntime.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libonnxruntime4j_jni.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libquickjs.so",
+          "minimum_load_alignment": 16384
+        }
+      ]
+    },
+    {
+      "file": "Zunevio-1.0.1-universal.apk",
+      "bytes": 158351928,
+      "sha256": "c5fc4ea0078404d25fb123b66ea33f08d1f077bada1dd17d84249b4c6bfcccff",
+      "signature_matches_rc1": true,
+      "certificate_sha256": "90b689ad6f21393d343ca9539860cb26d4f8b5be56d0b3e20ed58fc31bd8b496",
+      "zip_alignment_16k": true,
+      "non_debuggable": true,
+      "native_libraries": [
+        {
+          "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_analysis.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_dsd.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libbitchord_dst.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libffmpegJNI.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libonnxruntime.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libonnxruntime4j_jni.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/arm64-v8a/libquickjs.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libandroidx.graphics.path.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libbitchord_analysis.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libbitchord_dsd.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libbitchord_dst.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libffmpegJNI.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libonnxruntime.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libonnxruntime4j_jni.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/armeabi-v7a/libquickjs.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libandroidx.graphics.path.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libbitchord_analysis.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libbitchord_dsd.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libbitchord_dst.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libonnxruntime.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libonnxruntime4j_jni.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86/libquickjs.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libandroidx.graphics.path.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libbitchord_analysis.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libbitchord_dsd.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libbitchord_dst.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libffmpegJNI.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libonnxruntime.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libonnxruntime4j_jni.so",
+          "minimum_load_alignment": 16384
+        },
+        {
+          "name": "lib/x86_64/libquickjs.so",
+          "minimum_load_alignment": 16384
+        }
+      ]
+    }
+  ]
+}

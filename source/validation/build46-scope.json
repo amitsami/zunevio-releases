@@ -1,0 +1,22 @@
+{
+  "baseline": "delivered build45 candidate",
+  "version": "1.2.5",
+  "versionCode": 46,
+  "protected_files_byte_identical": [
+    "app/src/main/java/com/music/bitchord/ui/components/VoiceSearch.kt",
+    "app/src/main/java/com/music/bitchord/playback/PlaybackService.kt",
+    "app/src/main/java/com/music/bitchord/playback/PlayerConnection.kt",
+    "app/src/main/java/com/music/bitchord/ui/player/InlineMusicVideo.kt",
+    "shared/src/jvmSharedMain/kotlin/com/music/bitchord/data/lyrics/LyricsRepository.kt",
+    "sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/LyricClock.kt",
+    "sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/MediaLyricClock.kt",
+    "sharedUi/src/jvmSharedMain/kotlin/com/music/bitchord/ui/player/PlaybackLyricClock.kt"
+  ],
+  "audio_default_ms": -400,
+  "application_mode": "absolute separately saved audio offset, not additive compensation",
+  "legacy_nonzero_preserved": true,
+  "saved_audio_zero_preserved": true,
+  "video_legacy_offset_preserved": true,
+  "phone_tested_by_agent": false,
+  "calibration_basis": "user reported -0.4s aligns all audio tracks they tested"
+}

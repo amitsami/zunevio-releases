@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.SharedCallsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-15T08:53:29" hostname="33d8a6c9-889" time="0.077">
+  <properties/>
+  <testcase name="a repeated question inside the window costs one call" classname="com.music.bitchord.SharedCallsTest" time="0.002"/>
+  <testcase name="callers arriving mid-flight share the one call" classname="com.music.bitchord.SharedCallsTest" time="0.002"/>
+  <testcase name="an explicit refresh keeps a request already in flight" classname="com.music.bitchord.SharedCallsTest" time="0.002"/>
+  <testcase name="a failure is not kept" classname="com.music.bitchord.SharedCallsTest" time="0.001"/>
+  <testcase name="an empty answer is kept, because it is an answer" classname="com.music.bitchord.SharedCallsTest" time="0.001"/>
+  <testcase name="a cancelled caller does not kill the call others still want" classname="com.music.bitchord.SharedCallsTest" time="0.005"/>
+  <testcase name="an expired answer is asked again" classname="com.music.bitchord.SharedCallsTest" time="0.001"/>
+  <testcase name="an explicit refresh drops a completed answer" classname="com.music.bitchord.SharedCallsTest" time="0.003"/>
+  <testcase name="held answers stay bounded" classname="com.music.bitchord.SharedCallsTest" time="0.059"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

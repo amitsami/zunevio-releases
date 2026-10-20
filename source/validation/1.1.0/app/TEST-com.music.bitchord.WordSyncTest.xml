@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.WordSyncTest" tests="44" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:04" hostname="dc6b18e2-dd4" time="0.044">
+  <properties/>
+  <testcase name="a line of ordinary syllables has nothing to animate" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a voice named by alias is matched to its declaration" classname="com.music.bitchord.WordSyncTest" time="0.003"/>
+  <testcase name="the swell travels along the word rather than pulsing at once" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="ttml keeps each syllable's own timing on the word" classname="com.music.bitchord.WordSyncTest" time="0.003"/>
+  <testcase name="a repeated word lines up with its own occurrence" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="plain lrc is left for the line-synced parser" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="the bloom peaks partway up and is gone before the letter settles" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="the older tag list still marks the answering side" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="lyricsplus keeps each syllable's own timing on the word" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="stripping brackets moves the syllables with the letters" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="does not double-decode an escaped ampersand" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="letters lean away from the middle of the word as it swells" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a pause between two syllables rests on the boundary" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="line-synced ttml takes its break from the paragraph end" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="words that do not come apart into letters are left alone" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="a line with no word timings has nothing to animate" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="bad xml yields nothing rather than throwing" classname="com.music.bitchord.WordSyncTest" time="0.004"/>
+  <testcase name="decodes the html entities simpmusic escapes" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="reveal runs across a word over that word's own span" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="how long a word must be held depends on how long it is" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="the pause between words fills the space between them" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a song with one voice is all on one side" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="reveal covers the whole line once the last word is done" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="lays a duet out on alternating sides" classname="com.music.bitchord.WordSyncTest" time="0.004"/>
+  <testcase name="a line-synced source with no durations gets no synthesised breaks" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="reads a background vocal that is one timed span" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="every letter comes to rest at the lift an ordinary sung word carries" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="skips translations and hangs background vocals under the lead" classname="com.music.bitchord.WordSyncTest" time="0.003"/>
+  <testcase name="no break ever shares a stamp with the line it follows" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a line with no word timings reveals whole" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="a stated line end short of the next stamp is marked as a break" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="reads word timings out of apple ttml" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="merges lyricsplus syllables on their trailing space" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="lays out a lyricsplus duet from the voices it names" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a payload that says nothing about voices stays on one side" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="merges adjacent spans with no space between them into one word" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="reads word timings out of enhanced lrc" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="falls back to plain text for line-synced ttml" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="a song that would land entirely on the right is flipped back" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <testcase name="parses every ttml clock shape" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="a quick word barely lifts and a held one goes all the way up" classname="com.music.bitchord.WordSyncTest" time="0.003"/>
+  <testcase name="a slowly sung line-synced song gets no break between its lines" classname="com.music.bitchord.WordSyncTest" time="0.0"/>
+  <testcase name="the sweep follows syllables rather than spreading over the word" classname="com.music.bitchord.WordSyncTest" time="0.003"/>
+  <testcase name="a note carried earns the letter-by-letter treatment and patter does not" classname="com.music.bitchord.WordSyncTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Fatal Error] :1:20: XML document structures must start and end within the same entity.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.JamInviteLinkTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:58:58" hostname="882242d2-567" time="0.155">
+  <properties/>
+  <testcase name="builds custom scheme URL" classname="com.music.bitchord.JamInviteLinkTest" time="0.003"/>
+  <testcase name="invariant 5 fallback preserves user custom server preference" classname="com.music.bitchord.JamInviteLinkTest" time="0.11"/>
+  <testcase name="invariant 9 default server down with custom healthy uses custom" classname="com.music.bitchord.JamInviteLinkTest" time="0.002"/>
+  <testcase name="switch party result sealed hierarchy holds expected properties" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="stale-result publication barrier drops superseded resolution" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 2 custom server does not masquerade as default" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="builds the canonical share URL" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="probe payload validation - fake 200 without ok true is rejected" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="parses web invite with server parameter" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 10 default server down with no custom reports offline" classname="com.music.bitchord.JamInviteLinkTest" time="0.005"/>
+  <testcase name="invariant 1 default server generates canonical invite" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 11 switch target resolves blank custom server to idle fallback" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 4 explicit invite target ignores idle fallback" classname="com.music.bitchord.JamInviteLinkTest" time="0.001"/>
+  <testcase name="probe order invariant - custom equal to default probes once" classname="com.music.bitchord.JamInviteLinkTest" time="0.001"/>
+  <testcase name="parses custom scheme invite with server" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="rejects other hosts schemes paths and malformed codes" classname="com.music.bitchord.JamInviteLinkTest" time="0.001"/>
+  <testcase name="probe order invariant - custom fails probes default exactly once" classname="com.music.bitchord.JamInviteLinkTest" time="0.004"/>
+  <testcase name="accepts query parameters without making them part of the code" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="probe order invariant - custom succeeds skips default probe" classname="com.music.bitchord.JamInviteLinkTest" time="0.004"/>
+  <testcase name="4-phase configuration immutability invariant" classname="com.music.bitchord.JamInviteLinkTest" time="0.005"/>
+  <testcase name="parses custom scheme invite without server" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 8 custom server regains priority after recovery" classname="com.music.bitchord.JamInviteLinkTest" time="0.002"/>
+  <testcase name="parses and normalizes a public invite" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="invariant 6 create fallback commits default server" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="url validation matrix - valid inputs" classname="com.music.bitchord.JamInviteLinkTest" time="0.007"/>
+  <testcase name="invariant 3 active party authority is distinct from idle fallback" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="url validation matrix - invalid inputs" classname="com.music.bitchord.JamInviteLinkTest" time="0.002"/>
+  <testcase name="invariant 7 fallback error classification" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <testcase name="resolution invariant - both offline reports offline" classname="com.music.bitchord.JamInviteLinkTest" time="0.005"/>
+  <testcase name="builds the custom server share URL" classname="com.music.bitchord.JamInviteLinkTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.DistributionSecurityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:02" hostname="dc6b18e2-dd4" time="0.009">
+  <properties/>
+  <testcase name="updaterContainsNoApkDownloaderOrInstaller" classname="com.music.bitchord.DistributionSecurityTest" time="0.002"/>
+  <testcase name="credentialBearingPreferencesAndWebviewDataAreNotAutoBackedUp" classname="com.music.bitchord.DistributionSecurityTest" time="0.001"/>
+  <testcase name="fileProviderDoesNotShareUpdateApksOrBroadStorage" classname="com.music.bitchord.DistributionSecurityTest" time="0.0"/>
+  <testcase name="developmentFlavorCannotEnableGlobalCleartextTraffic" classname="com.music.bitchord.DistributionSecurityTest" time="0.004"/>
+  <testcase name="appDoesNotRequestInstallerOrHighRiskDataAccess" classname="com.music.bitchord.DistributionSecurityTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

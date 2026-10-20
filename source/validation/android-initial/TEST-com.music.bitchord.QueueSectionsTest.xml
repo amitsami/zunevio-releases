@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.QueueSectionsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T08:49:44" hostname="33d8a6c9-889" time="0.0">
+  <properties/>
+  <testcase name="a queue with nothing from AutoPlay has the section at its end" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <testcase name="an empty queue has nowhere for the section but the top" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <testcase name="the section starts where AutoPlay's tracks do" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <testcase name="the section closes the queue once the mix is on its last track" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <testcase name="a track put in by hand mid-mix stays above the section" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <testcase name="AutoPlay tracks already played sit above the section, not in it" classname="com.music.bitchord.QueueSectionsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.NewLyricsSourceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:07" hostname="dc6b18e2-dd4" time="0.011">
+  <properties/>
+  <testcase name="reads an unsynced unison entry as plain lines" classname="com.music.bitchord.NewLyricsSourceTest" time="0.001"/>
+  <testcase name="strips how an upload was labelled" classname="com.music.bitchord.NewLyricsSourceTest" time="0.001"/>
+  <testcase name="a binilyrics response with no results is not a match" classname="com.music.bitchord.NewLyricsSourceTest" time="0.001"/>
+  <testcase name="reads a binilyrics search hit" classname="com.music.bitchord.NewLyricsSourceTest" time="0.001"/>
+  <testcase name="reads a line-synced unison entry" classname="com.music.bitchord.NewLyricsSourceTest" time="0.002"/>
+  <testcase name="an entry with no lyrics in it is not a match" classname="com.music.bitchord.NewLyricsSourceTest" time="0.0"/>
+  <testcase name="strips the credits a catalogue does not file a track under" classname="com.music.bitchord.NewLyricsSourceTest" time="0.001"/>
+  <testcase name="drops the topic suffix from an auto-generated channel" classname="com.music.bitchord.NewLyricsSourceTest" time="0.0"/>
+  <testcase name="handles both at once and leaves ordinary titles untouched" classname="com.music.bitchord.NewLyricsSourceTest" time="0.0"/>
+  <testcase name="reads a word-synced unison entry as ttml" classname="com.music.bitchord.NewLyricsSourceTest" time="0.003"/>
+  <testcase name="leaves alone anything that names a different recording" classname="com.music.bitchord.NewLyricsSourceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

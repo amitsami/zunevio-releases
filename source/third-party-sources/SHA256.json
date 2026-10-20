@@ -1,0 +1,22 @@
+[
+  {
+    "archive": "Beat-This-main.zip",
+    "sha256": "917267cf89f4bce6428dd42df988b4a07e37f992bd47c2a1f4c36ffead92dca0"
+  },
+  {
+    "archive": "InnerTubeX-v0.7.0.zip",
+    "sha256": "9e1d24a9c7b53c914b44a30f7b6ccfbf6133cd5cbcd1d2e1350de55daf17f48d"
+  },
+  {
+    "archive": "NewPipeExtractor-v0.26.3.zip",
+    "sha256": "a3a145d300f556e2ef89ba62772177d8e0545bacccff487f4b8523eb6296eaa4"
+  },
+  {
+    "archive": "Open-Unmix-master.zip",
+    "sha256": "d42d83e327db7aabe543396c73282be382fa6522e1e910d383316196ccddf026"
+  },
+  {
+    "archive": "Rhino-1.8.1.zip",
+    "sha256": "3cef6a6c400f6dba58b4b4ad61b983c05214805c5fe5115e2fb0128500514661"
+  }
+]

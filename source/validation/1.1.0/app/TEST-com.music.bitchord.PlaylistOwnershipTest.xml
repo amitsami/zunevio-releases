@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.PlaylistOwnershipTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:03" hostname="dc6b18e2-dd4" time="0.002">
+  <properties/>
+  <testcase name="a track row's delete does not make the playlist own" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.0"/>
+  <testcase name="a headerless response says nothing" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.0"/>
+  <testcase name="save bookmark means saved rather than own" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.0"/>
+  <testcase name="editable header renderer means own playlist" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.0"/>
+  <testcase name="header with no save bookmark means own playlist" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.001"/>
+  <testcase name="delete in the header menu means own playlist" classname="com.music.bitchord.PlaylistOwnershipTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

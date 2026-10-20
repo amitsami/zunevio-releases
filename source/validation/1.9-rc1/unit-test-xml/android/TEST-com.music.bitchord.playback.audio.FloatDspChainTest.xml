@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.playback.audio.FloatDspChainTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-15T19:29:46" hostname="6b87ce45-d95" time="0.061">
+  <properties/>
+  <testcase name="steady state processing reuses audio block samples array without allocation" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.012"/>
+  <testcase name="zero length input is handled safely across entire chain" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="dsp chain preserves headroom without clipping above 1_0" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.001"/>
+  <testcase name="spatial crossfeed leaks delayed and low-passed signal to opposite channel" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="eq preserves float32 values below 16-bit pcm resolution" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="eq gain response lifts centre frequency by expected decibels" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.008"/>
+  <testcase name="eq impulse response rings with biquad filter decay" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.001"/>
+  <testcase name="transition high pass attenuates low frequency signal" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.001"/>
+  <testcase name="eq bypass when flat passes samples through untouched" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="transition bypass passes samples through untouched when open" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="spatial bypass passes samples through untouched when disabled" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.001"/>
+  <testcase name="transition low pass attenuates high frequency signal" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="repeated block processing maintains filter continuity and stability" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.03"/>
+  <testcase name="eq maintains stereo channel independence" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.001"/>
+  <testcase name="dsp chain preserves float32 precision across all three processors without intermediate quantization" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <testcase name="eq multiple simultaneous bands boost both low and high ends" classname="com.music.bitchord.playback.audio.FloatDspChainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

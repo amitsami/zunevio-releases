@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.music.bitchord.ui.resources.VectorResourceRegressionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:30:43" hostname="23011c11-9c1" time="0.173">
+  <properties/>
+  <testcase name="everySharedVectorDecodesAtMultipleDensities[jvm]" classname="com.music.bitchord.ui.resources.VectorResourceRegressionTest" time="0.14"/>
+  <testcase name="oldAndroidColorReferenceReproducesReportedCrash[jvm]" classname="com.music.bitchord.ui.resources.VectorResourceRegressionTest" time="0.004"/>
+  <testcase name="homeLogoRemainsTransparentWithVisibleStroke[jvm]" classname="com.music.bitchord.ui.resources.VectorResourceRegressionTest" time="0.002"/>
+  <testcase name="homeLogoDecodesWithoutAndroidResourceResolution[jvm]" classname="com.music.bitchord.ui.resources.VectorResourceRegressionTest" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

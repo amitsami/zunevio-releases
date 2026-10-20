@@ -1,0 +1,84 @@
+{
+  "fork_developer": "Amit Hasan Sami",
+  "public_email": "amitsami110@gmail.com",
+  "public_github": "https://github.com/amitsami",
+  "reported_device": {
+    "model": "POCO M6 Pro 5G",
+    "android_version": "15",
+    "reproduction": "Immediate crash on launch"
+  },
+  "apk_assembly": "successful",
+  "native_application_launched_here": false,
+  "device_or_emulator_tested": false,
+  "android_package": "com.zunevio.music.dev.crashfix1",
+  "app_label": "Zunévio Test",
+  "version_code": 27,
+  "version_name": "1.8-crashfix1",
+  "suites": {
+    "app": {
+      "tests": 971,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 970,
+      "failed_tests": [
+        {
+          "class": "com.music.bitchord.GeniusTest",
+          "test": "live genius search and scraping test with noisy titles",
+          "message": "java.lang.AssertionError"
+        }
+      ]
+    },
+    "sharedUi": {
+      "tests": 38,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 38,
+      "failed_tests": []
+    },
+    "shared": {
+      "tests": 46,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 46,
+      "failed_tests": []
+    }
+  },
+  "apk_checks": [
+    {
+      "file": "Zunevio-1.8-crashfix1-Android-arm64-Test.apk",
+      "bytes": 88521941,
+      "sha256": "3d695947792519af88addca86ac7d9e6b3ba4b723f43c3c8e2cc8ec56479b841",
+      "signature_verified": true,
+      "zip_alignment_16k_verified": true,
+      "packaged_vector_source_match": true,
+      "public_developer_contacts_present_in_dex": true,
+      "certificate_sha256": "1562596899aa5a635b9b115f5661cbe43348e224bd8b34a69bbecb04b1485459"
+    },
+    {
+      "file": "Zunevio-1.8-crashfix1-Android-universal-Test.apk",
+      "bytes": 186263156,
+      "sha256": "5861854976df95741d4c46c0cad5ffc5827ddb96509601fea0ade2ff30af1937",
+      "signature_verified": true,
+      "zip_alignment_16k_verified": true,
+      "packaged_vector_source_match": true,
+      "public_developer_contacts_present_in_dex": true,
+      "certificate_sha256": "1562596899aa5a635b9b115f5661cbe43348e224bd8b34a69bbecb04b1485459"
+    }
+  ],
+  "remaining_limitations": [
+    "Live Genius-provider test fails; matching app User-Agent HTTP probe returned 403 from this environment.",
+    "Physical phone/emulator launch, playback, background media and service/account integration remain unverified.",
+    "Desktop application build/run and Windows/macOS/iOS are not validated by this correction."
+  ],
+  "original_certificate_sha256": "da0d8f7f64b9fec6ce788a8f40810ff219f744e68224396d9b5c4cc5aea68ced",
+  "signing_key_changed": true,
+  "actual_compose_parser_regressions": {
+    "tests": 4,
+    "failures": 0,
+    "reproduced_original_exception": true
+  },
+  "combined_test_task_exit": "nonzero due to enabled live Genius test; APK assembly-only task succeeded"
+}
