@@ -41,8 +41,6 @@ Dedicated settings for audio quality, playback, appearance and performance.
 - Approved new gallery cards; the original banner is unchanged.
 - [Full changelog, validation and known limitations](RELEASE_NOTES.md).
 
-Genius live-fetch remains blocked with HTTP 403 in the build environment. Spotify device/account acceptance is not established by automated tests; no universal login or sync guarantee is claimed.
-
 ## Made for everyday listening
 
 - **Clean player** — single-line lyrics and a visible favorite heart.
@@ -55,7 +53,7 @@ Genius live-fetch remains blocked with HTTP 403 in the build environment. Spotif
 
 1. Open the latest release and download **Zuneviu-…-universal.apk**.
 2. Open the APK and allow installation for the app you downloaded it with, if Android asks.
-3. Keep Play Protect enabled. Review any Android warning; never bypass it blindly.
+3. Keep Play Protect enabled. Review any Android warning;
 
 **Requirements:** Android 8.0 or later. One universal APK supports ARM, ARM64, x86 and x86_64; individual device compatibility and provider availability can vary.
 
