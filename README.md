@@ -11,7 +11,7 @@ A focused Android music experience with clean lyrics, personal discovery and set
 
 ## App gallery
 
-Updated with owner-provided screenshots for the v1.2.6 release. The first banner is unchanged.
+Updated with owner-provided screenshots for the v1.2.6 release.
 
 ### Discover your next favorite
 
