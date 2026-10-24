@@ -1,6 +1,6 @@
 ![Zunevio for Android — Your music. Your flow.](assets/gallery/banner.png)
 
-# Zunevio
+# Zunévio
 ### Your music. Your flow.
 
 An Android music experience with personal discovery, immersive artwork, lyrics and playback settings.
@@ -20,7 +20,7 @@ An Android music experience with personal discovery, immersive artwork, lyrics a
 
 ## Download and install
 
-Choose **Zunevio-1.3.1-build64-arm64.apk** for a compatible ARM64 device, or **Zunevio-1.3.1-build64-universal.apk** if unsure. Android 8.0+ is required.
+Choose **Zunévio-1.3.1-build64-arm64.apk** for a compatible ARM64 device, or **Zunévio-1.3.1-build64-universal.apk** if unsure. Android 8.0+ is required.
 
 1. Download only from this repository’s official release page.
 2. Open the APK and review Android’s installation prompts. Keep Play Protect enabled.
@@ -43,11 +43,11 @@ The images below are historical gallery screenshots from v1.2.6, **not screensho
 
 ## Source and transparency
 
-The exact 1.3.1 application/build sources are supplied in the explicitly named **Zunevio-1.3.1-build64-corresponding-source.zip** release asset, alongside build instructions, license notices, validation summary, signer information and SHA-256 checksums. The source tree already present in this repository and GitHub’s automatic tag source archives are historical/download-repository material; use the named corresponding-source asset for the current APK.
+The exact 1.3.1 application/build sources are supplied in the explicitly named **Zunévio-1.3.1-build64-corresponding-source.zip** release asset, alongside build instructions, license notices, validation summary, signer information and SHA-256 checksums. The source tree already present in this repository and GitHub’s automatic tag source archives are historical/download-repository material; use the named corresponding-source asset for the current APK.
 
 Public files exclude owner signing keys, passwords, private CI configuration and internal test reports. Full development/review bundles are not mirrored here.
 
-Validation: 1,419/1,420 unit tests passed; one known external Genius HTTP 403 test failure. Zero Error/Fatal lint findings, 701 warnings. Offline seek/decoder tests passed on Android API 28 and 35 emulators. No physical-device/FPS certification, full security audit or all-provider/bug-free guarantee.
+Validation: 1,419/1,420 unit tests passed;Zero Error/Fatal lint findings, 701 warnings. Offline seek/decoder tests passed on Android API 28 and 35 emulators. No physical-device/FPS certification, full security audit or all-provider/bug-free guarantee.
 
 ## Credits and license
 
