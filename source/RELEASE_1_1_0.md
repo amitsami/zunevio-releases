@@ -1,4 +1,4 @@
-# Zunévio 1.1.0 — Universal Android release candidate
+# Zunéviu 1.1.0 — Universal Android release candidate
 
 Developer of this fork: **Amit Hasan Sami**  
 Contact: amitsami110@gmail.com  

@@ -55,7 +55,7 @@ A user screen recording of Sunflower (Post Malone & Swae Lee) shows the compact 
 - Existing engine-authoritative position, buffering/seek clock and manual lyric offset remain. No arbitrary fixed delay or duration-based time stretching has been added.
 
 ## Installation and validation
-- Android 8.0+; package com.zunevio.music, version 1.2.5, build 44. Same production signing identity.
+- Android 8.0+; package com.Zunéviu.music, version 1.2.5, build 44. Same production signing identity.
 - See the delivered VALIDATION.json for actual test/lint results and corresponding-source commit.
 - No physical-device microphone recognition, background playback, lyric synchronization or rendered UI testing has been performed. These are targeted code changes, not a bug-free or device-level verification claim.
 - No new GitHub publish is performed by this task.

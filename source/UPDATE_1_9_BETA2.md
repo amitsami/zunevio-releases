@@ -1,4 +1,4 @@
-# Zunévio 1.9-beta2 — account-free discovery and lighter Android UI
+# Zunéviu 1.9-beta2 — account-free discovery and lighter Android UI
 
 Developer of this fork: **Amit Hasan Sami**  
 Public contact: amitsami110@gmail.com  
@@ -32,7 +32,7 @@ YouTube/Google receive normal catalog, related-track/search, playback and legiti
 ## Compatibility and signing
 
 - Minimum Android 8.0 / API 26; compile SDK 37, target 36. Four ABIs plus universal. This does not mean every Android version, OEM, codec, login provider or external service has been tested.
-- Package for this delivery: **com.zunevio.music.preview3**, version **1.9-beta2 (29)**. It installs beside previous test packages; their settings, downloads and accounts are not automatically migrated. Keep the old app; do not uninstall it just to install this beta.
+- Package for this delivery: **com.Zunéviu.music.preview3**, version **1.9-beta2 (29)**. It installs beside previous test packages; their settings, downloads and accounts are not automatically migrated. Keep the old app; do not uninstall it just to install this beta.
 - A previous session's test private key was unavailable in this build environment. The distinct package avoids an incompatible-update/data-loss scenario. This is an optimized, non-debuggable `devBenchmark` beta signed with a test/debug key, not a production signing identity. Retain a secure signing-key backup for subsequent in-place updates; never publish it with the source.
 - POCO M6 Pro 5G / Android 15 is the user's target. That physical phone is not connected here. FPS, touch reliability under load, OEM battery limits, Bluetooth and background playback still need phone acceptance checks.
 - ARM64 is appropriate for the POCO. Universal is larger. 32-bit x86 does not bundle the optional FFmpeg fallback; normal supported platform codecs remain.

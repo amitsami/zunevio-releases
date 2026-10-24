@@ -1,4 +1,4 @@
-# Zunévio 1.9-beta1 — Android update
+# Zunéviu 1.9-beta1 — Android update
 
 Developer: **Amit Hasan Sami**  
 Public contact: amitsami110@gmail.com  
@@ -13,7 +13,7 @@ GitHub: https://github.com/amitsami
 - সঠিক word/syllable timestamp থাকলে full lyrics ও lyric strip-এ word/letter sweep চলে; সব গানে এমন timing পাওয়া যায় না।
 - Android 8+ এবং চারটি ABI লক্ষ্য করা হয়েছে; সব Android/OEM/codec-এ কাজের নিশ্চয়তা নয়। আপনার POCO-তে পরীক্ষা বাকি।
 - নতুন package `com.zunevio.music.preview2` পুরোনো app-এর পাশে বসবে; পুরোনো app uninstall করবেন না। পুরোনো data নিজে থেকে এতে আসবে না।
-- Source-এর GPL/copyright/JNI নাম মুছে দেওয়া হয়নি। App-এর visible branding Zunévio; এটি upstream code-এর authorship নিজের নামে দাবি নয়।
+- Source-এর GPL/copyright/JNI নাম মুছে দেওয়া হয়নি। App-এর visible branding Zunéviu; এটি upstream code-এর authorship নিজের নামে দাবি নয়।
 - Genius live lookup এই environment-এ HTTP 403/challenge দিচ্ছে। Final test counts আলাদা validation JSON-এ আছে; provider failure লুকানো বা test skip করা হয়নি।
 
 ## Scope and installation
@@ -22,7 +22,7 @@ This is the existing native Kotlin/Compose music app, not an HTML shell. This up
 
 - Minimum: Android 8.0 / API 26. Target: API 36. Your POCO M6 Pro 5G on Android 15 is within this range, but has **not** been connected or tested here.
 - Four requested ABIs: arm64-v8a, armeabi-v7a, x86 and x86_64; universal APK bundles all four. An ABI build is not a promise of compatibility with every device or OEM.
-- Package: `com.zunevio.music.preview2`; version code 28. This installs beside previous Zunévio test builds. It does **not** migrate their app data automatically. Keep the older app until the new one passes your device checks. Do not uninstall it merely to install this beta.
+- Package: `com.zunevio.music.preview2`; version code 28. This installs beside previous Zunéviu test builds. It does **not** migrate their app data automatically. Keep the older app until the new one passes your device checks. Do not uninstall it merely to install this beta.
 - The inherited FFmpeg fallback is bundled for ARM32, ARM64 and x86_64, but not 32-bit x86. On x86, normal platform-supported audio remains available; do not assume every optional codec works.
 - On API 26–30, glass uses the retained fallback. Advanced blur requires API 31+. No Android 7-or-older, iPhone, Windows or macOS binary is supplied by this update.
 
@@ -46,7 +46,7 @@ These changes remove identifiable work and tap conflicts. They are **not measure
 
 ### Branding and removed integrations
 
-- Visible Android strings and About/publisher links use Zunévio / Amit Hasan Sami. About no longer promotes the upstream app, community or updater.
+- Visible Android strings and About/publisher links use Zunéviu / Amit Hasan Sami. About no longer promotes the upstream app, community or updater.
 - JioSaavn is removed from built-in and restored source configurations, not merely hidden in the list. YouTube and user-configured source modules remain.
 - Discord, Last.fm and ListenBrainz/scrobbling controls are removed from Accounts & integrations. Their automatic observers/startup initialization are disabled; their enabled settings are forced off. The dormant Discord application ID is blank.
 - Listen Together controls, incoming invite handling and app-link entry points are removed from this Android edition. No owner-controlled server was provided/deployed. Its configured default server is blank and on a fresh install initialization returns before health polling or restoration. The retained source can still honor an explicitly saved custom server when rebuilt under an existing package; this new preview package does not import those older preferences. No upstream fallback service is bundled.
@@ -117,7 +117,7 @@ The live Genius scrape test is retained, not skipped. A normal request to its se
 | Shared JVM tests | 51 passed / 51 |
 | Shared UI JVM tests | 42 passed / 42; includes four actual Compose vector parser regressions |
 | APK signatures | All five APKs verified; debug/test certificate, not production |
-| Package / label / version | com.zunevio.music.preview2 / Zunévio / 1.9-beta1 (28) |
+| Package / label / version | com.Zunéviu.music.preview2 / Zunéviu / 1.9-beta1 (28) |
 | Debuggable manifest flag | false |
 | Four-ABI universal APK | Verified ARM64, ARM32, x86, x86_64 |
 | Bundled mood banners | 16 in every APK |

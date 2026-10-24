@@ -1,4 +1,4 @@
-# Zunevio 1.3.1 · Build 64
+# Zunéviu 1.3.1 · Build 64
 
 Production Android update from 1.3.0 / Build 62. Package: `com.zunevio.music`. Minimum Android: 8.0 (API 26). This release uses the existing production signing certificate.
 

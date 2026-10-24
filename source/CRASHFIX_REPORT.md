@@ -1,6 +1,6 @@
-# Zunévio Android startup crash correction
+# Zunéviu Android startup crash correction
 
-Developer of the Zunévio fork: **Amit Hasan Sami**. Public contact: amitsami110@gmail.com; GitHub profile: https://github.com/amitsami. Based on BitChord by Kushagra Singh and contributors. GPLv3 and upstream copyright notices remain in force; this is a derivative native application, not a claim of original authorship of BitChord.
+Developer of the Zunéviu fork: **Amit Hasan Sami**. Public contact: amitsami110@gmail.com; GitHub profile: https://github.com/amitsami. Based on BitChord by Kushagra Singh and contributors. GPLv3 and upstream copyright notices remain in force; this is a derivative native application, not a claim of original authorship of BitChord.
 
 ## Evidence and root cause
 
@@ -11,7 +11,7 @@ Android framework vector resources can resolve Android color references. Compose
 ## Changes in this correction
 
 - Four vector XML resources use literal transparent path fill.
-- Android Settings colophon identifies Zunévio and developer Amit Hasan Sami, and explicitly labels the retained BitChord source / upstream developer / upstream community links.
+- Android Settings colophon identifies Zunéviu and developer Amit Hasan Sami, and explicitly labels the retained BitChord source / upstream developer / upstream community links.
 - Desktop packaging publisher metadata uses Amit Hasan Sami instead of the previous placeholder publisher.
 - Android version code is 27; version name is `1.8-crashfix1`. Default development ID remains `com.zunevio.music.dev`; production ID remains `com.zunevio.music`. **The delivered build** uses `-PzunevioSideBySide=true`: ID `com.zunevio.music.dev.crashfix1`, label `Zunévio Test`, so the old app and its data remain untouched.
 - Four new shared-UI JVM regression tests use Compose's **actual** `decodeToImageVector` parser, not a mock: decode the Home logo, verify transparent fill and visible stroke, decode all shared vectors at several densities, and reproduce the original exception using the old color value.
@@ -70,11 +70,11 @@ Keep real credentials in local environment/configuration excluded from version c
 - Shared core JVM: **46/46 passed**. Shared UI JVM: **38/38 passed**, including all four new real-parser crash regression tests. The final contact/side-by-side build reused unchanged shared/JVM test results as UP-TO-DATE; Android tests ran again.
 - Direct Genius search HTTP probe with the application's `BitChord` User-Agent: **403** in this environment. This is not a guarantee of the response on the user's network, and the failed live test has not been disabled or rewritten to pass.
 - Both delivered APKs: signature verified, ZIP alignment checked with 16-KiB page alignment, corrected shared vector assets byte-matched to source, final public contact strings checked in packaged DEX. These ZIP checks do not establish native ELF compatibility on every 16-KiB device.
-- The inherited dev-flavor manifest hardcoded the old app label; this is now a flavor-supplied manifest placeholder so the delivered app is consistently labelled **Zunévio Test**.
+- The inherited dev-flavor manifest hardcoded the old app label; this is now a flavor-supplied manifest placeholder so the delivered app is consistently labelled **Zunéviu Test**.
 
 ### Quick test on POCO M6 Pro 5G / Android 15
 
-1. Install the ARM64 test APK and open **Zunévio Test** (not the old Zunévio Dev). No uninstall is required.
+1. Install the ARM64 test APK and open **Zunéviu Test** (not the old Zunéviu Dev). No uninstall is required.
 2. Check cold launch → Home → Settings. Confirm developer name/email/GitHub.
 3. Try a local audio file first, then navigate the native player, queue and lyrics. Online playback/lyrics depend on the chosen provider and account/network access.
 4. Test screen-off/background playback and notification controls.

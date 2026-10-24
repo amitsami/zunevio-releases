@@ -1,4 +1,4 @@
-# GitHub Releases → Zunévio updates
+# GitHub Releases → Zunéviu updates
 
 No repository has been published or selected for you. This build starts with the updater **unconfigured**. It never contacts the upstream project's releases and does not download an APK automatically.
 
@@ -30,7 +30,7 @@ This review APK is `com.zunevio.music.preview3`, signed with the **existing priv
 - Download starts only after a tap. It runs on IO, with throttled progress updates. Closing the update dialog does not stop a download; Cancel does. Process death requires retrying. No install happens in the background.
 - Only HTTPS GitHub metadata/assets and a narrow GitHub CDN redirect allowlist are accepted. Downloads are size-bounded and checked against GitHub's SHA-256 digest, the installed package, increasing versionCode, minimum SDK, non-debuggable flag and exact signing certificate set.
 - APKs stay in private update cache; only the APK selected for installation is granted temporary read access to Android's package installer through FileProvider.
-- Android may ask to allow installs from this app. If the user chooses to allow it, return to Zunévio and tap Install again. Android's own installer and Play Protect make the final installation decision. Never disable Play Protect.
+- Android may ask to allow installs from this app. If the user chooses to allow it, return to Zunéviu and tap Install again. Android's own installer and Play Protect make the final installation decision. Never disable Play Protect.
 - The sideload update feature requires `REQUEST_INSTALL_PACKAGES`, restored deliberately at the user's request in 1.1.1. This can receive additional scrutiny. No antivirus, Google approval, Play Store policy compliance or permanent warning-free guarantee is claimed. A Play Store distribution would need its own compliant update channel/policy review.
 - Android system app labels, notification titles, launcher text and other OS-controlled plain strings do not support our red-initial rich text. The red-Z rule applies to app-rendered text and generated share artwork.
 

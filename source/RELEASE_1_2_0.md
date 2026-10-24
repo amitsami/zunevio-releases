@@ -1,4 +1,4 @@
-# Zunévio 1.2.0 — review candidate
+# Zunéviu 1.2.0 — review candidate
 
 Version code 35. This review build keeps package `com.zunevio.music.preview3` and the same private **test** signing identity as the supplied 1.1.1. Android 8.0/API 26+, universal APK (arm64-v8a, armeabi-v7a, x86, x86_64). Not published to GitHub.
 

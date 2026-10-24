@@ -1,8 +1,8 @@
-# Zunévio 1.2.0 — review build
+# Zunéviu 1.2.0 — review build
 
 This fork's current Android changes, exact validation status and device-test checklist are in [RELEASE_1_2_0.md](RELEASE_1_2_0.md) and `VALIDATION_1_2_0.json`. Read [GITHUB_UPDATES.md](GITHUB_UPDATES.md) before configuring your new repository. The supplied preview3 APK is optimized and test-signed; it has not been published or certified for production.
 
-The original project's documentation and attribution follow. Its release links and badges are **upstream**, not a Zunévio download or update destination.
+The original project's documentation and attribution follow. Its release links and badges are **upstream**, not a Zunéviu download or update destination.
 
 ---
 

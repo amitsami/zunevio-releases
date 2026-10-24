@@ -1,4 +1,4 @@
-# Zunévio v1 — approved Settings and navigation update
+# Zunéviu v1 — approved Settings and navigation update
 
 Developer of this fork: **Amit Hasan Sami**  
 Email: amitsami110@gmail.com  
@@ -8,12 +8,12 @@ GitHub: https://github.com/amitsami
 
 - Native Compose Settings with rounded glass group cards, directional edge highlights and monochrome colour scheme. The glass samples a separate stationary background, not text or controls. API/low-RAM and Reduce blur fallbacks remain; no new perpetual animation loop or per-row image capture was introduced.
 - Approved soft-solid, matte black/white section glyphs without icon tiles. Existing Android Material switch controls are retained.
-- Home and Settings account wordmark render **Zunévio**, with only the initial **Z** red. The actual account name/email remain underneath the Settings wordmark.
+- Home and Settings account wordmark render **Zunéviu**, with only the initial **Z** red. The actual account name/email remain underneath the Settings wordmark.
 - Top-right profile action becomes a Settings gear with a 48dp hit target; account management remains accessible in Settings.
 - Only Explore's footer glyph changes. Original selection-pill code and existing spring/tab motion remain, with sampled glass re-enabled on supported, non-low-RAM devices when Reduce blur is off. The original top-level footer's non-folding layout is retained.
 - All existing Settings string references and callback expressions are retained. No JioSaavn, Discord or scrobbling features are restored.
 - Settings colophon includes the developer name, email and clickable **@amitsami** GitHub link. Upstream attribution and GPLv3 remain.
-- Version name **1.0**, increasing Android version code **31**. Package **com.zunevio.music.preview3** and private test signing lineage are preserved for an update over the supplied RC1/beta2 packages.
+- Version name **1.0**, increasing Android version code **31**. Package **com.Zunéviu.music.preview3** and private test signing lineage are preserved for an update over the supplied RC1/beta2 packages.
 - Prior literal-colour startup crash correction, ASCII HTTP identity/translation failure handling and one-action Settings-back correction are retained. The network identity now reads `Zunevio/1.0` (ASCII only).
 
 ## Validation and limits

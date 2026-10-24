@@ -1,6 +1,6 @@
-![Zunevio for Android — Your music. Your flow.](assets/gallery/banner.png)
+![Zunéviu for Android — Your music. Your flow.](assets/gallery/banner.png)
 
-# Zunévio
+# Zunéviu
 ### Your music. Your flow.
 
 An Android music experience with personal discovery, immersive artwork, lyrics and playback settings.
@@ -55,4 +55,4 @@ Maintained by [Amit Hasan Sami](https://github.com/amitsami).
 
 [License](LICENSE) · [Notices](NOTICE.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [App privacy](PRIVACY.md)
 
-Zunevio is independent and is not endorsed by music providers or upstream projects. Media, lyrics and artwork remain with their respective rights holders. Provider availability, account requirements and device compatibility vary.
+Zunéviu is independent and is not endorsed by music providers or upstream projects. Media, lyrics and artwork remain with their respective rights holders. Provider availability, account requirements and device compatibility vary.

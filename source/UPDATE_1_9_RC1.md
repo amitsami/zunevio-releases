@@ -1,4 +1,4 @@
-# Zunévio 1.9-rc1 — translation crash and Settings back correction
+# Zunéviu 1.9-rc1 — translation crash and Settings back correction
 
 Developer of this fork: **Amit Hasan Sami**  
 Public contact: amitsami110@gmail.com  
@@ -12,7 +12,7 @@ This is a **release-candidate test build**, not a declaration that every inherit
 
 - The user approved the **white paired music notes with one top beam on a pure-black background**. That exact shape is now used for launcher resources: adaptive foreground/background, Android themed monochrome foreground, and density-specific regular/round legacy WebP icons. No Z, second beam, added waveform or coloured gloss was applied.
 - Launcher foreground geometry accounts for the adaptive mask inset so the perceived mark scale matches the approved preview. System-themed icons can intentionally tint the monochrome variant.
-- The Home header now renders the full **Zunévio** wordmark as native scalable Text, not the old Z image. The existing page heading remains below it. Shared/notification/replay graphic resources now use the approved music mark rather than a Z.
+- The Home header now renders the full **Zunéviu** wordmark as native scalable Text, not the old Z image. The existing page heading remains below it. Shared/notification/replay graphic resources now use the approved music mark rather than a Z.
 - The actual Compose XML resource parser regression tests remain enabled; vector path colours remain literal ARGB values. Their geometry assertion was updated for the approved note, not removed.
 
 ### Translation force-close: cause verified from supplied log
@@ -61,10 +61,10 @@ Correction:
 
 ## Installation, identity and supported range
 
-- Version: **1.9-rc1 (30)**. Package: **com.zunevio.music.preview3**.
+- Version: **1.9-rc1 (30)**. Package: **com.Zunéviu.music.preview3**.
 - **Same package and same test signing key as the supplied 1.9-beta2.** On that exact beta2 installation, Android should allow an in-place update without intentionally clearing app data. Certificate continuity is checked during packaging. If Android reports an incompatible update, do not uninstall and lose data; confirm which earlier package/build is installed.
 - Older beta1/test packages have different IDs and/or signatures; they are not automatically migrated.
-- Display name: **Zunévio**. This remains an optimized, non-debuggable `devBenchmark` build signed with a test/debug identity, not a production/store signing key. Keep the key private and establish an owner-controlled release identity before public store distribution.
+- Display name: **Zunéviu**. This remains an optimized, non-debuggable `devBenchmark` build signed with a test/debug identity, not a production/store signing key. Keep the key private and establish an owner-controlled release identity before public store distribution.
 - Android 8+ / API 26 minimum, target 36. Four ABIs plus universal. POCO M6 Pro 5G / Android 15 should use the ARM64 APK. This is not an all-device/OEM/codec compatibility guarantee. Optional FFmpeg is not bundled for 32-bit x86.
 
 ## Inherited beta2 behaviour retained
@@ -82,7 +82,7 @@ The physical POCO is not connected to this environment. The previous no-KVM soft
 On the phone:
 
 1. Update **1.9-beta2** with the ARM64 RC1 APK; do not uninstall to resolve a signature conflict. Confirm App info says **1.9-rc1**.
-2. Check the approved music launcher icon and **Zunévio** Home wordmark.
+2. Check the approved music launcher icon and **Zunéviu** Home wordmark.
 3. Settings → Sources / Equalizer / Accounts & integrations: tap the top-left back arrow once. It should return to Settings, not remain on the sub-page. Check the saved Settings scroll position and ordinary system back too.
 4. Open a track with lyrics. Tap translation; test supported output, offline/unavailable response, repeated retry, changing track while loading, and changing target language. No provider reachability guarantee is made.
 5. Confirm playback/queue/word-synced lyrics, screen-off background audio and tab navigation on the POCO. If a crash remains, export a fresh log from this RC1 and provide the exact last action. Redact cookies/tokens; no additional personal details are needed now.
@@ -117,7 +117,7 @@ Test/lint failures remain failures; inspect the exact reports. Separate memory-b
 | Isolated optimized APK assembly | PASS, exit 0 |
 | Android/shared/shared-UI unit tests | 1,104 passed / 1,105, no skipped; one live Genius failure |
 | Full Lint | FAILED: 198 errors, 666 warnings, 5 hints; no suppression added |
-| Package / version / label | com.zunevio.music.preview3 / 1.9-rc1 (30) / Zunévio |
+| Package / version / label | com.Zunéviu.music.preview3 / 1.9-rc1 (30) / Zunéviu |
 | Signatures / update identity | All five APKs verified; certificate matches delivered beta2 |
 | Non-debuggable manifest | Verified |
 | Invalid accented translation header in packaged DEX | Absent; corrected ASCII identity present |

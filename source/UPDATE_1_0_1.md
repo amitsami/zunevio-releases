@@ -1,4 +1,4 @@
-# Zunévio 1.0.1 — Settings performance correction
+# Zunéviu 1.0.1 — Settings performance correction
 
 This update targets the reported Settings lag in v1. Android version code 32; package and private test signing lineage remain unchanged.
 

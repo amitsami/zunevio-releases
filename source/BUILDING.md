@@ -1,4 +1,4 @@
-# Build Zunévio for Android
+# Build Zunéviu for Android
 
 Use JDK 21, the Gradle wrapper, Android SDK platforms 36 and 37.0, build-tools 35.0.0, NDK 27.0.12077973 and CMake 3.22.1. Linux with at least 7 GB memory is recommended.
 
@@ -17,6 +17,6 @@ The live Genius network test is reported separately if it fails; deterministic f
 
 ## Owner release operation
 
-In the private development repository, update both versionName and versionCode, update RELEASE_NOTES.md, commit and push. Run **Zunévio production release** with `publish=true`. The workflow builds once, validates the certificate/package/tests/lint, creates matching APK/source/checksum assets, stages two draft releases, verifies uploads, then publishes both. GitHub has no cross-repository transaction; if publication fails after one repo becomes live, inspect both before retrying and never replace a published APK/version.
+In the private development repository, update both versionName and versionCode, update RELEASE_NOTES.md, commit and push. Run **Zunéviu production release** with `publish=true`. The workflow builds once, validates the certificate/package/tests/lint, creates matching APK/source/checksum assets, stages two draft releases, verifies uploads, then publishes both. GitHub has no cross-repository transaction; if publication fails after one repo becomes live, inspect both before retrying and never replace a published APK/version.
 
 The private repository holds signing/publishing secrets in GitHub Actions only. The public download repository has no signing secret. Never commit keystores or passwords. Publish a newer stable release, not just a commit, to trigger update discovery. Preserve the same application ID and production signing key and increase the numeric version code for every update.

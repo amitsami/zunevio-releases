@@ -1,4 +1,4 @@
-# Zunévio discovery artwork
+# Zunéviu discovery artwork
 
 Sixteen mood/genre images generated specifically for this update. Cropped from one AI-generated photographic contact sheet, then encoded as WebP. No external artwork endpoint, logo or artist likeness is used for these banners. Category text is native Compose text, not baked into imagery. App visuals are not a licence to remove the upstream source-code copyright notices retained elsewhere.
 

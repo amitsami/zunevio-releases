@@ -1,4 +1,4 @@
-# Zunévio 1.1.1 — review candidate
+# Zunéviu 1.1.1 — review candidate
 
 Version name `1.1.1`, version code `34`. Android 8.0/API 26 and later; universal APK includes arm64-v8a, armeabi-v7a, x86 and x86_64. Package `com.zunevio.music.preview3`, same private test signing identity as the supplied 1.1.0. Not published.
 
@@ -7,7 +7,7 @@ Version name `1.1.1`, version code `34`. Android 8.0/API 26 and later; universal
 - Settings now starts with account access and separate category links, rather than composing every settings control in one long root page. Audio quality, Appearance, Playback, Downloads, Recommendations, Performance, Local music, Storage, Your data, Language, Miscellaneous and Advanced options each open independently. All previous controls remain available; global settings search is retained.
 - Category Back navigation works through the page's button, system Back and the outer toolbar. Source/account/equalizer overlays return to the category underneath.
 - Settings keeps cached, painted glass styling rather than per-card GPU backdrop blur, shadows or continuous animations. Hidden category controls are not composed. Download progress is throttled and network/hash/archive work stays off the UI thread. This is an implementation improvement, not a measured all-device FPS guarantee.
-- App-rendered branding consistently colors only the initial **Z** red in Zunévio, including translated sentences containing the brand, settings footer and generated lyrics/Replay share artwork. Android system labels and native plain notifications cannot carry this rich-text styling.
+- App-rendered branding consistently colors only the initial **Z** red in Zunéviu, including translated sentences containing the brand, settings footer and generated lyrics/Replay share artwork. Android system labels and native plain notifications cannot carry this rich-text styling.
 - Added **Settings → App updates**. The repository is deliberately blank until you create and select your trusted public GitHub repo. No hard-coded upstream/fictitious repository is used.
 - Reads the newest stable GitHub Release at startup, manually and approximately every 12 hours via network-constrained WorkManager. Notifications require Android permission and are not real-time push. Force-stop, Doze, restricted background operation and offline state affect delivery.
 - Displays the future release description as a changelog; notification taps open the updater even if the app was already running.
