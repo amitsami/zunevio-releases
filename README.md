@@ -51,7 +51,7 @@ Validation: 1,419/1,420 unit tests passed; one known external Genius HTTP 403 te
 
 ## Credits and license
 
-Maintained by [Amit Hasan Sami](https://github.com/amitsami). Derived from [BitChord](https://github.com/kushagrasinghx/BitChord). Required source, copyright and third-party notices are retained.
+Maintained by [Amit Hasan Sami](https://github.com/amitsami).
 
 [License](LICENSE) · [Notices](NOTICE.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [App privacy](PRIVACY.md)
 
