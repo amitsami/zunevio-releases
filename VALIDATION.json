@@ -1,0 +1,56 @@
+{
+  "version": "1.3.1",
+  "versionCode": 64,
+  "tests": 1420,
+  "passed": 1419,
+  "skipped": 0,
+  "known_network_test_failures": [
+    {
+      "class": "com.music.bitchord.GeniusTest",
+      "test": "live genius search and scraping test with noisy titles"
+    }
+  ],
+  "lint_errors": 0,
+  "lint_warnings": 701,
+  "physical_device_tested": false,
+  "future_update_install_tested_on_device": false,
+  "production_signer_sha256": "b369d2ccad6466a8b4034f231e9de20ba0e8d87ea47cde2221fca80ddef11d3b",
+  "apk_checks": [
+    {
+      "abi": "universal",
+      "launcher_aliases": 26,
+      "signature_verified": true,
+      "zip_alignment_16k_verified": true,
+      "ascii_user_agent_verified": true
+    },
+    {
+      "abi": "arm64",
+      "launcher_aliases": 26,
+      "signature_verified": true,
+      "zip_alignment_16k_verified": true,
+      "ascii_user_agent_verified": true
+    }
+  ],
+  "android_emulator_checks": [
+    {
+      "api": 28,
+      "tests": 2,
+      "passed": 2,
+      "media": "generated local H264/AAC fixtures",
+      "physical_device": false
+    },
+    {
+      "api": 35,
+      "tests": 2,
+      "passed": 2,
+      "media": "generated local H264/AAC fixtures",
+      "physical_device": false
+    }
+  ],
+  "artifact_provenance": "Unmodified APKs from the completed signed Build 64; SHA-256 matches the owner handoff. Source files checked against the tested source tree before packaging.",
+  "security_audit_performed": false,
+  "release_apk_sha256": {
+    "Zunevio-1.3.1-build64-universal.apk": "eb743df615e4d67ed7f01b1fdd6ffeab704fd02d7117a711d367b097a13df1d5",
+    "Zunevio-1.3.1-build64-arm64.apk": "ed4a7d9aef07c95ecc64fd4cbc088e2a7ae3ca80d0052a613e086c3eb82acaa8"
+  }
+}
