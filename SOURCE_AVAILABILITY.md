@@ -1,7 +1,7 @@
-# Corresponding source — v1.2.6, Build 51
+# Application source
 
-Public immutable source tree: https://github.com/amitsami/zunevio-releases/tree/v1.2.6/source
+The current Android release includes a named corresponding-source ZIP:
 
-GitHub automatic source archives include this directory. Build from inside `source/` following BUILDING.md. The private development mirror keeps the same application/build tree at its root. Owner signing credentials are intentionally excluded; use your own signing key for local builds.
+[Download Zunéviu 1.3.2 source](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-corresponding-source.zip)
 
-Full source includes the original licenses/notices and third-party source/build inputs. This satisfies source availability without a separately uploaded source ZIP release asset. Historical binary releases keep their own exact source ZIP assets.
+Build instructions, license files and required copyright notices are included. GitHub’s automatic source archives describe this download repository, not the current APK source. The `source/` directory is historical. Previous source snapshots remain available at their original release tags.

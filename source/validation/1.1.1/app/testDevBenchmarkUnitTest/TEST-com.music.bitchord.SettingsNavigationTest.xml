@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.SettingsNavigationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T06:56:15" hostname="23011c11-9c1" time="0.023">
-  <properties/>
-  <testcase name="eachCategoryIsIndependentlyGatedBeforeComposition" classname="com.music.bitchord.SettingsNavigationTest" time="0.023"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

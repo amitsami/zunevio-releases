@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.ui.theme.ArtworkPaletteTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T18:48:08" hostname="6b87ce45-d95" time="0.004">
-  <properties/>
-  <testcase name="grayscaleDoesNotAcquireTheDefaultRedHue[jvm]" classname="com.music.bitchord.ui.theme.ArtworkPaletteTest" time="0.003"/>
-  <testcase name="nearlyNeutralArtworkKeepsItsSubtleSaturation[jvm]" classname="com.music.bitchord.ui.theme.ArtworkPaletteTest" time="0.001"/>
-  <testcase name="genuinelyChromaticArtworkIsStillStrengthenedAndCapped[jvm]" classname="com.music.bitchord.ui.theme.ArtworkPaletteTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

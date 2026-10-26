@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.LocalizationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-15T21:28:06" hostname="dc6b18e2-dd4" time="0.003">
-  <properties/>
-  <testcase name="supportedLanguages_containsVietnamese" classname="com.music.bitchord.LocalizationTest" time="0.001"/>
-  <testcase name="localesConfig_matchesSupportedLanguages" classname="com.music.bitchord.LocalizationTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

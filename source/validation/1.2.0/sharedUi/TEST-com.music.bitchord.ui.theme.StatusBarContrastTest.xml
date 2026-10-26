@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.ui.theme.StatusBarContrastTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T07:39:21" hostname="40a1f0bf-d72" time="0.001">
-  <properties/>
-  <testcase name="mixedTopBandInterpolatesScrimInLinearLuminance[jvm]" classname="com.music.bitchord.ui.theme.StatusBarContrastTest" time="0.001"/>
-  <testcase name="lightTopBandUsesMaximumScrim[jvm]" classname="com.music.bitchord.ui.theme.StatusBarContrastTest" time="0.0"/>
-  <testcase name="darkTopBandUsesSubtleBaseScrim[jvm]" classname="com.music.bitchord.ui.theme.StatusBarContrastTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

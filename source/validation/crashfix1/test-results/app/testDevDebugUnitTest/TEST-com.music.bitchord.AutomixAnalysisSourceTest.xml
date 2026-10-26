@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.AutomixAnalysisSourceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:58:58" hostname="882242d2-567" time="0.005">
-  <properties/>
-  <testcase name="second quality upgrade gets a new rendition marker" classname="com.music.bitchord.AutomixAnalysisSourceTest" time="0.001"/>
-  <testcase name="analysis URI asks the resolver to bypass playback substitutions" classname="com.music.bitchord.AutomixAnalysisSourceTest" time="0.004"/>
-  <testcase name="YouTube analysis accepts only its canonical Opus cache key" classname="com.music.bitchord.AutomixAnalysisSourceTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

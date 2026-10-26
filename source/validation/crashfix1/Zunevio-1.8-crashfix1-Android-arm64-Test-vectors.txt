@@ -1,2 +1,0 @@
-PASS: 6 shared vector XML resources have literal path colors
-PASS: 6 APK shared vectors checked; packaged logo matches corrected source

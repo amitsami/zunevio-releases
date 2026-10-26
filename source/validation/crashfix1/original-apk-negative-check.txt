@@ -1,9 +1,0 @@
-PASS: 6 shared vector XML resources have literal path colors
-Traceback (most recent call last):
-  File "/vercel/sandbox/data/zunevio/Zunevio-native/scripts/check_vector_resources.py", line 24, in <module>
-    for name in names: check(archive.read(name), name)
-                       ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/vercel/sandbox/data/zunevio/Zunevio-native/scripts/check_vector_resources.py", line 13, in check
-    assert re.fullmatch(r'#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})', value), (label, attr, value)
-           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: ('assets/composeResources/com.music.bitchord.sharedui.resources/drawable/ic_logo.xml', 'fillColor', '@android:color/transparent')

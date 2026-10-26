@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.download.Mp4SidxTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T22:14:04" hostname="dc6b18e2-dd4" time="0.0">
-  <properties/>
-  <testcase name="adds a sidx whose references cover every fragment" classname="com.music.bitchord.download.Mp4SidxTest" time="0.0"/>
-  <testcase name="leaves an already indexed file alone" classname="com.music.bitchord.download.Mp4SidxTest" time="0.0"/>
-  <testcase name="leaves a progressive file alone" classname="com.music.bitchord.download.Mp4SidxTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

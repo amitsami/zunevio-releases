@@ -1,1 +1,0 @@
-PASS: 6 shared vector XML resources have literal path colors

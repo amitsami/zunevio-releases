@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.music.bitchord.AccountSessionsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-15T16:35:52" hostname="a4a5409e-bd5" time="0.008">
-  <properties/>
-  <testcase name="profiles retain account then profile ordering" classname="com.music.bitchord.AccountSessionsTest" time="0.003"/>
-  <testcase name="next previous and boundaries do not wrap" classname="com.music.bitchord.AccountSessionsTest" time="0.0"/>
-  <testcase name="one profile has no adjacent profile" classname="com.music.bitchord.AccountSessionsTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

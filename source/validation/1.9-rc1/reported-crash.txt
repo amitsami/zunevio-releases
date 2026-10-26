@@ -1,4 +1,0 @@
-Source: user-supplied Kotlin Coroutines Error.rtf
-java.lang.IllegalArgumentException: Unexpected char 0xe9 at 3 in User-Agent value: Zunévio/1.7.1
-at okhttp3.Request$Builder.header(...)
-at com.music.bitchord.data.lyrics.LyricsTranslation.requestBatch(...)
