@@ -1,3 +1,5 @@
+![Zunéviu — Your music. Your flow.](assets/gallery/banner.png)
+
 # Zunéviu
 ### Your music. Your flow.
 
@@ -23,6 +25,19 @@ Download one APK and install it over your existing Zunéviu app to keep your lib
 Choose **White Glass** in the app’s icon settings to try the new look.
 
 [Official website](https://amitsami.github.io/zuneviu-website/) · [Latest release](https://github.com/amitsami/zunevio-releases/releases/latest)
+
+## App gallery
+
+*Screenshots from v1.2.6.*
+
+### Discover your next favorite
+![Listen Now, Explore and Library](assets/gallery/discover.png)
+
+### Stay in the music
+![Now Playing and Track Controls](assets/gallery/listen.png)
+
+### Make it yours
+![Settings](assets/gallery/settings.png)
 
 ## Source
 
