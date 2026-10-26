@@ -1,58 +1,29 @@
-![Zunéviu for Android — Your music. Your flow.](assets/gallery/banner.png)
-
 # Zunéviu
 ### Your music. Your flow.
 
-An Android music experience with personal discovery, immersive artwork, lyrics and playback settings.
+A fresh look. A more reliable way to stay up to date.
 
-[**Download latest release →**](https://github.com/amitsami/zunevio-releases/releases/latest) · [All versions](https://github.com/amitsami/zunevio-releases/releases) · [Privacy](PRIVACY.md)
+## 1.3.2 · Build 65
 
-## Latest update — 1.3.1 (Build 64)
+- **White Glass icon** — a clean white finish with Zunéviu’s signature music mark in black.
+- **Improved update checks** — alternative update sources, smarter retries and cached release information.
+- **Your choice, preserved** — all existing icon styles remain available.
 
-- Correct repeated-track seeking after Next and audio/video handovers.
-- Keep seek state with its active track and clock; clean up cancelled gestures.
-- Separate the landscape “This phone” caption from the headphones button.
-- Soften the video's right edge without reducing the video pane.
-- Show only the selected footer icon in brand red.
-- Remove redundant video compositing; no measured FPS guarantee.
+## Download
 
-[Changelog and known limits](RELEASE_NOTES.md) · [Release assets and source](https://github.com/amitsami/zunevio-releases/releases/tag/v1.3.1)
+**Android 8.0+**
 
-## Download and install
+| Edition | Best for |
+| --- | --- |
+| [ARM64 APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-arm64.apk) | Compatible 64-bit ARM devices |
+| [Universal APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-universal.apk) | Choose this if you are unsure |
 
-Choose **Zunévio-1.3.1-build64-arm64.apk** for a compatible ARM64 device, or **Zunévio-1.3.1-build64-universal.apk** if unsure. Android 8.0+ is required.
+Download one APK and install it over your existing Zunéviu app to keep your library and settings. Do not uninstall or clear app data just to update. Android manages installation permissions and prompts.
 
-1. Download only from this repository’s official release page.
-2. Open the APK and review Android’s installation prompts. Keep Play Protect enabled.
-3. To update the existing production app, keep it installed. Do not uninstall or clear data just to update. Preview/debug apps may use a separate package or signing chain.
+Choose **White Glass** in the app’s icon settings to try the new look.
 
-Package: `com.zunevio.music`. Updates retain the production signing identity. The app checks update SHA-256, package identity, signer and a newer version code before opening Android's installer. Device/network/battery policies affect update checks.
+[Official website](https://amitsami.github.io/zuneviu-website/) · [Latest release](https://github.com/amitsami/zunevio-releases/releases/latest)
 
-## App gallery
+## Source
 
-The images below are historical gallery screenshots from v1.2.6, **not screenshots of Build 64**.
-
-### Discover your next favorite
-![Listen Now, Explore and Library](assets/gallery/discover.png)
-
-### Stay in the music
-![Now Playing and Track Controls](assets/gallery/listen.png)
-
-### Make it yours
-![Settings](assets/gallery/settings.png)
-
-## Source and transparency
-
-The exact 1.3.1 application/build sources are supplied in the explicitly named **Zunévio-1.3.1-build64-corresponding-source.zip** release asset, alongside build instructions, license notices, validation summary, signer information and SHA-256 checksums. The source tree already present in this repository and GitHub’s automatic tag source archives are historical/download-repository material; use the named corresponding-source asset for the current APK.
-
-Public files exclude owner signing keys, passwords, private CI configuration and internal test reports. Full development/review bundles are not mirrored here.
-
-Validation: 1,419/1,420 unit tests passed;Zero Error/Fatal lint findings, 701 warnings. Offline seek/decoder tests passed on Android API 28 and 35 emulators. No physical-device/FPS certification, full security audit or all-provider/bug-free guarantee.
-
-## Credits and license
-
-Maintained by [Amit Hasan Sami](https://github.com/amitsami).
-
-[License](LICENSE) · [Notices](NOTICE.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [App privacy](PRIVACY.md)
-
-Zunéviu is independent and is not endorsed by music providers or upstream projects. Media, lyrics and artwork remain with their respective rights holders. Provider availability, account requirements and device compatibility vary.
+[Download corresponding source](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-corresponding-source.zip). Build instructions, licenses and required copyright notices are included. Use this named source ZIP for the app; GitHub’s automatically generated source archives describe the download repository instead.
