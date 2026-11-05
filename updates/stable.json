@@ -7,7 +7,7 @@
   "draft": false,
   "prerelease": false,
   "published_at": "2026-11-03T08:27:33Z",
-  "body": "# Zunéviu 1.5.0\n\n### A more refined music experience\n\n- Redesigned artist pages with immersive artwork and elegant info, play and heart controls.\n- Refreshed Library collections with clean, monochrome icons and streamlined rows.\n- Polished the Home, Search and player interfaces for a more cohesive look.\n- Added fluid touch feedback and smoother transitions across selected controls.\n- Improved play-button visibility on light backgrounds.\n- Refined animations for a more comfortable reduced-motion experience.\n",
+  "body": "# Zunéviu 1.5.0\r\n\r\n### A more refined music experience\r\n\r\n- Redesigned artist pages with immersive artwork and elegant info, play and heart controls.\r\n- Refreshed Library collections with clean, monochrome icons and streamlined rows.\r\n- Polished the Home, Search and player interfaces for a more cohesive look.\r\n- Added fluid touch feedback and smoother transitions across selected controls.\r\n- Improved play-button visibility on light backgrounds.\r\n- Refined animations for a more comfortable reduced-motion experience.\r\n",
   "assets": [
     {
       "name": "Zunevio-1.5.0-arm64.apk",
