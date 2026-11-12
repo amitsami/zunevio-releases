@@ -32,8 +32,8 @@ A fresh look. A more reliable way to stay up to date.
 
 | Edition | Best for |
 | --- | --- |
-| [ARM64 APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-arm64.apk) | Compatible 64-bit ARM devices |
-| [Universal APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-universal.apk) | Choose this if you are unsure |
+| [ARM64 APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.5.5/Zunevio-1.5.5-arm64.apk) | Compatible 64-bit ARM devices |
+| [Universal APK](https://github.com/amitsami/zunevio-releases/releases/download/v1.5.5/Zunevio-1.5.5-universal.apk) | Choose this if you are unsure |
 
 Download one APK and install it over your existing Zunéviu app to keep your library and settings. Do not uninstall or clear app data just to update. Android manages installation permissions and prompts.
 
