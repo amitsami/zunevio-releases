@@ -55,5 +55,4 @@ Choose **White Glass** in the app’s icon settings to try the new look.
 ![Settings](assets/gallery/settings.png)
 
 ## Source
-
-[Download corresponding source](https://github.com/amitsami/zunevio-releases/releases/download/v1.3.2/Zunevio-1.3.2-corresponding-source.zip). Build instructions, licenses and required copyright notices are included. Use this named source ZIP for the app; GitHub’s automatically generated source archives describe the download repository instead.
+ Build instructions, licenses and required copyright notices are included. Use this named source ZIP for the app; GitHub’s automatically generated source archives describe the download repository instead.
